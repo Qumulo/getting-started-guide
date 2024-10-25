@@ -296,7 +296,7 @@ while true; do
     echo "7.  🖥️  Only serve HTML documentation locally"
     echo "8.  🖥️  Build documentation and serve it locally"
     echo "9.  🖥️  Build documentation and serve it locally with LiveReload (can be unstable)"
-    echo "10.  📋 Check documentation for link, script, and image errors"
+    echo "10. 📋 Check documentation for link, script, and image errors"
     echo "11. 📋 Check documentation for spelling errors"
     echo "12. 🧹 Sweep Toolchain"
     echo "13. 🔍 Ingest docs.qumulo.com into Vectara"
