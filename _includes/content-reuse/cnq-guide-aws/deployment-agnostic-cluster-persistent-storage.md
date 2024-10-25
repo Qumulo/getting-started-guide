@@ -8,7 +8,7 @@ This section explains how to deploy the S3 buckets that act as persistent storag
 1. In your S3 bucket, create the `qumulo-core-install` directory. Within this directory, create another directory with the Qumulo Core version as its name. The following is an example path:
 
    ```
-   my-s3-bucket-name/my-s3-bucket-prefix/qumulo-core-install/7.2.3.1
+   my-s3-bucket-name/my-s3-bucket-prefix/qumulo-core-install/7.2.3.2
    ```
 
    {% capture newVer %}{{site.cnq.qCoreVerTip}}{% endcapture %}

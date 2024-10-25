@@ -428,7 +428,7 @@ cnq:
   cfnConfigureStackOptions: On the <strong>Configure stack options</strong> page, click <strong>Next</strong>.
   cfnRollbackOnFailure: On the <strong>Review &lt;my-stack-name&gt;</strong> page, click <strong>Rollback on failure</strong> and then click <strong>Submit</strong>.
   qCoreVerTip: Make a new subdirectory for every new release of Qumulo Core.
-  copyDebAndConfig: Copy `qumulo-core.deb` and `host_configuration.tar.gz` into the directory named after the Qumulo Core version (in this example, it is `7.2.3.1`).
+  copyDebAndConfig: Copy `qumulo-core.deb` and `host_configuration.tar.gz` into the directory named after the Qumulo Core version (in this example, it is `7.2.3.2`).
   deploymentUniqueNameExample: my-deployment-ABCDEFGH1IJ
   paramStore: in AWS Systems Manager (<strong>Application Management &gt; Parameter Store</strong>)
   azureAppConfig: in Azure App Configuration (on the left navigation panel, click <strong>Operations &gt; Configuration Explorer</strong>)
