@@ -19,11 +19,45 @@ Access tokens are long-lived. They provide an alternative to session-based authe
   <li>{{page.varPrereqRead}}</li>
 </ul>
 
+{{site.data.alerts.note}}
+<ul>
+  <li>These RBAC privileges grant administrative access to view, modify, create and delete keys for any user in the system.</li>
+  <li>In Qumulo Core access tokens use a "self service" permissions model. Any user in the system may view, modify, create or delete keys for themselves.</li>
+</ul>
+{{site.data.alerts.end}}
+
 <a id="creating-using-access-tokens"></a>
 ## Creating and Using Access Tokens
 {{page.varPrereqWrite}} This section explains how to create access tokens without or with an expiration time by using the `qq` CLI.
 
-### To Create an Access Token without an Expiration Time
+### To create an Access Token for Yourself
+Run the {% include qq.html command="auth_create_access_token" %} command and specify <code>--self</code>. For example:
+
+```bash
+$ qq auth_create_access_token --self
+```
+
+<a id="json-bearer-token"></a>
+
+The {% include qq.html command="auth_create_access_token" %} command returns a JSON response that contains the bearer token body and the access token ID, which you can use to manage the access token.
+
+```json
+{
+  "bearer_token": "access-v1:abAcde...==",
+  "id": "12345678901234567890123"
+}
+```
+
+{{site.data.alerts.important}}
+<ul>
+  <li>{{site.varBearerTokenRecommend}} {{site.varBearerTokenWarning}}</li>
+  <li>Any user can have a maximum of two access tokens. If a user already has two access tokens, creating new tokens fails until you remove at least one token from the user. We strongly recommend creating a single access token for each user and using the second access token to perform secret rotation.</li>
+  <li>{{page.varAccessTokenBestPractices}}</li>
+  <li>{{page.varAccessTokenAdminWarning}}</li>
+</ul>
+{{site.data.alerts.end}}
+
+### To Create an Access Token For a Specific User
 Run the {% include qq.html command="auth_create_access_token" %} command and specify the user. For example:
 
 ```bash
@@ -46,26 +80,6 @@ You can:
 <ul>
   <li>Although you can create groups for users, you can't create access tokens for groups.</li>
   <li>{{page.varTokenQQcli}}</li>
-</ul>
-{{site.data.alerts.end}}
-
-<a id="json-bearer-token"></a>
-
-The {% include qq.html command="auth_create_access_token" %} command returns a JSON response that contains the bearer token body and the access token ID, which you can use to manage the access token.
-
-```json
-{
-  "bearer_token": "access-v1:abAcde...==",
-  "id": "12345678901234567890123"
-}
-```
-
-{{site.data.alerts.important}}
-<ul>
-  <li>{{site.varBearerTokenRecommend}} {{site.varBearerTokenWarning}}</li>
-  <li>Any user can have a maximum of two access tokens. If a user already has two access tokens, creating new tokens fails until you remove at least one token from the user. We strongly recommend creating a single access token for each user and using the second access token to perform secret rotation.</li>  
-  <li>{{page.varAccessTokenBestPractices}}</li>
-  <li>{{page.varAccessTokenAdminWarning}}</li>
 </ul>
 {{site.data.alerts.end}}
 
@@ -127,6 +141,30 @@ To use the credentials file, specify its location by using the `--credentials-st
 $ qq --credentials-store ./qumulo_credentials who_am_i
 ```
 
+## Listing Access Tokens
+{{page.varPrereqRead}} This section explains how to list access tokens for yourself, a specific user, or all users by using the `qq` CLI.
+
+### To List Access Tokens for Yourself
+Run the {% include qq.html command="auth_list_access_tokens" %} command and specify <code>--self</code>. For example:
+
+```bash
+$ qq auth_list_access_tokens --self
+```
+
+### To List Access Tokens for a Specific User
+Run the {% include qq.html command="auth_list_access_tokens" %} command and specify <code>--user</code>. For example:
+
+```bash
+$ qq auth_list_access_tokens --user jane
+```
+
+### To List Access Tokens for all Users
+Run the {% include qq.html command="auth_list_access_tokens" %} command with no user specified. For example:
+
+```bash
+$ qq auth_list_access_tokens
+```
+
 ## Getting Metadata for Access Tokens
 {{page.varPrereqRead}} This section explains how to get metadata for a specific access token or all access tokens by using the `qq` CLI.
 
@@ -180,8 +218,8 @@ The `auth_list_access_tokens` command returns:
 For example:
 
 ```
-id                      user   creator  creation time                   
-======================  =====  =======  ==============================  
+id                      user   creator  creation time
+======================  =====  =======  ==============================
 1234567890123456789012  svc    admin    2022-10-27T15:18:09.725513764Z
 0987654321098765432109  svc    admin    2022-10-27T15:18:24.997572918Z
 
