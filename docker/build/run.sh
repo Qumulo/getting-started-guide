@@ -10,6 +10,14 @@ if [[ -f /build.sha256 ]]; then
         echo "#####################################################################"
         echo "Expected $(</build.sha256)"
         echo "Found $(sha256sum --check /build.sha256)"
+        echo
+        echo "This likely means that the Gemfile has built differently in your"
+        echo "docs-builder container, likely due to dependency updates in the "
+        echo "generic parent container".
+        echo "You can get a new Gemfile.lock that will work with this command "
+        echo "running it from the docs root directory"
+        echo '  docker run -ti --user $(id -u):$(id -g) --entrypoint /bin/bash -v $(pwd):/src docs-builder -c "bundle update --bundler; bundle install"'
+        echo "This will update the Gemfile.lock in your local repo ready to commit"
         exit 1
     fi
 fi
