@@ -16,13 +16,13 @@ Run the `./alerts quota_add` command and specify the quota path, the email addre
 ```bash
 ./alerts quota_add \
   --quotapath /Reports/Marketing \
-  --user-notification True \
+  --user-notification \
   --user-mode direct \
   --user-email jjohnson@example.com \
   --cluster-include cluster.example.com
 ```
 
-{% include note.html content="For the `--user-email` flag, you can specify a comma-delimited list of email addresses to notify, if you also specify `--user-notification True --user-mode direct`." %}
+{% include note.html content="For the `--user-email` flag, you can specify a comma-delimited list of email addresses to notify, if you also specify `--user-notification --user-mode direct`." %}
 
 {{site.exampleOutput}}
 
@@ -80,7 +80,7 @@ Run the `./alerts default_quota_update` command, specify the default quota ID, a
 ```bash
 ./alerts default_quota_update \
   --id 1 \
-  --user-notification True \
+  --user-notification \
   --admin-notification False
 ```
 
