@@ -4,6 +4,9 @@ For information about upgrade types for each release, see <a href='mode-referenc
 
 <style>div#toc{height:200px;overflow:auto;}</style>
 
+## Qumulo Core 7.3.0
+{{page.varDownloadsRelnotes}}
+
 ## Qumulo Core 7.2.3.2
 {{page.varDownloadsRelnotes}}
 {{site.data.alerts.important}}
