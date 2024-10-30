@@ -127,6 +127,10 @@ entries:
       url: /hardware-guide/hpe-alletra-4110/wiring-nodes-networking-cluster.html
       output: web, pdf
 
+    - title: Replacing Hardware Components
+      url: /hardware-guide/hpe-alletra-4110/replacing-hardware-components.html
+      output: web, pdf
+
     - title: Technical Specifications
       url: /hardware-guide/hpe-alletra-4110/technical-specifications.html
       output: web, pdf
@@ -154,6 +158,10 @@ entries:
 
     - title: Wiring Nodes and Networking a Cluster
       url: /hardware-guide/hpe-alletra-4140/wiring-nodes-networking-cluster.html
+      output: web, pdf
+
+    - title: Replacing Hardware Components
+      url: /hardware-guide/hpe-alletra-4140/replacing-hardware-components.html
       output: web, pdf
 
     - title: Technical Specifications
@@ -189,6 +197,10 @@ entries:
       url: /hardware-guide/hpe-apollo-4200-gen9/wiring-nodes-networking-cluster.html
       output: web, pdf
 
+    - title: Replacing Hardware Components
+      url: /hardware-guide/hpe-apollo-4200-gen9/replacing-hardware-components.html
+      output: web, pdf
+
   - title: HPE Apollo 4200 Gen10
     url: /hardware-guide/hpe-apollo-4200-gen10/index.html
     output: web, pdf
@@ -218,6 +230,10 @@ entries:
       url: /hardware-guide/hpe-apollo-4200-gen10/wiring-nodes-networking-cluster.html
       output: web, pdf
 
+    - title: Replacing Hardware Components
+      url: /hardware-guide/hpe-apollo-4200-gen10/replacing-hardware-components.html
+      output: web, pdf
+      
     - title: Technical Specifications
       url: /hardware-guide/hpe-apollo-4200-gen10/technical-specifications.html
       output: web, pdf
@@ -247,6 +263,10 @@ entries:
       url: /hardware-guide/hpe-apollo-4200-gen10-plus/wiring-nodes-networking-cluster.html
       output: web, pdf
 
+    - title: Replacing Hardware Components
+      url: /hardware-guide/hpe-apollo-4200-gen10-plus/replacing-hardware-components.html
+      output: web, pdf
+
     - title: Technical Specifications
       url: /hardware-guide/hpe-apollo-4200-gen10-plus/technical-specifications.html
       output: web, pdf
@@ -270,6 +290,10 @@ entries:
 
     - title: Wiring Nodes and Networking a Cluster
       url: /hardware-guide/hpe-dl325-gen10-plus/wiring-nodes-networking-cluster.html
+      output: web, pdf
+
+    - title: Replacing Hardware Components
+      url: /hardware-guide/hpe-dl325-gen10-plus/replacing-hardware-components.html
       output: web, pdf
 
     - title: Technical Specifications
