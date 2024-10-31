@@ -135,7 +135,7 @@ This section explains how to deploy compute and cache resources for a Qumulo clu
 
       1. Enter the **Total number of Floating IPs for the Qumulo Cluster**.
 
-         {% include important.html content="If you intend to scale out your Qumulo cluter, enter 6 floating IP addresses for each EC2 instance." %}
+         {% include tip.html content="If you intend to scale out your Qumulo cluter, enter 6 floating IP addresses for each EC2 instance." %}
 
       1. Enter the **Qumulo software version**, **Qumulo cluster name**, and the **Qumulo cluster administrator password**.
   
