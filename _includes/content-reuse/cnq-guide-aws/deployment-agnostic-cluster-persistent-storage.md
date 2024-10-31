@@ -37,11 +37,14 @@ This section explains how to deploy the S3 buckets that act as persistent storag
 1. Find the URL to `templates/persistent-storage.template.yaml`. For example:
 
    ```
-   https://my-bucket.s3.us-west-2.amazonaws.com/aws-cloudformation-cnq/templates/persistent-storage.template.yaml
+   https://my-bucket.s3.us-west-2.amazonaws.com/my-s3-bucket-prefix/aws-cloudformation-cnq/templates/persistent-storage.template.yaml
    ```
 
    {% capture newVer %}{{site.cnq.qCoreVerTip}}{% endcapture %}
    {% include tip.html content=newVer %}
+
+<a id="create-cloudformation-stack"></a>
+### Part 2: Create the CloudFormation Stack
 
 1. {{site.cnq.logIntoCFN}}
 
@@ -49,7 +52,7 @@ This section explains how to deploy the S3 buckets that act as persistent storag
 
 1. On the **Create stack** page, in the **Specify template** section, click **Amazon S3 URL**, enter the URL to `persistent-storage.template.yaml`, and then click **Next**.
 
-1. On the **Specify stack details** page, enter the **Stack name***, take the following steps:
+1. On the **Specify stack details** page, enter the **Stack name**, take the following steps:
 
    1. For **S3 bucket name**, enter [the name of the S3 bucket that you used to prepare your files](#prepare-required-files).
 
@@ -59,7 +62,7 @@ This section explains how to deploy the S3 buckets that act as persistent storag
   
    1. Click **Next**.
 
-1. On the **Configure stack options** page, click **Next**.
+1. On the **Configure stack options** page, read and accept the two acknowledgements, and then click **Next**.
 
 1. On the **Review and create** page, click **Submit**.
 
