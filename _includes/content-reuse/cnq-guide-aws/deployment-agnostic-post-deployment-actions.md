@@ -30,7 +30,7 @@ This section describes the common actions you can perform on a {{site.cnqShort}}
 1. {{site.cnq.cfnUseExistingTemplate}}
 1. On the **Specify stack details** page, enter a new value for **Number of Qumulo EC2 instances** and then click **Next**.
 1. {{site.cnq.cfnRollbackOnFailure}}
-1. On the **Review &lt;my-stack-name&gt;** pqage, click **Submit**.
+1. On the **Review &lt;my-stack-name&gt;** page, click **Submit**.
 
    CloudFormation creates resources for the stack and displays the **CREATE_COMPLETE** status for each resource.
 {% endif %}
@@ -124,9 +124,9 @@ You must perform this step while the cluster is running.
 {% elsif page.deployment == "cfn" %}
 1. {{site.cnq.cfnUpdateStackComputeCache}}
 1. {{site.cnq.cfnUseExistingTemplate}}
-1. On the **Specify stack details** page, enter a lower value for **Node Count** (for example, `4`) and then click **Next**.
-1. {{site.cnq.cfnConfigureStackOptions}}
+1. On the **Specify stack details** page, enter a lower value for **Number of Qumulo EC2 instances** (for example, `4`) and then click **Next**.
 1. {{site.cnq.cfnRollbackOnFailure}}
+1. On the **Review &lt;my-stack-name&gt;** page, click **Submit**.
 {% endif %}
 
    The node and the infrastructure associated with the node are removed.
