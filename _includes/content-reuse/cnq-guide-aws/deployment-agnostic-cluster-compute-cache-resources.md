@@ -101,9 +101,7 @@ This section explains how to deploy compute and cache resources for a Qumulo clu
 
       1. For **S3 bucket name**, enter [the name of the S3 bucket that you used to prepare your files](#prepare-required-files).
 
-      1. For **S3 key prefix**, enter your S3 bucket prefix followed by the `aws-cloudformation-cnq/` directory. For example:
-
-         `my-s3-bucket-prefix/aws-cloudformation-cnq/`
+      1. For **S3 key prefix**, enter your S3 bucket prefix.
 
       1. For **S3 bucket region**, enter the same AWS region as the one for your S3 bucket.
   
