@@ -81,13 +81,31 @@ This section explains how to deploy compute and cache resources for a Qumulo clu
    ```
 
 {% elsif page.deployment == "cfn" %}
+1. In the S3 bucket that hosts your deployment files, find the URL to `templates/cnq-standard.template.yaml`. For example:
+
+   ```
+   https://my-bucket.s3.us-west-2.amazonaws.com/my-s3-bucket-prefix/aws-cloudformation-cnq/templates/cnq-standard.template.yaml
+   ```
+
 1. Log in to the [AWS CloudFormation console](https://console.aws.amazon.com/cloudformation/home).
 
 1. On the **Stacks** page, in the upper right, click **Create stack > With new resources (standard)**.
 
 1. On the **Create stack** page, in the **Specify template** section, click **Amazon S3 URL**, enter the URL to `cnq-standard-template.yaml`, and then click **Next**.
 
-1. On the **Specify stack details** page, enter the **Stack name** and review the information in the **Parameters** section, and then click **Next**.
+1. On the **Specify stack details** page, take the following steps:
+
+   1. Enter a **Stack name**, for example `my-compute-cache-stack`.
+   
+   1. For **S3 bucket name**, enter [the name of the S3 bucket that you used to prepare your files](#prepare-required-files).
+
+   1. For **S3 key prefix**, enter your S3 bucket prefix followed by the `aws-cloudformation-cnq/` directory. For example:
+
+      `my-s3-bucket-prefix/aws-cloudformation-cnq/`
+
+   1. For **S3 bucket region**, enter the same AWS region as the one for your S3 bucket.
+  
+   1. Click **Next**.
 
 1. On the **Configure stack options** page, click **Next**.
 
