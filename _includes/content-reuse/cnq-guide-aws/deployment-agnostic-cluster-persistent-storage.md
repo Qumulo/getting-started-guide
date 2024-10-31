@@ -10,7 +10,7 @@ This section explains how to deploy the S3 buckets that act as persistent storag
 
 1. On the **AWS** tab and, in the **Download the required files** section, select the Qumulo Core version that you want to deploy and then download the corresponding {% if page.deployment == "cfn" %}CloudFormation template{% elsif page.deployment == "tf" %}Terraform configuration{% endif %}, Debian package, and host configuration file.
 
-1. Within your S3 bucket prefix, create the `qumulo-core-install` directory. Within this directory, create another directory with the Qumulo Core version as its name. The following is an example path:
+1. Within your S3 bucket prefix, create the `qumulo-core-install` directory. Within this directory, create another directory with the Qumulo Core version as its name. For example:
 
    ```
    my-s3-bucket-name/my-s3-bucket-prefix/qumulo-core-install/7.2.3.2
