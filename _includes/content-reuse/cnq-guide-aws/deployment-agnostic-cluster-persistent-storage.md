@@ -56,7 +56,7 @@ This section explains how to deploy the S3 buckets that act as persistent storag
 
 1. On the **Specify stack details** page, take the following steps:
 
-   1. Enter a **Stack name**, for example `my-storage-stack`.
+   1. <a id="persistent-storage-stack-name"></a> Enter a **Stack name**, for example `my-storage-stack`.
 
    1. For **S3 bucket name**, enter [the name of the S3 bucket that you used to prepare your files](#prepare-required-files).
 
