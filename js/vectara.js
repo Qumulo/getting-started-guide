@@ -167,7 +167,9 @@ console.log("submitFn called with query:", query);
           console.log(`fetch elapsedTime: ${ ( endTime - startTime ) / 1000 }`);
           return data;
         })
-        .then(successFn)
+        .then((results) => {
+            return successFn(results, query);
+        })
         .catch(function (error) {
           errorFn(error);
           pulseLogo.classList.remove("vectara__search_loading");
