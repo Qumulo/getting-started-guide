@@ -24,11 +24,7 @@ This section explains how to deploy the S3 buckets that act as persistent storag
 1. {{site.cnq.copyDebAndConfig}}
 
 {% if page.deployment == "cfn" %}
-1. Decompress `aws-cloudformation-cnq-<x.y>.zip` locally and place it within your S3 bucket prefix. The following is an example path:
-
-   ```
-   my-s3-bucket-name/my-s3-bucket-prefix/
-   ```
+1. Decompress `aws-cloudformation-cnq-<x.y>.zip` locally and place it within your S3 bucket prefix.
 {% elsif page.deployment == "tf" %}
 1. Copy `aws-terraform-cnq-<x.y>.zip` to your Terraform environment and decompress.
 {% endif %}
