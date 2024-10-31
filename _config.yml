@@ -422,8 +422,8 @@ cnq:
   runTFdestroyWithFile: Run the <code>terraform destroy -var-file config-standard.tfvars</code> command.
   tfCreatesNewBuckets: Terraform creates new S3 buckets as necessary
   tfCreatesNewStorageAccounts: Terraform creates new Azure Storage Accounts as necessary
-  cfnUpdateStackComputeCache: On the <strong>Stacks</strong> page, select your compute and cache deployment stack and then, in the upper right, click <strong>Update</strong>.
-  cfnUpdateStackPersistentStorage: On the <strong>Stacks</strong> page, select your persistent storage stack and then, in the upper right, click <strong>Update</strong>.
+  cfnUpdateStackComputeCache: On the <strong>Stacks</strong> page, select <a href="#compute-cache-stack-name">your compute and cache deployment stack</a> and then, in the upper right, click <strong>Update</strong>.
+  cfnUpdateStackPersistentStorage: On the <strong>Stacks</strong> page, select <a href="#persistent-storage-stack-name">your persistent storage stack</a> and then, in the upper right, click <strong>Update</strong>.
   cfnUseExistingTemplate: On the <strong>Update stack</strong> page, click <strong>Use existing template</strong> and then click <strong>Next</strong>.
   cfnConfigureStackOptions: On the <strong>Configure stack options</strong> page, click <strong>Next</strong>.
   cfnRollbackOnFailure: On the <strong>Review &lt;my-stack-name&gt;</strong> page, click <strong>Rollback on failure</strong> and then click <strong>Submit</strong>.
