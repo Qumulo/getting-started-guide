@@ -84,7 +84,7 @@ This section explains how to deploy compute and cache resources for a Qumulo clu
 1. In the S3 bucket that hosts your deployment files, find the URL to `templates/cnq-standard.template.yaml`. For example:
 
    ```
-   https://my-bucket.s3.us-west-2.amazonaws.com/my-s3-bucket-prefix/aws-cloudformation-cnq/templates/cnq-standard.template.yaml
+   https://my-bucket.s3.us-west-2.amazonaws.com/my-s3-bucket-prefix/templates/cnq-standard.template.yaml
    ```
 
 1. Log in to the [AWS CloudFormation console](https://console.aws.amazon.com/cloudformation/home).
