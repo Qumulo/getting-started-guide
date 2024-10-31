@@ -10,7 +10,7 @@ This section explains how to deploy the S3 buckets that act as persistent storag
 
 1. On the **AWS** tab and, in the **Download the required files** section, select the Qumulo Core version that you want to deploy and then download the corresponding {% if page.deployment == "cfn" %}CloudFormation template{% elsif page.deployment == "tf" %}Terraform configuration{% endif %}, Debian package, and host configuration file.
 
-1. In your S3 bucket, create the `qumulo-core-install` directory. Within this directory, create another directory with the Qumulo Core version as its name. The following is an example path:
+1. Within your S3 bucket's prefix, create the `qumulo-core-install` directory. Within this directory, create another directory with the Qumulo Core version as its name. The following is an example path:
 
    ```
    my-s3-bucket-name/my-s3-bucket-prefix/qumulo-core-install/7.2.3.2
@@ -21,7 +21,18 @@ This section explains how to deploy the S3 buckets that act as persistent storag
 
 1. {{site.cnq.copyDebAndConfig}}
 
-1. Copy {% if page.deployment == "cfn" %}`aws-cloudformation-cnq-<x.y>.zip` to the `my-s3-bucket-name/my-s3-bucket-prefix/aws-cloudformation-cnq` directory{% elsif page.deployment == "tf" %}`aws-terraform-cnq-<x.y>.zip` to your Terraform environment{% endif %} and decompress it.
+{% if page.deployment == "cfn" %}
+1. Within your S3 bucket's prefix, make a directory called `aws-cloudformation-cnq`.
+
+1. Decompress `aws-cloudformation-cnq-<x.y>.zip` locally and copy it to the `aws-cloudformation-cnq` directory. The following is an example path:
+
+   ```
+   my-s3-bucket-name/my-s3-bucket-prefix/aws-cloudformation-cnq
+   ```
+{% elsif page.deployment == "tf" %}
+1. Copy `aws-terraform-cnq-<x.y>.zip` to your Terraform environment and decompress.
+{% endif %}
+
 {% if page.deployment == "cfn" %}
 1. Find the URL to `templates/persistent-storage.template.yaml`. For example:
 
