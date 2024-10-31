@@ -54,7 +54,9 @@ This section explains how to deploy the S3 buckets that act as persistent storag
 
 1. On the **Create stack** page, in the **Specify template** section, click **Amazon S3 URL**, enter the URL to `persistent-storage.template.yaml`, and then click **Next**.
 
-1. On the **Specify stack details** page, enter the **Stack name**, take the following steps:
+1. On the **Specify stack details** page, take the following steps:
+
+   1. Enter a **Stack name**, for example `my-storage-stack`.
 
    1. For **S3 bucket name**, enter [the name of the S3 bucket that you used to prepare your files](#prepare-required-files).
 
