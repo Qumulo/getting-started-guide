@@ -62,7 +62,9 @@ This section explains how to deploy the S3 buckets that act as persistent storag
 
    1. For **S3 key prefix**, enter your S3 bucket prefix followed by the `aws-cloudformation-cnq/` directory. For example:
 
-      `my-s3-bucket-prefix/aws-cloudformation-cnq/`
+      ```
+      my-s3-bucket-prefix/aws-cloudformation-cnq/
+      ```
 
    1. For **S3 bucket region**, enter the same AWS region as the one for your S3 bucket.
   
