@@ -24,13 +24,7 @@ This section explains how to deploy the S3 buckets that act as persistent storag
 1. {{site.cnq.copyDebAndConfig}}
 
 {% if page.deployment == "cfn" %}
-1. Within your S3 bucket's prefix, make a directory called `aws-cloudformation-cnq`.
-
-1. Decompress `aws-cloudformation-cnq-<x.y>.zip` locally and copy it to the `aws-cloudformation-cnq` directory. The following is an example path:
-
-   ```
-   my-s3-bucket-name/my-s3-bucket-prefix/aws-cloudformation-cnq
-   ```
+1. Decompress `aws-cloudformation-cnq-<x.y>.zip` locally and copy it to your S3 bucket prefix.
 {% elsif page.deployment == "tf" %}
 1. Copy `aws-terraform-cnq-<x.y>.zip` to your Terraform environment and decompress.
 {% endif %}
@@ -39,7 +33,7 @@ This section explains how to deploy the S3 buckets that act as persistent storag
 1. Find the URL to `templates/persistent-storage.template.yaml`. For example:
 
    ```
-   https://my-bucket.s3.us-west-2.amazonaws.com/my-s3-bucket-prefix/aws-cloudformation-cnq/templates/persistent-storage.template.yaml
+   https://my-bucket.s3.us-west-2.amazonaws.com/my-s3-bucket-prefix/templates/persistent-storage.template.yaml
    ```
 
    {% capture newVer %}{{site.cnq.qCoreVerTip}}{% endcapture %}
@@ -60,11 +54,7 @@ This section explains how to deploy the S3 buckets that act as persistent storag
 
    1. For **S3 bucket name**, enter [the name of the S3 bucket that you used to prepare your files](#prepare-required-files).
 
-   1. For **S3 key prefix**, enter your S3 bucket prefix followed by the `aws-cloudformation-cnq/` directory. For example:
-
-      ```
-      my-s3-bucket-prefix/aws-cloudformation-cnq/
-      ```
+   1. For **S3 key prefix**, enter your S3 bucket prefix.
 
    1. For **S3 bucket region**, enter the same AWS region as the one for your S3 bucket.
   
