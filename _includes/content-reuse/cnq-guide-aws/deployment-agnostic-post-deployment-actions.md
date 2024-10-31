@@ -31,6 +31,8 @@ This section describes the common actions you can perform on a {{site.cnqShort}}
 1. On the **Specify stack details** page, enter a new value for **Number of Qumulo EC2 instances** and then click **Next**.
 1. {{site.cnq.cfnRollbackOnFailure}}
 1. On the **Review &lt;my-stack-name&gt;** pqage, click **Submit**.
+
+   CloudFormation creates resources for the stack and displays the **CREATE_COMPLETE** status for each resource.
 {% endif %}
 {% capture verifyProvis %}To ensure that the Provisioner shut downs automatically, review the `/qumulo/{% if page.deployment == "tf" %}my-deployment-name{% elsif page.deployment == "cfn" %}my-stack-name{% endif %}/last-run-status` parameter {{site.cnq.paramStore}}.{% endcapture %}
 1. {{verifyProvis}}
