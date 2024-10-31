@@ -28,7 +28,7 @@ This section describes the common actions you can perform on a {{site.cnqShort}}
 1. {{site.cnq.logIntoCFN}}
 1. {{site.cnq.cfnUpdateStackComputeCache}}
 1. {{site.cnq.cfnUseExistingTemplate}}
-1. On the **Specify stack details** page, enter a new value for **Node Count** and then click **Next**.
+1. On the **Specify stack details** page, enter a new value for **Number of Qumulo EC2 instances** and then click **Next**.
 1. {{site.cnq.cfnConfigureStackOptions}}
 1. {{site.cnq.cfnRollbackOnFailure}}
 {% endif %}
