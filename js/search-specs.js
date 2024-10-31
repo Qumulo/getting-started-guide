@@ -17,7 +17,7 @@ let searchWidget = createSearch(
 );
 document.getElementById("search-widget").appendChild(searchWidget);
 
-function successFn(results) {
+function successFn(results, query) {
   hideOverlay();
 
   // Check if results are valid or not empty
@@ -25,6 +25,8 @@ function successFn(results) {
     console.log("No results to show.");
     return;
   }
+
+  query = query || document.querySelector('#search-input').value.trim();
 
   // Process the results and display them on the page.
   console.log(results);
@@ -58,7 +60,7 @@ function successFn(results) {
   });
 
   // Remove not-useful qq CLI boilerplate
-  document.querySelectorAll('.vuiSearchResult a[href*="qq-cli-command-guide"]').forEach(link => {
+  document.querySelectorAll('.vuiSearchResult a[href*="qq-cli-command-guide"]').forEach((link) => {
     // For each of these links, find any parent 'vuiSearchResult' divs
     const parentDiv = link.closest(".vuiSearchResult");
     if (parentDiv) {
@@ -79,24 +81,24 @@ function successFn(results) {
   });
 
   // Encourage users to enter more search terms.
-  const apologyText1 = "The returned results did not contain sufficient information to be summarized into a useful answer for your query. Please try a different search or restate your query differently.";
-  const apologyText2 = "The returned search results did not contain sufficient information to be summarized into a useful answer for your query. Please try a different search or restate your query differently.";
+  const apologyText = /The returned (search )?results did not contain sufficient information to be summarized into a useful answer for your query. Please try a different search or restate your query differently./;
   const apologyTextElements = document.querySelectorAll(".vuiText--m");
   apologyTextElements.forEach(function(element) {
-    if (element.textContent.includes(apologyText1) || element.textContent.includes(apologyText2)) {
-      element.textContent = `Here are some search results. To help me write a better summary, enter more search terms or ask me a question!`;
+    if (apologyText.exec(element.textContent)) {
+      element.textContent = `Here are some search results about ${query}. To help me write a better summary, enter more search terms or ask me a question!`;
     }
   });
 
   // Update history state
   const state = {
     results: results,
-    query: document.getElementById("search-input").value
+    query: query
   };
-  if (history.state && history.state.results) {
-    history.replaceState(state, "", "?query=" + encodeURIComponent(state.query));
-  } else {
+
+  if (history.state) {
     history.pushState(state, "", "?query=" + encodeURIComponent(state.query));
+  } else {
+    history.replaceState(state, "", "?query=" + encodeURIComponent(state.query));
   }
 }
 
@@ -107,9 +109,6 @@ function errorFn(err) {
 }
 
 window.addEventListener("popstate", function(event) {
-  let url = new URL(window.location.href);
-  let query = url.searchParams.get("query");
-
   if (event.state && event.state.results) {
     // Directly render the cached results for query pages
     renderResults(event.state.results, "search-widget-results");
@@ -126,8 +125,8 @@ window.addEventListener("load", function(e) {
   // Handle the case where the page is loaded with search results in the history state
   if (history.state && history.state.results) {
     // If there are results in the history state, render them
-    successFn(history.state.results);
-  } 
+    successFn(history.state.results, history.state.query);
+  }
 });
 
 // Expand left sidebar menu on page load
