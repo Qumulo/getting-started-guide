@@ -10,7 +10,7 @@ This section explains how to deploy the S3 buckets that act as persistent storag
 
 1. On the **AWS** tab and, in the **Download the required files** section, select the Qumulo Core version that you want to deploy and then download the corresponding {% if page.deployment == "cfn" %}CloudFormation template{% elsif page.deployment == "tf" %}Terraform configuration{% endif %}, Debian package, and host configuration file.
 
-1. Within your S3 bucket's prefix, create the `qumulo-core-install` directory. Within this directory, create another directory with the Qumulo Core version as its name. The following is an example path:
+1. Within your S3 bucket prefix, create the `qumulo-core-install` directory. Within this directory, create another directory with the Qumulo Core version as its name. The following is an example path:
 
    ```
    my-s3-bucket-name/my-s3-bucket-prefix/qumulo-core-install/7.2.3.2
@@ -56,7 +56,9 @@ This section explains how to deploy the S3 buckets that act as persistent storag
 
    1. For **S3 bucket name**, enter [the name of the S3 bucket that you used to prepare your files](#prepare-required-files).
 
-   1. For **S3 key prefix**, ensure that `aws-cloudformation-cnq/` is entered.
+   1. For **S3 key prefix**, enter your S3 bucket prefix followed by the `aws-cloudformation-cnq/` directory. For example:
+
+      `my-s3-bucket-prefix/aws-cloudformation-cnq/`
 
    1. For **S3 bucket region**, enter the same AWS region as the one for your S3 bucket.
   
@@ -66,7 +68,7 @@ This section explains how to deploy the S3 buckets that act as persistent storag
 
 1. On the **Review and create** page, click **Submit**.
 
-   CloudFormation creates S3 buckets and their stack.
+   CloudFormation creates resources for the stack and displays the **CREATE_COMPLETE** status for each resource.
 {% elsif page.deployment == "tf" %}
 
 1. Navigate to the `persistent-storage` directory and take the following steps:
