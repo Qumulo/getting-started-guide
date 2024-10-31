@@ -121,8 +121,6 @@ You must perform this step while the cluster is running.
      "{{site.exampleIP4}}"   
    ]
    ```
-
-1. {{site.cnq.monitorProvisionerStatus}}
 {% elsif page.deployment == "cfn" %}
 1. {{site.cnq.cfnUpdateStackComputeCache}}
 1. {{site.cnq.cfnUseExistingTemplate}}
