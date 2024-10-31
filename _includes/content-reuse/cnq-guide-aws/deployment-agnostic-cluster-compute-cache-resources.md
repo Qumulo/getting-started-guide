@@ -148,7 +148,7 @@ This section explains how to deploy compute and cache resources for a Qumulo clu
    CloudFormation creates resources for the stack and displays the **CREATE_COMPLETE** status for each resource.
 {% endif %}
 
-1. To log in to your cluster's Web UI, use the endpoint from the {% if page.deployment == "tf" %}Terraform output{% elsif page.deployment == "cfn" %}the **LinkToManagement** key on the **Outputs** tab for this stack {% endif %} and the username and password that you have configured.
+1. To log in to your cluster's Web UI, use the endpoint from the {% if page.deployment == "tf" %}Terraform output{% elsif page.deployment == "cfn" %}the **QumuloPrivateIP** key on the **Outputs** tab for this stack {% endif %} and the username and password that you have configured.
 
    {% include important.html content="If you change the administrative password for your cluster by using the Qumulo Core Web UI, `qq` CLI, or REST API after deployment, you must add your new password to AWS Secrets Manager." %}
 
