@@ -284,8 +284,8 @@ You can scale an existing {{site.aws.cnqAWSshort}} cluster by changing the EC2 i
    1. (Optional) To change the number of nodes, enter the **QNodeCount**
    1. Click **Next**.
 
-1. On the **Configure stack options** page, click **Next**.
-   
+1. On the **Configure stack options** page, read and accept the two acknowledgements, and then click **Next**.
+
 1. On the **Review and create** page, click **Submit**.
 {% endif %}
 1. {{verifyProvis}}
@@ -351,7 +351,7 @@ Deleting a cluster is a two-step process:
    1. On the **Stacks** page, select the existing stack and then, in the upper right, click **Update**.
    1. On the **Update stack** page, click **Use existing template** and then click **Next**.
    1. On the **Specify stack details** page, click **Next**.
-   1. On the **Configure stack options** page, click **Next**.
+   1. On the **Configure stack options** page, read and accept the two acknowledgements, and then click **Next**.
    1. On the **Review &lt;my-stack-name&gt;** page, click **Rollback on failure** and then click **Submit**.
 1. [Delete your CloudFormation stack](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-console-delete-stack.html).
 {% elsif page.deployment == "tf" %}
