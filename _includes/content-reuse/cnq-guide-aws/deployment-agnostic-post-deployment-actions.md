@@ -191,7 +191,7 @@ Increasing the soft capacity limit for an existing cluster is a two-step process
 1. {{site.cnq.cfnRollbackOnFailure}}
 1. On the **Review &lt;my-stack-name&gt;** page, click **Submit**.
 
-   CloudFormation creates new S3 buckets as necessary.
+   CloudFormation updates resources for the stack and displays the **CREATE_COMPLETE** status for each resource.
 
 #### Step 2: Update Existing Compute and Cache Resource Deployment
 1. {{site.cnq.cfnUpdateStackComputeCache}}
@@ -200,7 +200,8 @@ Increasing the soft capacity limit for an existing cluster is a two-step process
 1. {{site.cnq.cfnRollbackOnFailure}}
 1. On the **Review &lt;my-stack-name&gt;** page, click **Submit**.
 
-   CloudFormation updates the necessary IAM roles and S3 bucket policies, adds S3 buckets to the persistent storage list for the cluster, and increases the soft capacity limit.
+   CloudFormation updates resources for the stack and displays the **CREATE_COMPLETE** status for each resource.
+
    When the Provisioner shuts down automatically, this process is complete.
 {% endif %}
 
@@ -328,6 +329,8 @@ You can scale an existing {{site.aws.cnqAWSshort}} cluster by changing the EC2 i
 1. On the **Specify stack details** page, for **QReplacementCluster**, click **No**.
 1. {{site.cnq.cfnRollbackOnFailure}}
 1. On the **Review &lt;my-stack-name&gt;** page, click **Submit**.
+
+   CloudFormation updates resources for the stack and displays the **CREATE_COMPLETE** status for each resource.
 {% endif %}
 
 <a id="deleting-existing-cluster"></a>
