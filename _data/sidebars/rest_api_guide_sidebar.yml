@@ -166,6 +166,13 @@ entries:
     title: Authentication (auth)
     url: /rest-api-guide/authentication/
   - folderitems:
+    - output: web,pdf
+      title: capacity/clamp
+      url: /rest-api-guide/capacity-clamp/capacity_clamp.html
+    output: web,pdf
+    title: Capacity Clamp (capacity)
+    url: /rest-api-guide/capacity-clamp/
+  - folderitems:
     - apiversion: v3
       output: web,pdf
       title: cluster/calculate-supported-protection-info
@@ -276,17 +283,17 @@ entries:
   - folderitems:
     - output: web,pdf
       title: node/state
-      url: /rest-api-guide/unconfigured-node-management/node_state.html
-    output: web,pdf
-    title: Unconfigured Node Management (node)
-    url: /rest-api-guide/unconfigured-node-management/
-  - folderitems:
-    - output: web,pdf
-      title: node/state
       url: /rest-api-guide/configured-node-management/node_state.html
     output: web,pdf
     title: Configured Node Management (node)
     url: /rest-api-guide/configured-node-management/
+  - folderitems:
+    - output: web,pdf
+      title: node/state
+      url: /rest-api-guide/unconfigured-node-management/node_state.html
+    output: web,pdf
+    title: Unconfigured Node Management (node)
+    url: /rest-api-guide/unconfigured-node-management/
   - folderitems:
     - output: web,pdf
       title: dns/configs/system
@@ -1184,17 +1191,17 @@ entries:
   - folderitems:
     - output: web,pdf
       title: unconfigured/nodes
-      url: /rest-api-guide/unconfigured-nodes/unconfigured_nodes.html
-    output: web,pdf
-    title: Unconfigured Nodes (unconfigured)
-    url: /rest-api-guide/unconfigured-nodes/
-  - folderitems:
-    - output: web,pdf
-      title: unconfigured/nodes
       url: /rest-api-guide/unconfigured-nodes-discovery/unconfigured_nodes.html
     output: web,pdf
     title: Unconfigured Nodes Discovery (unconfigured)
     url: /rest-api-guide/unconfigured-nodes-discovery/
+  - folderitems:
+    - output: web,pdf
+      title: unconfigured/nodes
+      url: /rest-api-guide/unconfigured-nodes/unconfigured_nodes.html
+    output: web,pdf
+    title: Unconfigured Nodes (unconfigured)
+    url: /rest-api-guide/unconfigured-nodes/
   - folderitems:
     - output: web,pdf
       title: version

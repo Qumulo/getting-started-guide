@@ -81,7 +81,8 @@ methods:
     responses:
     - code: '200'
       description: Return value on success
-    summary: List all access tokens for the cluster.
+    summary: List all access tokens for the cluster or specified user. Privilege ACCESS_TOKENS_READ
+      is required to list keys for users other than yourself
   post:
     parameters: []
     request_body:
@@ -121,7 +122,8 @@ methods:
     responses:
     - code: '200'
       description: Return value on success
-    summary: Create an access token for the specified user.
+    summary: Create an access token for the specified user. Privilege ACCESS_TOKENS_WRITE
+      is required to create a key for a user other than yourself.
 rest_endpoint: /v1/auth/access-tokens/
 api_version: v1
 permalink: /rest-api-guide/access-tokens/auth_access-tokens.html

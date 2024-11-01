@@ -3,7 +3,7 @@ category: /Directory Quotas
 methods:
   delete:
     parameters:
-    - description: Directory ID (uint64)
+    - description: Directory ID
       name: id
       required: true
     - description: ETag for expected version
@@ -16,7 +16,7 @@ methods:
     summary: Delete the quota for a given directory.
   get:
     parameters:
-    - description: Directory ID (uint64)
+    - description: Directory ID
       name: id
       required: true
     response_body:
@@ -32,7 +32,7 @@ methods:
     summary: Get the directory quota for a directory and its limit in bytes
   put:
     parameters:
-    - description: Directory ID (uint64)
+    - description: Directory ID
       name: id
       required: true
     - description: ETag for expected version

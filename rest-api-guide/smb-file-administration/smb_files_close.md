@@ -14,13 +14,14 @@ methods:
         \ {\n            \"description\": \"version\",\n            \"type\": \"number\"\
         \n          },\n          \"num_byte_range_locks\": {\n            \"description\"\
         : \"num_byte_range_locks\",\n            \"type\": \"number\"\n          },\n\
-        \          \"access_mask\": {\n            \"description\": \"access_mask\"\
-        ,\n            \"type\": \"array\",\n            \"items\": {\n          \
-        \    \"type\": \"string\",\n              \"enum\": [\n                \"\
-        MS_ACCESS_FILE_READ_DATA\",\n                \"MS_ACCESS_FILE_WRITE_DATA\"\
-        ,\n                \"MS_ACCESS_FILE_APPEND_DATA\",\n                \"MS_ACCESS_FILE_EXECUTE\"\
-        ,\n                \"MS_ACCESS_FILE_LIST_DIRECTORY\",\n                \"\
-        MS_ACCESS_FILE_ADD_FILE\",\n                \"MS_ACCESS_FILE_ADD_SUBDIRECTORY\"\
+        \          \"num_notify_watches\": {\n            \"description\": \"num_notify_watches\"\
+        ,\n            \"type\": \"string\"\n          },\n          \"access_mask\"\
+        : {\n            \"description\": \"access_mask\",\n            \"type\":\
+        \ \"array\",\n            \"items\": {\n              \"type\": \"string\"\
+        ,\n              \"enum\": [\n                \"MS_ACCESS_FILE_READ_DATA\"\
+        ,\n                \"MS_ACCESS_FILE_WRITE_DATA\",\n                \"MS_ACCESS_FILE_APPEND_DATA\"\
+        ,\n                \"MS_ACCESS_FILE_EXECUTE\",\n                \"MS_ACCESS_FILE_LIST_DIRECTORY\"\
+        ,\n                \"MS_ACCESS_FILE_ADD_FILE\",\n                \"MS_ACCESS_FILE_ADD_SUBDIRECTORY\"\
         ,\n                \"MS_ACCESS_FILE_TRAVERSE\",\n                \"MS_ACCESS_FILE_READ_EA\"\
         ,\n                \"MS_ACCESS_FILE_WRITE_EA\",\n                \"MS_ACCESS_FILE_DELETE_CHILD\"\
         ,\n                \"MS_ACCESS_FILE_READ_ATTRIBUTES\",\n                \"\
