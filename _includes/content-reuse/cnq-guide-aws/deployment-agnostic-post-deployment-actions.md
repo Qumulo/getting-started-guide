@@ -28,9 +28,11 @@ This section describes the common actions you can perform on a {{site.cnqShort}}
 1. {{site.cnq.logIntoCFN}}
 1. {{site.cnq.cfnUpdateStackComputeCache}}
 1. {{site.cnq.cfnUseExistingTemplate}}
-1. On the **Specify stack details** page, enter a new value for **Node Count** and then click **Next**.
-1. {{site.cnq.cfnConfigureStackOptions}}
+1. On the **Specify stack details** page, enter a new value for **Number of Qumulo EC2 instances** and then click **Next**.
 1. {{site.cnq.cfnRollbackOnFailure}}
+1. On the **Review &lt;my-stack-name&gt;** page, click **Submit**.
+
+   CloudFormation creates resources for the stack and displays the **CREATE_COMPLETE** status for each resource.
 {% endif %}
 {% capture verifyProvis %}To ensure that the Provisioner shut downs automatically, review the `/qumulo/{% if page.deployment == "tf" %}my-deployment-name{% elsif page.deployment == "cfn" %}my-stack-name{% endif %}/last-run-status` parameter {{site.cnq.paramStore}}.{% endcapture %}
 1. {{verifyProvis}}
@@ -48,7 +50,7 @@ You must perform this step while the cluster is running.
 
 {% include important.html content="After you remove nodes from your cluster, you must clean up these nodes' cloud infrastructure by using CloudFormation or Terraform." %}
 
-1. Copy the `remove-nodes.sh` script from the `aws-terraform-cnq-<x.y>/utilities` directory to a machine running in your VPC that has the AWS CLI tools installed (for example, an AWS Linux 2 AMI).
+1. Copy the `remove-nodes.sh` script from the {% if page.deployment == "tf" %}`aws-terraform-cnq-<x.y>/utilities`{% elsif page.deployment == "cfn" %}`aws-cloudformation-cnq-<x.y>/utilities`{% endif %} directory to a machine running in your VPC that has the AWS CLI tools installed (for example, an AWS Linux 2 AMI).
 
    {{site.data.alerts.tip}}
    <ul>
@@ -119,14 +121,12 @@ You must perform this step while the cluster is running.
      "{{site.exampleIP4}}"   
    ]
    ```
-
-1. {{site.cnq.monitorProvisionerStatus}}
 {% elsif page.deployment == "cfn" %}
 1. {{site.cnq.cfnUpdateStackComputeCache}}
 1. {{site.cnq.cfnUseExistingTemplate}}
-1. On the **Specify stack details** page, enter a lower value for **Node Count** (for example, `4`) and then click **Next**.
-1. {{site.cnq.cfnConfigureStackOptions}}
+1. On the **Specify stack details** page, enter a lower value for **Number of Qumulo EC2 instances** (for example, `4`) and then click **Next**.
 1. {{site.cnq.cfnRollbackOnFailure}}
+1. On the **Review &lt;my-stack-name&gt;** page, click **Submit**.
 {% endif %}
 
    The node and the infrastructure associated with the node are removed.
@@ -188,19 +188,20 @@ Increasing the soft capacity limit for an existing cluster is a two-step process
 1. {{site.cnq.cfnUpdateStackPersistentStorage}}
 1. {{site.cnq.cfnUseExistingTemplate}}
 1. On the **Specify stack details** page, enter a higher value for **QSoftCapacityLimit** and then click **Next**.
-1. {{site.cnq.cfnConfigureStackOptions}}
 1. {{site.cnq.cfnRollbackOnFailure}}
+1. On the **Review &lt;my-stack-name&gt;** page, click **Submit**.
 
-   CloudFormation creates new S3 buckets as necessary.
+   CloudFormation updates resources for the stack and displays the **CREATE_COMPLETE** status for each resource.
 
 #### Step 2: Update Existing Compute and Cache Resource Deployment
 1. {{site.cnq.cfnUpdateStackComputeCache}}
 1. {{site.cnq.cfnUseExistingTemplate}}
 1. On the **Specify stack details** page click **Next**.
-1. {{site.cnq.cfnConfigureStackOptions}}
 1. {{site.cnq.cfnRollbackOnFailure}}
+1. On the **Review &lt;my-stack-name&gt;** page, click **Submit**.
 
-   CloudFormation updates the necessary IAM roles and S3 bucket policies, adds S3 buckets to the persistent storage list for the cluster, and increases the soft capacity limit.
+   CloudFormation updates resources for the stack and displays the **CREATE_COMPLETE** status for each resource.
+
    When the Provisioner shuts down automatically, this process is complete.
 {% endif %}
 
@@ -284,8 +285,8 @@ You can scale an existing {{site.aws.cnqAWSshort}} cluster by changing the EC2 i
    1. (Optional) To change the number of nodes, enter the **QNodeCount**
    1. Click **Next**.
 
-1. On the **Configure stack options** page, click **Next**.
-   
+1. On the **Configure stack options** page, read and accept the two acknowledgements, and then click **Next**.
+
 1. On the **Review and create** page, click **Submit**.
 {% endif %}
 1. {{verifyProvis}}
@@ -326,8 +327,10 @@ You can scale an existing {{site.aws.cnqAWSshort}} cluster by changing the EC2 i
 1. On the <strong>Stacks</strong> page, select the newly created stack and then, in the upper right, click <strong>Update</strong>.
 1. {{site.cnq.cfnUseExistingTemplate}}
 1. On the **Specify stack details** page, for **QReplacementCluster**, click **No**.
-1. {{site.cnq.cfnConfigureStackOptions}}
 1. {{site.cnq.cfnRollbackOnFailure}}
+1. On the **Review &lt;my-stack-name&gt;** page, click **Submit**.
+
+   CloudFormation updates resources for the stack and displays the **CREATE_COMPLETE** status for each resource.
 {% endif %}
 
 <a id="deleting-existing-cluster"></a>
@@ -351,7 +354,7 @@ Deleting a cluster is a two-step process:
    1. On the **Stacks** page, select the existing stack and then, in the upper right, click **Update**.
    1. On the **Update stack** page, click **Use existing template** and then click **Next**.
    1. On the **Specify stack details** page, click **Next**.
-   1. On the **Configure stack options** page, click **Next**.
+   1. On the **Configure stack options** page, read and accept the two acknowledgements, and then click **Next**.
    1. On the **Review &lt;my-stack-name&gt;** page, click **Rollback on failure** and then click **Submit**.
 1. [Delete your CloudFormation stack](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-console-delete-stack.html).
 {% elsif page.deployment == "tf" %}

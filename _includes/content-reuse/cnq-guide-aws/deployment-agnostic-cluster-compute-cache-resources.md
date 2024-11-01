@@ -5,7 +5,7 @@ This section explains how to deploy compute and cache resources for a Qumulo clu
 {{site.data.alerts.important}}
 <ul>
 {% if page.deployment == "cfn" %}
-  <li>Only when the CloudFormation stack finishes running should you begin to monitor {{site.cnq.paramStore}} for the <code>last-ran-status</code> value for the provisioning instance. Until the provisioning instance shuts down automatically, the provisoning process isn't complete and the Qumulo cluster isn't yet functional.</li>  
+  <li>Only when the CloudFormation stack finishes running can you begin to monitor {{site.cnq.paramStore}} for the <code>last-ran-status</code> value for the provisioning instance. Until the provisioning instance shuts down automatically, the provisoning process isn't complete and the Qumulo cluster isn't yet functional.</li>  
 {% elsif page.deployment == "tf" %}
   <li>Provisioning completes successfully when the provisioning instance shuts down automatically. If the provisioning instance doesn't shut down, the provisioning cycle has failed and you must troubleshoot it. To monitor the provisioner's status, you can watch the Terraform status posts in your terminal or {{site.cnq.paramStore}}.</li>
   <li>The first variable in the example configuration files in the <code>aws-terraform-cnq</code> repository is <code>deployment_name</code>. To help avoid conflicts between Network Load Balancers (NLBs), resource groups, cross-region CloudWatch views, and other deployment components, Terraform ignores the <code>deployment_name</code> value and any changes to it. Terraform generates the additional <code>deployment_unique_name</code> variable; appends a random, 11-digit alphanumeric value to it; and then tags all future resources with this variable, which never changes during subsequent Terraform deployments.</li>
@@ -81,22 +81,72 @@ This section explains how to deploy compute and cache resources for a Qumulo clu
    ```
 
 {% elsif page.deployment == "cfn" %}
+1. In the S3 bucket that hosts your deployment files, find the URL to `templates/cnq-standard.template.yaml`. For example:
+
+   ```
+   https://my-bucket.s3.us-west-2.amazonaws.com/my-s3-bucket-prefix/templates/cnq-standard.template.yaml
+   ```
+
 1. Log in to the [AWS CloudFormation console](https://console.aws.amazon.com/cloudformation/home).
 
 1. On the **Stacks** page, in the upper right, click **Create stack > With new resources (standard)**.
 
 1. On the **Create stack** page, in the **Specify template** section, click **Amazon S3 URL**, enter the URL to `cnq-standard-template.yaml`, and then click **Next**.
 
-1. On the **Specify stack details** page, enter the **Stack name** and review the information in the **Parameters** section, and then click **Next**.
+1. On the **Specify stack details** page, take the following steps:
 
-1. On the **Configure stack options** page, click **Next**.
+   1. <a id="compute-cache-stack-name"></a> In the **Provide a stack name** section, enter a **Stack name**, for example `my-compute-cache-stack`.
+   
+   1. In the **Parameters** section, under **Cloud Native Qumulo**, take the following steps:
+
+      1. For **S3 bucket name**, enter [the name of the S3 bucket that you used to prepare your files](#prepare-required-files).
+
+      1. For **S3 key prefix**, enter your S3 bucket prefix.
+
+      1. For **S3 bucket region**, enter the same AWS region as the one for your S3 bucket.
+  
+      1. Select an **EC2 key pair**.
+
+      1. For **Environment type**, select either **Dev** or **Prod**.
+
+   1. Under **AWS network configuration**, take the following steps:
+
+      1. Select a **VPC ID**.
+     
+      1. Enter **CIDR #1 for the Qumulo security group**.
+
+      1. (Optional) Enter **CIDR #2 for the Qumulo security group**.
+   
+      1. Select the **Private subnet ID(s)**.
+
+   1. Under **Qumulo file data platform configuration**, take the following steps:
+
+      1. For the **Stack name from the persistent storage CloudFormation deployment**, enter [the name of the stack that you used to create your persistent storage](#persistent-storage-stack-name).
+
+      1. For **Hot or Cold** cluster, select an S3 storage class.
+
+      1. Select the **Qumulo EC2 instance type**.
+     
+      1. Enter the **Number of Qumulo EC2 instances**.
+
+         This number determines the number of nodes in your Qumulo cluster.
+
+      1. Enter the **Total number of Floating IPs for the Qumulo Cluster**.
+
+         {% include tip.html content="If you intend to scale out your Qumulo cluter, enter 6 floating IP addresses for each EC2 instance." %}
+
+      1. Enter the **Qumulo software version**, **Qumulo cluster name**, and the **Qumulo cluster administrator password**.
+  
+   1. Click **Next**.
+
+1. On the **Configure stack options** page, read and accept the two acknowledgements, and then click **Next**.
 
 1. On the **Review and create** page, click **Submit**.
 
-   CloudFormation creates S3 buckets and their stack.
+   CloudFormation creates resources for the stack and displays the **CREATE_COMPLETE** status for each resource.
 {% endif %}
 
-1. To log in to your cluster's Web UI, use the endpoint from the {% if page.deployment == "tf" %}Terraform output{% elsif page.deployment == "cfn" %}top-level stack output{% endif %} as the endpoint and the username and password that you have configured during deployment as the credentials.
+1. To log in to your cluster's Web UI, use the endpoint from the {% if page.deployment == "tf" %}Terraform output{% elsif page.deployment == "cfn" %}the **QumuloPrivateIP** key on the **Outputs** tab for this stack {% endif %} and the username and password that you have configured.
 
    {% include important.html content="If you change the administrative password for your cluster by using the Qumulo Core Web UI, `qq` CLI, or REST API after deployment, you must add your new password to AWS Secrets Manager." %}
 
