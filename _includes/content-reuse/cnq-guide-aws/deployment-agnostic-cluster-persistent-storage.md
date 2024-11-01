@@ -10,7 +10,9 @@ This section explains how to deploy the S3 buckets that act as persistent storag
 
 1. On the **AWS** tab and, in the **Download the required files** section, select the Qumulo Core version that you want to deploy and then download the corresponding {% if page.deployment == "cfn" %}CloudFormation template{% elsif page.deployment == "tf" %}Terraform configuration{% endif %}, Debian package, and host configuration file.
 
-1. In your S3 bucket, create the `qumulo-core-install` directory. Within this directory, create another directory with the Qumulo Core version as its name. The following is an example path:
+1. Create a new S3 bucket and, within your S3 bucket prefix, create the `qumulo-core-install` directory.
+
+1. Within this directory, create another directory with the Qumulo Core version as its name. For example:
 
    ```
    my-s3-bucket-name/my-s3-bucket-prefix/qumulo-core-install/7.2.3.2
@@ -21,16 +23,24 @@ This section explains how to deploy the S3 buckets that act as persistent storag
 
 1. {{site.cnq.copyDebAndConfig}}
 
-1. Copy {% if page.deployment == "cfn" %}`aws-cloudformation-cnq-<x.y>.zip` to the `my-s3-bucket-name/my-s3-bucket-prefix/aws-cloudformation-cnq` directory{% elsif page.deployment == "tf" %}`aws-terraform-cnq-<x.y>.zip` to your Terraform environment{% endif %} and decompress it.
+{% if page.deployment == "cfn" %}
+1. Decompress `aws-cloudformation-cnq-<x.y>.zip` locally and copy it to your S3 bucket prefix.
+{% elsif page.deployment == "tf" %}
+1. Copy `aws-terraform-cnq-<x.y>.zip` to your Terraform environment and decompress.
+{% endif %}
+
 {% if page.deployment == "cfn" %}
 1. Find the URL to `templates/persistent-storage.template.yaml`. For example:
 
    ```
-   https://my-bucket.s3.us-west-2.amazonaws.com/aws-cloudformation-cnq/templates/persistent-storage.template.yaml
+   https://my-bucket.s3.us-west-2.amazonaws.com/my-s3-bucket-prefix/templates/persistent-storage.template.yaml
    ```
 
    {% capture newVer %}{{site.cnq.qCoreVerTip}}{% endcapture %}
    {% include tip.html content=newVer %}
+
+<a id="create-cloudformation-stack"></a>
+### Part 2: Create the CloudFormation Stack
 
 1. {{site.cnq.logIntoCFN}}
 
@@ -38,21 +48,23 @@ This section explains how to deploy the S3 buckets that act as persistent storag
 
 1. On the **Create stack** page, in the **Specify template** section, click **Amazon S3 URL**, enter the URL to `persistent-storage.template.yaml`, and then click **Next**.
 
-1. On the **Specify stack details** page, enter the **Stack name***, take the following steps:
+1. On the **Specify stack details** page, take the following steps:
+
+   1. <a id="persistent-storage-stack-name"></a> Enter a **Stack name**, for example `my-storage-stack`.
 
    1. For **S3 bucket name**, enter [the name of the S3 bucket that you used to prepare your files](#prepare-required-files).
 
-   1. For **S3 key prefix**, ensure that `aws-cloudformation-cnq/` is entered.
+   1. For **S3 key prefix**, enter your S3 bucket prefix.
 
    1. For **S3 bucket region**, enter the same AWS region as the one for your S3 bucket.
   
    1. Click **Next**.
 
-1. On the **Configure stack options** page, click **Next**.
+1. On the **Configure stack options** page, read and accept the two acknowledgements, and then click **Next**.
 
 1. On the **Review and create** page, click **Submit**.
 
-   CloudFormation creates S3 buckets and their stack.
+   CloudFormation creates resources for the stack and displays the **CREATE_COMPLETE** status for each resource.
 {% elsif page.deployment == "tf" %}
 
 1. Navigate to the `persistent-storage` directory and take the following steps:
