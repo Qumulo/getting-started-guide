@@ -13,6 +13,10 @@ optional_options:
     access tokens, must be a user.
   name: --user
   required: false
+- alternate: []
+  help: List only access keys that target yourself.
+  name: --self
+  required: false
 permalink: /qq-cli-command-guide/auth/auth_list_access_tokens.html
 positional_options: []
 sidebar: qq_cli_command_reference_sidebar
@@ -20,7 +24,7 @@ summary: This section explains how to use the <code>qq auth_list_access_tokens</
   command.
 synopsis: List metadata for all access tokens
 title: qq auth_list_access_tokens
-usage: qq auth_list_access_tokens [-h] [--json] [--user USER]
+usage: qq auth_list_access_tokens [-h] [--json] [--user USER | --self]
 zendesk_source: qq CLI Command Guide
 
 ---
