@@ -6,6 +6,10 @@ For information about upgrade types for each release, see <a href='mode-referenc
 
 ## Qumulo Core 7.3.0
 {{page.varDownloadsRelnotes}}
+* Added the _self-service_ permission model to Qumulo Core access tokens and made changes to corresponding `qq` CLI commands
+* Made it possible for a user to perform operations on their own access keys without having RBAC privileges
+* Added REST API endpoints to support the capacity clamp functionality in Qumulo Core
+* Resolved issues concerning cached data on a spoke portal host cluster, NLM connection time-outs, and directory metadata block updates made by S3 API actions
 
 ## Qumulo Core 7.2.3.2
 {{page.varDownloadsRelnotes}}
