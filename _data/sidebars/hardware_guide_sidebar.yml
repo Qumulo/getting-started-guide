@@ -100,7 +100,7 @@ entries:
 
     - title: Technical Specifications
       url: /hardware-guide/fujitsu-primergy-rx2540-m7/technical-specifications.html
-      output: web, pdf
+      output: web
 
   - title: HPE Alletra 4110
     url: /hardware-guide/hpe-alletra-4110/index.html
@@ -133,7 +133,7 @@ entries:
 
     - title: Technical Specifications
       url: /hardware-guide/hpe-alletra-4110/technical-specifications.html
-      output: web, pdf
+      output: web
 
   - title: HPE Alletra 4140
     url: /hardware-guide/hpe-alletra-4140/index.html
@@ -166,7 +166,7 @@ entries:
 
     - title: Technical Specifications
       url: /hardware-guide/hpe-alletra-4140/technical-specifications.html
-      output: web, pdf
+      output: web
 
   - title: HPE Apollo 4200 Gen9
     url: /hardware-guide/hpe-apollo-4200-gen9/index.html
@@ -236,7 +236,7 @@ entries:
       
     - title: Technical Specifications
       url: /hardware-guide/hpe-apollo-4200-gen10/technical-specifications.html
-      output: web, pdf
+      output: web
 
   - title: HPE Apollo 4200 Gen10 Plus
     url: /hardware-guide/hpe-apollo-4200-gen10-plus/index.html
@@ -269,7 +269,7 @@ entries:
 
     - title: Technical Specifications
       url: /hardware-guide/hpe-apollo-4200-gen10-plus/technical-specifications.html
-      output: web, pdf
+      output: web
 
   - title: HPE ProLiant DL325 Gen10 Plus
     url: /hardware-guide/hpe-dl325-gen10-plus/index.html
@@ -298,7 +298,7 @@ entries:
 
     - title: Technical Specifications
       url: /hardware-guide/hpe-dl325-gen10-plus/technical-specifications.html
-      output: web, pdf
+      output: web
 
   - title: Quiver 1U All-NVMe Gen1
     url: /hardware-guide/quiver-1ua-all-nvme-gen1/index.html
@@ -335,7 +335,7 @@ entries:
 
     - title: Technical Specifications
       url: /hardware-guide/quiver-1ua-all-nvme-gen1/technical-specifications.html
-      output: web, pdf
+      output: web
 
   - title: Quiver 1U Hybrid Gen2
     url: /hardware-guide/quiver-1u-hybrid-gen2/index.html
@@ -372,7 +372,7 @@ entries:
 
     - title: Technical Specifications
       url: /hardware-guide/quiver-1u-hybrid-gen2/technical-specifications.html
-      output: web, pdf
+      output: web
 
   - title: Supermicro A+ ASG-1014S-ACR12N4H
     url: /hardware-guide/supermicro-a-plus-asg-1014s-acr12n4h/index.html
@@ -409,7 +409,7 @@ entries:
 
     - title: Technical Specifications
       url: /hardware-guide/supermicro-a-plus-asg-1014s-acr12n4h/technical-specifications.html
-      output: web, pdf
+      output: web
 
   - title: Supermicro A+ ASG-2015S-E1CR24L
     url: /hardware-guide/supermicro-a-plus-asg-2015s-e1cr24l/index.html
@@ -446,7 +446,7 @@ entries:
 
     - title: Technical Specifications
       url: /hardware-guide/supermicro-a-plus-asg-2015s-e1cr24l/technical-specifications.html
-      output: web, pdf
+      output: web
 
   - title: Supermicro A+ WIO 1114S-WN10RT
     url: /hardware-guide/supermicro-a-plus-wio-1114s-wn10rt/index.html
@@ -483,4 +483,4 @@ entries:
 
     - title: Technical Specifications
       url: /hardware-guide/supermicro-a-plus-wio-1114s-wn10rt/technical-specifications.html
-      output: web, pdf
+      output: web
