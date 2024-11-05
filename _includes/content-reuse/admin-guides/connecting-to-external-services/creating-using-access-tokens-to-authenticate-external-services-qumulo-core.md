@@ -22,7 +22,7 @@ Access tokens are long-lived. They provide an alternative to session-based authe
 {{site.data.alerts.note}}
 <ul>
   <li>These RBAC privileges grant administrative access to view, modify, create and delete keys for any user in the system.</li>
-  <li>In Qumulo Core access tokens use a "self service" permissions model. Any user in the system may view, modify, create or delete keys for themselves.</li>
+  <li>In Qumulo Core access tokens can also use a <em>self service</em> permissions model that allows any system user to view, modify, create, or and delete their own access keys.</li>
 </ul>
 {{site.data.alerts.end}}
 
