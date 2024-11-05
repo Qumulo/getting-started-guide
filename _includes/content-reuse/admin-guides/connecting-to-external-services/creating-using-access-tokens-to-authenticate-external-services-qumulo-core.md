@@ -16,7 +16,7 @@ Access tokens are long-lived. They provide an alternative to session-based authe
 ## Prerequisites
 <ul>
   <li>{{page.varPrereqWrite}}</li>
-  <li>{{page.varPrereqRead}}</li>
+  <li>{{site.varPrereqRead}}</li>
 </ul>
 
 {{site.data.alerts.note}}
@@ -142,7 +142,7 @@ $ qq --credentials-store ./qumulo_credentials who_am_i
 ```
 
 ## Listing Access Tokens
-{{page.varPrereqRead}} This section explains how to list access tokens for yourself, a specific user, or all users by using the `qq` CLI.
+{{site.varPrereqRead}} This section explains how to list access tokens for yourself, a specific user, or all users by using the `qq` CLI.
 
 ### To List Access Tokens for Yourself
 Run the {% include qq.html command="auth_list_access_tokens" %} command and specify <code>--self</code>. For example:
@@ -166,7 +166,7 @@ $ qq auth_list_access_tokens
 ```
 
 ## Getting Metadata for Access Tokens
-{{page.varPrereqRead}} This section explains how to get metadata for a specific access token or all access tokens by using the `qq` CLI.
+{{site.varPrereqRead}} This section explains how to get metadata for a specific access token or all access tokens by using the `qq` CLI.
 
 ### To Get Metadata for a Specific Access Token
 Run the `auth_get_access_token` command and specify the access token ID. For example:

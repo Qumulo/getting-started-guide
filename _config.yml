@@ -294,6 +294,7 @@ twoPeopleOrLift: We strongly recommend using a server lift or that two people pe
 
 varBearerTokenRecommend: As soon as you receive your bearer token, record it in a safe place.
 varBearerTokenWarning: If you misplace the bearer token, you can't retrieve it at a later time. You must create a new access token.
+varPrereqRead: <code>PRIVILEGE_ACCESS_TOKEN_READ</code> is required for listing access tokens for all users in the system.
 
 a4200g9: HPE Apollo 4200 Gen9
 a4200g10: HPE Apollo 4200 Gen10
