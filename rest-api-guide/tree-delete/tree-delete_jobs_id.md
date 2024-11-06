@@ -3,7 +3,7 @@ category: /Tree Delete
 methods:
   delete:
     parameters:
-    - description: Job ID (uint64)
+    - description: Job ID
       name: id
       required: true
     response_body: {}
@@ -15,7 +15,7 @@ methods:
       given object
   get:
     parameters:
-    - description: Job ID (uint64)
+    - description: Job ID
       name: id
       required: true
     response_body:

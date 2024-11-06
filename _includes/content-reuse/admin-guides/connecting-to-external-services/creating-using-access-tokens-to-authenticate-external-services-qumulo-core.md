@@ -5,7 +5,7 @@ In Qumulo Core 5.3.0 (and higher), you can use _access tokens_ to let a user aut
 
 Access tokens are long-lived. They provide an alternative to session-based authentication that the {% include qq.html command="login" %} command and the Qumulo Core Web UI use. They also support support authentication for services, long-lived automation processes, and programmatic REST API access that doesn't require user input.
 
-{{site.data.alerts.important}}
+{{site.data.alerts.caution}}
 <ul>
   <li>{{page.varAccessTokenWarning}} {{page.varAccessTokenBestPractices}}</li>
   <li>Because a token allows indefinite authentication to the associated user's account, we strongly recommend against creating tokens for individual Qumulo Core REST API users. For more information, see <a href="#best-practices-using-access-tokens">Best Practices for Using Access Tokens</a>.</li>
@@ -16,14 +16,50 @@ Access tokens are long-lived. They provide an alternative to session-based authe
 ## Prerequisites
 <ul>
   <li>{{page.varPrereqWrite}}</li>
-  <li>{{page.varPrereqRead}}</li>
+  <li>{{site.varPrereqRead}}</li>
 </ul>
+
+{{site.data.alerts.note}}
+<ul>
+  <li>These RBAC privileges grant administrative access to view, modify, create and delete keys for any user in the system.</li>
+  <li>Qumulo Core access tokens can also use a <em>self service</em> permissions model that allows any system user to view, modify, create, or and delete their own access keys.</li>
+</ul>
+{{site.data.alerts.end}}
 
 <a id="creating-using-access-tokens"></a>
 ## Creating and Using Access Tokens
-{{page.varPrereqWrite}} This section explains how to create access tokens without or with an expiration time by using the `qq` CLI.
+This section explains how to create access tokens without or with an expiration time by using the `qq` CLI.
 
-### To Create an Access Token without an Expiration Time
+{{page.varPrereqWrite}}
+
+### To create an Access Token for Yourself
+Run the {% include qq.html command="auth_create_access_token" %} command with the <code>--self</code> flag. For example:
+
+```bash
+$ qq auth_create_access_token --self
+```
+
+<a id="json-bearer-token"></a>
+
+The {% include qq.html command="auth_create_access_token" %} command returns a JSON response that contains the bearer token body and the access token ID, which you can use to manage the access token.
+
+```json
+{
+  "bearer_token": "access-v1:abAcde...==",
+  "id": "{{site.exampleAccessTokenID1}}"
+}
+```
+
+{{site.data.alerts.important}}
+<ul>
+  <li>{{site.varBearerTokenRecommend}} {{site.varBearerTokenWarning}}</li>
+  <li>Any user can have a maximum of two access tokens. If a user already has two access tokens, creating new tokens fails until you remove at least one token from the user. We strongly recommend creating a single access token for each user and using the second access token to perform secret rotation.</li>
+  <li>{{page.varAccessTokenBestPractices}}</li>
+  <li>{{page.varAccessTokenAdminWarning}}</li>
+</ul>
+{{site.data.alerts.end}}
+
+### To Create an Access Token For a Specific User
 Run the {% include qq.html command="auth_create_access_token" %} command and specify the user. For example:
 
 ```bash
@@ -46,26 +82,6 @@ You can:
 <ul>
   <li>Although you can create groups for users, you can't create access tokens for groups.</li>
   <li>{{page.varTokenQQcli}}</li>
-</ul>
-{{site.data.alerts.end}}
-
-<a id="json-bearer-token"></a>
-
-The {% include qq.html command="auth_create_access_token" %} command returns a JSON response that contains the bearer token body and the access token ID, which you can use to manage the access token.
-
-```json
-{
-  "bearer_token": "access-v1:abAcde...==",
-  "id": "12345678901234567890123"
-}
-```
-
-{{site.data.alerts.important}}
-<ul>
-  <li>{{site.varBearerTokenRecommend}} {{site.varBearerTokenWarning}}</li>
-  <li>Any user can have a maximum of two access tokens. If a user already has two access tokens, creating new tokens fails until you remove at least one token from the user. We strongly recommend creating a single access token for each user and using the second access token to perform secret rotation.</li>  
-  <li>{{page.varAccessTokenBestPractices}}</li>
-  <li>{{page.varAccessTokenAdminWarning}}</li>
 </ul>
 {{site.data.alerts.end}}
 
@@ -127,17 +143,43 @@ To use the credentials file, specify its location by using the `--credentials-st
 $ qq --credentials-store ./qumulo_credentials who_am_i
 ```
 
-## Getting Metadata for Access Tokens
-{{page.varPrereqRead}} This section explains how to get metadata for a specific access token or all access tokens by using the `qq` CLI.
+## Listing Access Tokens
+This section explains how to list access tokens for yourself, a specific user, or all users by using the `qq` CLI.
 
-### To Get Metadata for a Specific Access Token
+{{site.varPrereqRead}}
+
+* To list access tokens for yourself, run the {% include qq.html command="auth_list_access_tokens" %} command with <code>--self</code> flag. For example:
+
+  ```bash
+  $ qq auth_list_access_tokens --self
+  ```
+
+* To list access tokens for a specific user, run the {% include qq.html command="auth_list_access_tokens" %} command and use the <code>--user</code> flag to specify a user. For example:
+
+  ```bash
+  $ qq auth_list_access_tokens --user jane
+  ```
+
+* To list access tokens for all users, run the {% include qq.html command="auth_list_access_tokens" %} command without any additional parameters. For example:
+
+  ```bash
+  $ qq auth_list_access_tokens
+  ```
+
+## Retrieving Metadata for Access Tokens
+This section explains how to get metadata for a specific access token or all access tokens by using the `qq` CLI.
+
+{{site.varPrereqRead}}
+
+### To Retrieve Metadata for a Specific Access Token
 Run the `auth_get_access_token` command and specify the access token ID. For example:
 
 ```bash
-$ qq auth_get_access_token 1234567890123456789012
+$ qq auth_get_access_token {{site.exampleAccessTokenID1}}
 ```
 
 This command returns a JSON object that lists:
+
 {{page.varTokenReturn}}
 
 For example:
@@ -155,7 +197,7 @@ For example:
   },
   "enabled": true,
   "expiration_time": "2023-01-01T00:00:00Z",
-  "id": "12345678901234567890123",
+  "id": "{{site.exampleAccessTokenID1}}",
   "user": {
     "auth_id": "1002",
     "domain": "LOCAL",
@@ -167,7 +209,7 @@ For example:
 }
 ```
 
-### To Get Metadata for All Access Tokens
+### To Retrieve Metadata for All Access Tokens
 Run the `qq auth_list_access_tokens` command.
 
 {{site.data.alerts.important}}
@@ -175,15 +217,16 @@ Listing access tokens <em>doesn't</em> return the bearer token required for auth
 {{site.data.alerts.end}}
 
 The `auth_list_access_tokens` command returns:
+
 {{page.varTokenReturn}}
 
 For example:
 
 ```
-id                      user   creator  creation time                   
-======================  =====  =======  ==============================  
-1234567890123456789012  svc    admin    2022-10-27T15:18:09.725513764Z
-0987654321098765432109  svc    admin    2022-10-27T15:18:24.997572918Z
+id                      user   creator  creation time
+======================  =====  =======  ==============================
+{{site.exampleAccessTokenID1}}  svc    admin    2022-10-27T15:18:09.725513764Z
+{{site.exampleAccessTokenID2}}  svc    admin    2022-10-27T15:18:24.997572918Z
 
 expiration time       enabled
 ====================  =======
@@ -196,7 +239,9 @@ To filter the command's output by user, use the `--user` flag and use the same f
 
 <a id="modifying-expiration-time-access-token"></a>
 ## Modifying the Expiration Time for an Access Token
-{{page.varPrereqWrite}} This section explains how to modify access tokens by using the `qq` CLI.
+This section explains how to modify access tokens by using the `qq` CLI.
+
+{{page.varPrereqWrite}}
 
 Run the `auth_modify_access_token` command and specify the access token ID and the expiration time. For example:
 
@@ -213,9 +258,9 @@ $ qq auth_modify_access_token 1234567890123456789012 --expiration-time 'Jan 01 2
 
 <a id="disabling-access-token"></a>
 ## Disabling an Access Token
-To help you check your system's security posture, Qumulo Core lets you disable an access token without deleting it. This is a good way to check for dependencies on the access token before you delete the token permanently.
+To help you check your system's security posture, Qumulo Core lets you disable an access token without deleting it. This is a good way to check for dependencies on the access token before you delete the token permanently. This section explains how to disable an access token by using the `qq` CLI.
 
-{{page.varPrereqWrite}} This section explains how to disable an access token by using the `qq` CLI.
+{{page.varPrereqWrite}}
 
 {% capture content_disable_token %}After you disable an access token, {{page.varBearerToken}}{% endcapture %}
 {% include important.html content=content_disable_token %}
@@ -234,7 +279,9 @@ $ qq auth_modify_access_token 1234567890123456789012 -e
 
 
 ## Deleting Access Tokens
-{{page.varPrereqWrite}} This section explains how to delete an access token by using the `qq` CLI.
+This section explains how to delete an access token by using the `qq` CLI.
+
+{{page.varPrereqWrite}}
 
 {% capture content_disable_token %}After you delete an access token, {{page.varBearerToken}}{% endcapture %}
 {% include important.html content=content_disable_token %}

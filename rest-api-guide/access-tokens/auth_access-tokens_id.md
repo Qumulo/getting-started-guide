@@ -10,7 +10,8 @@ methods:
     responses:
     - code: '200'
       description: Return value on success
-    summary: Delete the specified access token.
+    summary: Delete the specified access token. Privilege ACCESS_TOKENS_WRITE is required
+      to delete a token for a user other than yourself.
   get:
     parameters:
     - description: Access Token ID
@@ -73,7 +74,8 @@ methods:
     responses:
     - code: '200'
       description: Return value on success
-    summary: Get metadata about the specified access token.
+    summary: Get metadata about the specified access token. Privilege ACCESS_TOKENS_READ
+      is required if the token is for a user other than yourself.
   patch:
     parameters:
     - description: Access Token ID
@@ -143,7 +145,8 @@ methods:
     responses:
     - code: '200'
       description: Return value on success
-    summary: Modify metadata for the specified access token.
+    summary: Modify metadata for the specified access token. Privilege ACCESS_TOKENS_WRITE
+      is required to modify a token for a user other than yourself.
 rest_endpoint: /v1/auth/access-tokens/{id}
 api_version: v1
 permalink: /rest-api-guide/access-tokens/auth_access-tokens_id.html

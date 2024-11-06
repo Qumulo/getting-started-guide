@@ -12,7 +12,7 @@ methods:
         \n  }\n}"
     response_body:
       schema: "{\n  \"type\": \"array\",\n  \"items\": {\n    \"description\": \"\
-        fs_api_ref_id_path\",\n    \"type\": \"object\",\n    \"properties\": {\n\
+        fs_api_file_id_path\",\n    \"type\": \"object\",\n    \"properties\": {\n\
         \      \"id\": {\n        \"description\": \"Unique ID of this file or directory\"\
         ,\n        \"type\": \"string\"\n      },\n      \"path\": {\n        \"description\"\
         : \"Full path of this file or directory\",\n        \"type\": \"string\"\n\

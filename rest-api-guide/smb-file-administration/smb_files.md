@@ -3,7 +3,7 @@ category: /SMB File Administration
 methods:
   get:
     parameters:
-    - description: File ID (uint64). Limits result to handles on the specified file.
+    - description: File ID. Limits result to handles on the specified file.
       name: file_number
       required: false
     - description: Includes the paths to each file in the results. Resolving many
@@ -32,7 +32,9 @@ methods:
         : \"version\",\n                \"type\": \"number\"\n              },\n \
         \             \"num_byte_range_locks\": {\n                \"description\"\
         : \"num_byte_range_locks\",\n                \"type\": \"number\"\n      \
-        \        },\n              \"access_mask\": {\n                \"description\"\
+        \        },\n              \"num_notify_watches\": {\n                \"description\"\
+        : \"num_notify_watches\",\n                \"type\": \"string\"\n        \
+        \      },\n              \"access_mask\": {\n                \"description\"\
         : \"access_mask\",\n                \"type\": \"array\",\n               \
         \ \"items\": {\n                  \"type\": \"string\",\n                \
         \  \"enum\": [\n                    \"MS_ACCESS_FILE_READ_DATA\",\n      \

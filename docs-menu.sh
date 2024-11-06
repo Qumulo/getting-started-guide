@@ -226,7 +226,7 @@ ingest_care_portal() {
     no_toolchain
     check_vectara_ingest_repo
     check_secrets_toml
-    ingest_documentation "qumulo-care-v3.yaml"
+    ingest_documentation "qumulo-care-v4.yaml"
 }
 
 # Ingest qumulo.com into Vectara corpus 5
