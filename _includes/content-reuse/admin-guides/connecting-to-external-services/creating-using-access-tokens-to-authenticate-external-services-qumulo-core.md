@@ -165,10 +165,12 @@ Run the {% include qq.html command="auth_list_access_tokens" %} command with no 
 $ qq auth_list_access_tokens
 ```
 
-## Getting Metadata for Access Tokens
-{{site.varPrereqRead}} This section explains how to get metadata for a specific access token or all access tokens by using the `qq` CLI.
+## Retrieving Metadata for Access Tokens
+This section explains how to get metadata for a specific access token or all access tokens by using the `qq` CLI.
 
-### To Get Metadata for a Specific Access Token
+{{site.varPrereqRead}}
+
+### To Retrieve Metadata for a Specific Access Token
 Run the `auth_get_access_token` command and specify the access token ID. For example:
 
 ```bash
@@ -176,6 +178,7 @@ $ qq auth_get_access_token 1234567890123456789012
 ```
 
 This command returns a JSON object that lists:
+
 {{page.varTokenReturn}}
 
 For example:
@@ -205,7 +208,7 @@ For example:
 }
 ```
 
-### To Get Metadata for All Access Tokens
+### To Retrieve Metadata for All Access Tokens
 Run the `qq auth_list_access_tokens` command.
 
 {{site.data.alerts.important}}
@@ -213,6 +216,7 @@ Listing access tokens <em>doesn't</em> return the bearer token required for auth
 {{site.data.alerts.end}}
 
 The `auth_list_access_tokens` command returns:
+
 {{page.varTokenReturn}}
 
 For example:
