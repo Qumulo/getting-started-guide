@@ -31,7 +31,7 @@ Access tokens are long-lived. They provide an alternative to session-based authe
 {{page.varPrereqWrite}} This section explains how to create access tokens without or with an expiration time by using the `qq` CLI.
 
 ### To create an Access Token for Yourself
-Run the {% include qq.html command="auth_create_access_token" %} command and specify <code>--self</code>. For example:
+Run the {% include qq.html command="auth_create_access_token" %} command with the <code>--self</code> flag. For example:
 
 ```bash
 $ qq auth_create_access_token --self
