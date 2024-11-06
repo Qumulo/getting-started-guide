@@ -28,7 +28,9 @@ Access tokens are long-lived. They provide an alternative to session-based authe
 
 <a id="creating-using-access-tokens"></a>
 ## Creating and Using Access Tokens
-{{page.varPrereqWrite}} This section explains how to create access tokens without or with an expiration time by using the `qq` CLI.
+This section explains how to create access tokens without or with an expiration time by using the `qq` CLI.
+
+{{page.varPrereqWrite}}
 
 ### To create an Access Token for Yourself
 Run the {% include qq.html command="auth_create_access_token" %} command with the <code>--self</code> flag. For example:
@@ -142,7 +144,9 @@ $ qq --credentials-store ./qumulo_credentials who_am_i
 ```
 
 ## Listing Access Tokens
-{{site.varPrereqRead}} This section explains how to list access tokens for yourself, a specific user, or all users by using the `qq` CLI.
+This section explains how to list access tokens for yourself, a specific user, or all users by using the `qq` CLI.
+
+{{site.varPrereqRead}}
 
 * To list access tokens for yourself, run the {% include qq.html command="auth_list_access_tokens" %} command with <code>--self</code> flag. For example:
 
@@ -235,7 +239,9 @@ To filter the command's output by user, use the `--user` flag and use the same f
 
 <a id="modifying-expiration-time-access-token"></a>
 ## Modifying the Expiration Time for an Access Token
-{{page.varPrereqWrite}} This section explains how to modify access tokens by using the `qq` CLI.
+This section explains how to modify access tokens by using the `qq` CLI.
+
+{{page.varPrereqWrite}}
 
 Run the `auth_modify_access_token` command and specify the access token ID and the expiration time. For example:
 
@@ -252,9 +258,9 @@ $ qq auth_modify_access_token 1234567890123456789012 --expiration-time 'Jan 01 2
 
 <a id="disabling-access-token"></a>
 ## Disabling an Access Token
-To help you check your system's security posture, Qumulo Core lets you disable an access token without deleting it. This is a good way to check for dependencies on the access token before you delete the token permanently.
+To help you check your system's security posture, Qumulo Core lets you disable an access token without deleting it. This is a good way to check for dependencies on the access token before you delete the token permanently. This section explains how to disable an access token by using the `qq` CLI.
 
-{{page.varPrereqWrite}} This section explains how to disable an access token by using the `qq` CLI.
+{{page.varPrereqWrite}}
 
 {% capture content_disable_token %}After you disable an access token, {{page.varBearerToken}}{% endcapture %}
 {% include important.html content=content_disable_token %}
@@ -273,7 +279,9 @@ $ qq auth_modify_access_token 1234567890123456789012 -e
 
 
 ## Deleting Access Tokens
-{{page.varPrereqWrite}} This section explains how to delete an access token by using the `qq` CLI.
+This section explains how to delete an access token by using the `qq` CLI.
+
+{{page.varPrereqWrite}}
 
 {% capture content_disable_token %}After you delete an access token, {{page.varBearerToken}}{% endcapture %}
 {% include important.html content=content_disable_token %}
