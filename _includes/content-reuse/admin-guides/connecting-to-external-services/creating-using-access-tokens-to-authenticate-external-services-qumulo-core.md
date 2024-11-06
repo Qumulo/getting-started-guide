@@ -144,26 +144,23 @@ $ qq --credentials-store ./qumulo_credentials who_am_i
 ## Listing Access Tokens
 {{site.varPrereqRead}} This section explains how to list access tokens for yourself, a specific user, or all users by using the `qq` CLI.
 
-### To List Access Tokens for Yourself
-Run the {% include qq.html command="auth_list_access_tokens" %} command and specify <code>--self</code>. For example:
+* To list access tokens for yourself, run the {% include qq.html command="auth_list_access_tokens" %} command with <code>--self</code> flag. For example:
 
-```bash
-$ qq auth_list_access_tokens --self
-```
+  ```bash
+  $ qq auth_list_access_tokens --self
+  ```
 
-### To List Access Tokens for a Specific User
-Run the {% include qq.html command="auth_list_access_tokens" %} command and specify <code>--user</code>. For example:
+* To list access tokens for a specific user, run the {% include qq.html command="auth_list_access_tokens" %} command and use the <code>--user</code> flag to specify a user. For example:
 
-```bash
-$ qq auth_list_access_tokens --user jane
-```
+  ```bash
+  $ qq auth_list_access_tokens --user jane
+  ```
 
-### To List Access Tokens for all Users
-Run the {% include qq.html command="auth_list_access_tokens" %} command with no user specified. For example:
+* To list access tokens for all users, run the {% include qq.html command="auth_list_access_tokens" %} command without any additional parameters. For example:
 
-```bash
-$ qq auth_list_access_tokens
-```
+  ```bash
+  $ qq auth_list_access_tokens
+  ```
 
 ## Retrieving Metadata for Access Tokens
 This section explains how to get metadata for a specific access token or all access tokens by using the `qq` CLI.
