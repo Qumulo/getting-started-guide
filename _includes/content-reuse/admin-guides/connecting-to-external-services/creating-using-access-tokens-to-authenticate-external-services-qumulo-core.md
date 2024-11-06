@@ -5,7 +5,7 @@ In Qumulo Core 5.3.0 (and higher), you can use _access tokens_ to let a user aut
 
 Access tokens are long-lived. They provide an alternative to session-based authentication that the {% include qq.html command="login" %} command and the Qumulo Core Web UI use. They also support support authentication for services, long-lived automation processes, and programmatic REST API access that doesn't require user input.
 
-{{site.data.alerts.important}}
+{{site.data.alerts.caution}}
 <ul>
   <li>{{page.varAccessTokenWarning}} {{page.varAccessTokenBestPractices}}</li>
   <li>Because a token allows indefinite authentication to the associated user's account, we strongly recommend against creating tokens for individual Qumulo Core REST API users. For more information, see <a href="#best-practices-using-access-tokens">Best Practices for Using Access Tokens</a>.</li>
