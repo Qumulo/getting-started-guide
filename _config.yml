@@ -235,6 +235,8 @@ exampleStorageAccountName3: ab3cdefghij3
 exampleStorageAccountName4: ab2cdefghij4
 exampleEC2id1: i-0ab12345678c9012d
 exampleEC2id2: i-9dc87654321b0987a
+exampleAccessTokenID1: 12345678901234567890123
+exampleAccessTokenID2: 09876543210987654321098
 
 adp:
   before612AddOnly: Qumulo Core 6.1.0.1 and 6.1.1 support Adaptive Data Protection by letting you reconfigure your cluster's fault tolerance level and storage efficiency only when you add nodes to your cluster.

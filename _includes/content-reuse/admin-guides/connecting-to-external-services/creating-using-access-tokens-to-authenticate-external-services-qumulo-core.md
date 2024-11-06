@@ -44,7 +44,7 @@ The {% include qq.html command="auth_create_access_token" %} command returns a J
 ```json
 {
   "bearer_token": "access-v1:abAcde...==",
-  "id": "12345678901234567890123"
+  "id": "{{site.exampleAccessTokenID1}}"
 }
 ```
 
@@ -171,7 +171,7 @@ This section explains how to get metadata for a specific access token or all acc
 Run the `auth_get_access_token` command and specify the access token ID. For example:
 
 ```bash
-$ qq auth_get_access_token 1234567890123456789012
+$ qq auth_get_access_token {{site.exampleAccessTokenID1}}
 ```
 
 This command returns a JSON object that lists:
@@ -193,7 +193,7 @@ For example:
   },
   "enabled": true,
   "expiration_time": "2023-01-01T00:00:00Z",
-  "id": "12345678901234567890123",
+  "id": "{{site.exampleAccessTokenID1}}",
   "user": {
     "auth_id": "1002",
     "domain": "LOCAL",
@@ -221,8 +221,8 @@ For example:
 ```
 id                      user   creator  creation time
 ======================  =====  =======  ==============================
-1234567890123456789012  svc    admin    2022-10-27T15:18:09.725513764Z
-0987654321098765432109  svc    admin    2022-10-27T15:18:24.997572918Z
+{{site.exampleAccessTokenID1}}  svc    admin    2022-10-27T15:18:09.725513764Z
+{{site.exampleAccessTokenID2}}  svc    admin    2022-10-27T15:18:24.997572918Z
 
 expiration time       enabled
 ====================  =======
