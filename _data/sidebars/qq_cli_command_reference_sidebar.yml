@@ -208,6 +208,12 @@ entries:
     url: /qq-cli-command-guide/auth/
   - folderitems:
     - output: web,pdf
+      title: capacity_clamp_get
+      url: /qq-cli-command-guide/capacity/capacity_clamp_get.html
+    - output: web,pdf
+      title: capacity_clamp_set
+      url: /qq-cli-command-guide/capacity/capacity_clamp_set.html
+    - output: web,pdf
       title: capacity_history_files_get
       url: /qq-cli-command-guide/capacity/capacity_history_files_get.html
     - output: web,pdf

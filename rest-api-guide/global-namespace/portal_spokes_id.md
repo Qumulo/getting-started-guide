@@ -23,12 +23,16 @@ methods:
         : {\n      \"description\": \"Local spoke portal root directory file ID\"\
         ,\n      \"type\": \"string\"\n    },\n    \"spoke_root_path\": {\n      \"\
         description\": \"Local spoke portal root directory path\",\n      \"type\"\
-        : \"string\"\n    },\n    \"state\": {\n      \"type\": \"string\",\n    \
-        \  \"enum\": [\n        \"UNLINKED\",\n        \"PENDING\",\n        \"ACTIVE\"\
-        ,\n        \"ENDED\"\n      ],\n      \"description\": \"State of the portal:\\\
-        n * `ACTIVE` - PORTAL_ACTIVE,\\n * `ENDED` - PORTAL_ENDED,\\n * `PENDING`\
-        \ - PORTAL_PENDING,\\n * `UNLINKED` - PORTAL_UNLINKED\"\n    },\n    \"hub_root\"\
-        : {\n      \"description\": \"Remote hub portal root directory (if in a relationship)\"\
+        : \"string\"\n    },\n    \"spoke_type\": {\n      \"type\": \"string\",\n\
+        \      \"enum\": [\n        \"SPOKE_READ_ONLY\",\n        \"SPOKE_READ_WRITE\"\
+        \n      ],\n      \"description\": \"Type of the spoke portal:\\n * `SPOKE_READ_ONLY`\
+        \ - SPOKE_READ_ONLY,\\n * `SPOKE_READ_WRITE` - SPOKE_READ_WRITE\"\n    },\n\
+        \    \"state\": {\n      \"type\": \"string\",\n      \"enum\": [\n      \
+        \  \"UNLINKED\",\n        \"PENDING\",\n        \"ACTIVE\",\n        \"ENDED\"\
+        \n      ],\n      \"description\": \"State of the portal:\\n * `ACTIVE` -\
+        \ PORTAL_ACTIVE,\\n * `ENDED` - PORTAL_ENDED,\\n * `PENDING` - PORTAL_PENDING,\\\
+        n * `UNLINKED` - PORTAL_UNLINKED\"\n    },\n    \"hub_root\": {\n      \"\
+        description\": \"Remote hub portal root directory (if in a relationship)\"\
         ,\n      \"type\": \"string\"\n    },\n    \"hub_address\": {\n      \"description\"\
         : \"IP address of a node in the cluster with the hub portal (if in a relationship)\"\
         ,\n      \"type\": \"string\"\n    },\n    \"hub_port\": {\n      \"description\"\
@@ -54,12 +58,16 @@ methods:
         : {\n      \"description\": \"Local spoke portal root directory file ID\"\
         ,\n      \"type\": \"string\"\n    },\n    \"spoke_root_path\": {\n      \"\
         description\": \"Local spoke portal root directory path\",\n      \"type\"\
-        : \"string\"\n    },\n    \"state\": {\n      \"type\": \"string\",\n    \
-        \  \"enum\": [\n        \"UNLINKED\",\n        \"PENDING\",\n        \"ACTIVE\"\
-        ,\n        \"ENDED\"\n      ],\n      \"description\": \"State of the portal:\\\
-        n * `ACTIVE` - PORTAL_ACTIVE,\\n * `ENDED` - PORTAL_ENDED,\\n * `PENDING`\
-        \ - PORTAL_PENDING,\\n * `UNLINKED` - PORTAL_UNLINKED\"\n    },\n    \"hub_root\"\
-        : {\n      \"description\": \"Remote hub portal root directory (if in a relationship)\"\
+        : \"string\"\n    },\n    \"spoke_type\": {\n      \"type\": \"string\",\n\
+        \      \"enum\": [\n        \"SPOKE_READ_ONLY\",\n        \"SPOKE_READ_WRITE\"\
+        \n      ],\n      \"description\": \"Type of the spoke portal:\\n * `SPOKE_READ_ONLY`\
+        \ - SPOKE_READ_ONLY,\\n * `SPOKE_READ_WRITE` - SPOKE_READ_WRITE\"\n    },\n\
+        \    \"state\": {\n      \"type\": \"string\",\n      \"enum\": [\n      \
+        \  \"UNLINKED\",\n        \"PENDING\",\n        \"ACTIVE\",\n        \"ENDED\"\
+        \n      ],\n      \"description\": \"State of the portal:\\n * `ACTIVE` -\
+        \ PORTAL_ACTIVE,\\n * `ENDED` - PORTAL_ENDED,\\n * `PENDING` - PORTAL_PENDING,\\\
+        n * `UNLINKED` - PORTAL_UNLINKED\"\n    },\n    \"hub_root\": {\n      \"\
+        description\": \"Remote hub portal root directory (if in a relationship)\"\
         ,\n      \"type\": \"string\"\n    },\n    \"hub_address\": {\n      \"description\"\
         : \"IP address of a node in the cluster with the hub portal (if in a relationship)\"\
         ,\n      \"type\": \"string\"\n    },\n    \"hub_port\": {\n      \"description\"\
@@ -72,12 +80,16 @@ methods:
         : {\n      \"description\": \"Local spoke portal root directory file ID\"\
         ,\n      \"type\": \"string\"\n    },\n    \"spoke_root_path\": {\n      \"\
         description\": \"Local spoke portal root directory path\",\n      \"type\"\
-        : \"string\"\n    },\n    \"state\": {\n      \"type\": \"string\",\n    \
-        \  \"enum\": [\n        \"UNLINKED\",\n        \"PENDING\",\n        \"ACTIVE\"\
-        ,\n        \"ENDED\"\n      ],\n      \"description\": \"State of the portal:\\\
-        n * `ACTIVE` - PORTAL_ACTIVE,\\n * `ENDED` - PORTAL_ENDED,\\n * `PENDING`\
-        \ - PORTAL_PENDING,\\n * `UNLINKED` - PORTAL_UNLINKED\"\n    },\n    \"hub_root\"\
-        : {\n      \"description\": \"Remote hub portal root directory (if in a relationship)\"\
+        : \"string\"\n    },\n    \"spoke_type\": {\n      \"type\": \"string\",\n\
+        \      \"enum\": [\n        \"SPOKE_READ_ONLY\",\n        \"SPOKE_READ_WRITE\"\
+        \n      ],\n      \"description\": \"Type of the spoke portal:\\n * `SPOKE_READ_ONLY`\
+        \ - SPOKE_READ_ONLY,\\n * `SPOKE_READ_WRITE` - SPOKE_READ_WRITE\"\n    },\n\
+        \    \"state\": {\n      \"type\": \"string\",\n      \"enum\": [\n      \
+        \  \"UNLINKED\",\n        \"PENDING\",\n        \"ACTIVE\",\n        \"ENDED\"\
+        \n      ],\n      \"description\": \"State of the portal:\\n * `ACTIVE` -\
+        \ PORTAL_ACTIVE,\\n * `ENDED` - PORTAL_ENDED,\\n * `PENDING` - PORTAL_PENDING,\\\
+        n * `UNLINKED` - PORTAL_UNLINKED\"\n    },\n    \"hub_root\": {\n      \"\
+        description\": \"Remote hub portal root directory (if in a relationship)\"\
         ,\n      \"type\": \"string\"\n    },\n    \"hub_address\": {\n      \"description\"\
         : \"IP address of a node in the cluster with the hub portal (if in a relationship)\"\
         ,\n      \"type\": \"string\"\n    },\n    \"hub_port\": {\n      \"description\"\

@@ -3,6 +3,10 @@ category: auth
 command: auth_create_access_token
 optional_options:
 - alternate: []
+  help: Create an access key that targets the currently logged in user.
+  name: --self
+  required: false
+- alternate: []
   help: The expiration time of the access token. After this time, the token will no
     longer be usable for authentication. For example, "Jan 20 2024", "1/20/2024",
     or "2024-01-20 12:00", with times interpreted in UTC timezone.
@@ -26,8 +30,8 @@ summary: This section explains how to use the <code>qq auth_create_access_token<
   command.
 synopsis: Create a long-lived access token
 title: qq auth_create_access_token
-usage: qq auth_create_access_token [-h] [--expiration-time EXPIRATION_TIME] [--file
-  PATH] identifier
+usage: qq auth_create_access_token [-h] [--self] [--expiration-time EXPIRATION_TIME]
+  [--file PATH] [identifier]
 zendesk_source: qq CLI Command Guide
 
 ---

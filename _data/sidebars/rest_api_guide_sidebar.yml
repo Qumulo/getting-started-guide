@@ -166,6 +166,13 @@ entries:
     title: Authentication (auth)
     url: /rest-api-guide/authentication/
   - folderitems:
+    - output: web,pdf
+      title: capacity/clamp
+      url: /rest-api-guide/capacity-clamp/capacity_clamp.html
+    output: web,pdf
+    title: Capacity Clamp (capacity)
+    url: /rest-api-guide/capacity-clamp/
+  - folderitems:
     - apiversion: v3
       output: web,pdf
       title: cluster/calculate-supported-protection-info

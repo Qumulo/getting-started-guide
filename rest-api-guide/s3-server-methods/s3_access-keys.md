@@ -53,7 +53,8 @@ methods:
     responses:
     - code: '200'
       description: Return value on success
-    summary: List all S3 access keys present in the system.
+    summary: List all S3 access keys present in the system or for a specified user.
+      Privilege S3_CREDENTIALS_READ is required to list keys other than for yourself.
   post:
     parameters: []
     request_body:
@@ -116,7 +117,8 @@ methods:
     - code: '200'
       description: Return value on success
     summary: Create a new S3 access key for the provided user identity. To add a new
-      key, a user must have fewer than two keys.
+      key, a user must have fewer than two keys. Privilege S3_CREDENTIALS_WRITE is
+      required to create a key for a user other than yourself.
 rest_endpoint: /v1/s3/access-keys/
 api_version: v1
 permalink: /rest-api-guide/s3-server-methods/s3_access-keys.html

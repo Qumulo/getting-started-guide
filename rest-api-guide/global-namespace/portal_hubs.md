@@ -27,8 +27,12 @@ methods:
         \ the spoke portal (if in a relationship)\",\n            \"type\": \"string\"\
         \n          },\n          \"spoke_port\": {\n            \"description\":\
         \ \"TCP port for the cluster with the spoke portal (if in a relationship)\"\
-        ,\n            \"type\": \"number\"\n          }\n        }\n      }\n   \
-        \ }\n  }\n}"
+        ,\n            \"type\": \"number\"\n          },\n          \"spoke_type\"\
+        : {\n            \"type\": \"string\",\n            \"enum\": [\n        \
+        \      \"SPOKE_READ_ONLY\",\n              \"SPOKE_READ_WRITE\"\n        \
+        \    ],\n            \"description\": \"Type of the spoke portal:\\n * `SPOKE_READ_ONLY`\
+        \ - SPOKE_READ_ONLY,\\n * `SPOKE_READ_WRITE` - SPOKE_READ_WRITE\"\n      \
+        \    }\n        }\n      }\n    }\n  }\n}"
     responses:
     - code: '200'
       description: Return value on success

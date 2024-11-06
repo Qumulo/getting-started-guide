@@ -3,7 +3,7 @@ category: /Tree Delete
 methods:
   post:
     parameters:
-    - description: Job ID (uint64)
+    - description: Job ID
       name: id
       required: true
     response_body: {}

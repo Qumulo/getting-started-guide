@@ -3,7 +3,7 @@ category: /Directory Quotas
 methods:
   get:
     parameters:
-    - description: Directory ID (uint64)
+    - description: Directory ID
       name: id
       required: true
     response_body:
