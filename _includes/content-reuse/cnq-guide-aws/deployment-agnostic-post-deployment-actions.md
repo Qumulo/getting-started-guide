@@ -331,7 +331,7 @@ You can scale an existing {{site.aws.cnqAWSshort}} cluster by changing the EC2 i
 {% elsif page.deployment == "cfn" %}
 1. On the <strong>Stacks</strong> page, select the newly created stack and then, in the upper right, click <strong>Update</strong>.
 1. {{site.cnq.cfnUseExistingTemplate}}
-1. On the **Specify stack details** page, for **QReplacementCluster**, click **No**.
+1. On the **Specify stack details** page, for **Replacement Cluster**, click **No**.
 1. {{site.cnq.cfnRollbackOnFailure}}
 1. On the **Review &lt;my-stack-name&gt;** page, click **Submit**.
 
