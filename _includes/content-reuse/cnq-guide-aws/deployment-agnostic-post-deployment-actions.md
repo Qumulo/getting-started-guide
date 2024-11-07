@@ -187,7 +187,7 @@ Increasing the soft capacity limit for an existing cluster is a two-step process
 {% elsif page.deployment == "cfn" %}
 1. {{site.cnq.cfnUpdateStackPersistentStorage}}
 1. {{site.cnq.cfnUseExistingTemplate}}
-1. On the **Specify stack details** page, enter a higher value for **QSoftCapacityLimit** and then click **Next**.
+1. On the **Specify stack details** page, select a higher value for **Soft Capacity Limit for the subsequent CNQ deployment** and then click **Next**.
 1. {{site.cnq.cfnRollbackOnFailure}}
 1. On the **Review &lt;my-stack-name&gt;** page, click **Submit**.
 
