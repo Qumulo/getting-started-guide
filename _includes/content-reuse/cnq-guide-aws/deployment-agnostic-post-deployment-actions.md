@@ -43,12 +43,10 @@ This section describes the common actions you can perform on a {{site.cnqShort}}
 Removing a node from an existing cluster is a two-step process:
 
 1. Remove the node from your cluster's quorum.
-1. Tidy up your AWS resources.
+1. Tidy up the AWS resources for the removed nodes.
 
 #### Step 1: Remove the Node from the Cluster's Quorum
 You must perform this step while the cluster is running.
-
-{% include important.html content="After you remove nodes from your cluster, you must clean up these nodes' cloud infrastructure by using CloudFormation or Terraform." %}
 
 1. Copy the `remove-nodes.sh` script from the {% if page.deployment == "tf" %}`aws-terraform-cnq-<x.y>/utilities`{% elsif page.deployment == "cfn" %}`aws-cloudformation-cnq-<x.y>/utilities`{% endif %} directory to a machine running in your VPC that has the AWS CLI tools installed (for example, an Amazon Linux 2 AMI).
 
@@ -102,7 +100,8 @@ You must perform this step while the cluster is running.
 
 1. {{site.cnq.logIntoWebUI}}
 
-#### Step 2: Tidy Up Your AWS Resources
+#### Step 2: Tidy Up AWS Resources for Removed Nodes
+To avoid incurring additional costs, we recommend tidying up the AWS resources for the removed nodes.
 {% if page.deployment == "tf" %}
 1. Navigate to the `aws-terraform-cnq-<x.y>` directory.
 1. {{site.cnq.changeQnodeCount}} to a lower value (for example, `4`).
@@ -187,11 +186,13 @@ Increasing the soft capacity limit for an existing cluster is a two-step process
 {% elsif page.deployment == "cfn" %}
 1. {{site.cnq.cfnUpdateStackPersistentStorage}}
 1. {{site.cnq.cfnUseExistingTemplate}}
-1. On the **Specify stack details** page, enter a higher value for **QSoftCapacityLimit** and then click **Next**.
+1. On the **Specify stack details** page, select a higher value for **Soft Capacity Limit** and then click **Next**.
 1. {{site.cnq.cfnRollbackOnFailure}}
 1. On the **Review &lt;my-stack-name&gt;** page, click **Submit**.
 
    CloudFormation updates resources for the stack and displays the **CREATE_COMPLETE** status for each resource.
+
+1. {{site.cnq.logIntoWebUI}}
 
 #### Step 2: Update Existing Compute and Cache Resource Deployment
 1. {{site.cnq.cfnUpdateStackComputeCache}}
@@ -215,8 +216,8 @@ You can scale an existing {{site.aws.cnqAWSshort}} cluster by changing the EC2 i
 1. Remove the existing EC2 instances.
 1. Clean up your S3 bucket policies.
 
-#### Step 1: Create a New Deployment in a New Terraform Workspace
 {% if page.deployment == "tf" %}
+#### Step 1: Create a New Deployment in a New Terraform Workspace
 1. To create a new Terraform workspace, run the `terraform workspace new my-new-workspace-name` command.
 1. To initialize the workspace, run the `terraform init` command.
 1. Edit `config-standard.tfvars` or `config-advanced.tfvars`:
@@ -274,15 +275,16 @@ You can scale an existing {{site.aws.cnqAWSshort}} cluster by changing the EC2 i
    qumulo_private_url_node1 = "https://{{site.exampleEndpointIP0}}"
    ```
 {% elsif page.deployment == "cfn" %}
+#### Step 1: Create a New CloudFormation Stack
 1. {{site.cnq.logIntoCFN}}
 1. On the **Stacks** page, in the upper right, click **Create stack > With new resources (standard)**.
 1. On the **Create stack** page, in the **Specify template** section, click **Amazon S3 URL**, enter the URL to your CloudFormation template, and then click **Next**.
 1. On the **Specify stack details** page, to use the same S3 buckets as before, enter _the same_ **Stack name** as the one you used for the [persistent storage](#deploy-persistent-storage) stack name and then review the information in the **Parameters** section:
 
-   1. For **QReplacementCluster**, click **Yes**.
-   1. For **QExistingDeploymentUniqueName**, enter the current stack name.
-   1. For **QInstanceType**, enter the EC2 instance type.
-   1. (Optional) To change the number of nodes, enter the **QNodeCount**
+   1. For **Qumulo EC2 instance type**, enter the EC2 instance type.
+   1. (Optional) To change the number of nodes, enter the **Number of Qumulo EC2 instances** 
+   1. For **Replacement Cluster**, select **Yes**.
+   1. For **Existing Deployment CloudFormation Stack Name**, enter the current stack name.
    1. Click **Next**.
 
 1. On the **Configure stack options** page, read and accept the two acknowledgements, and then click **Next**.
