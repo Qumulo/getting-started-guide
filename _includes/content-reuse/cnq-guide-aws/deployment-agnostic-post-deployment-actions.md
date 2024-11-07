@@ -103,6 +103,8 @@ You must perform this step while the cluster is running.
 1. {{site.cnq.logIntoWebUI}}
 
 #### Step 2: Tidy Up Your AWS Resources
+To avoid incurring additional costs, we recommend tidying up the resources that supported the removed nodes.
+
 {% if page.deployment == "tf" %}
 1. Navigate to the `aws-terraform-cnq-<x.y>` directory.
 1. {{site.cnq.changeQnodeCount}} to a lower value (for example, `4`).
