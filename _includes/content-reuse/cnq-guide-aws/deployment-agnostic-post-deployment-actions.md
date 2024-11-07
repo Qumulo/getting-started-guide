@@ -193,6 +193,8 @@ Increasing the soft capacity limit for an existing cluster is a two-step process
 
    CloudFormation updates resources for the stack and displays the **CREATE_COMPLETE** status for each resource.
 
+1. {{site.cnq.logIntoWebUI}}
+
 #### Step 2: Update Existing Compute and Cache Resource Deployment
 1. {{site.cnq.cfnUpdateStackComputeCache}}
 1. {{site.cnq.cfnUseExistingTemplate}}
