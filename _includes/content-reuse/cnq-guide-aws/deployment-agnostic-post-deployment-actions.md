@@ -48,7 +48,7 @@ Removing a node from an existing cluster is a two-step process:
 #### Step 1: Remove the Node from the Cluster's Quorum
 You must perform this step while the cluster is running.
 
-{% include important.html content="After you remove nodes from your cluster, you must clean up these nodes' cloud infrastructure by using CloudFormation or Terraform." %}
+{% include important.html content="To avoid incurring additional costs, we recommend tidying up the resources that supported the removed infrastructure." %}
 
 1. Copy the `remove-nodes.sh` script from the {% if page.deployment == "tf" %}`aws-terraform-cnq-<x.y>/utilities`{% elsif page.deployment == "cfn" %}`aws-cloudformation-cnq-<x.y>/utilities`{% endif %} directory to a machine running in your VPC that has the AWS CLI tools installed (for example, an AWS Linux 2 AMI).
 
@@ -103,8 +103,6 @@ You must perform this step while the cluster is running.
 1. {{site.cnq.logIntoWebUI}}
 
 #### Step 2: Tidy Up Your AWS Resources
-To avoid incurring additional costs, we recommend tidying up the resources that supported the removed nodes.
-
 {% if page.deployment == "tf" %}
 1. Navigate to the `aws-terraform-cnq-<x.y>` directory.
 1. {{site.cnq.changeQnodeCount}} to a lower value (for example, `4`).
@@ -217,8 +215,8 @@ You can scale an existing {{site.aws.cnqAWSshort}} cluster by changing the EC2 i
 1. Remove the existing EC2 instances.
 1. Clean up your S3 bucket policies.
 
-#### Step 1: Create a New Deployment in a New Terraform Workspace
 {% if page.deployment == "tf" %}
+#### Step 1: Create a New Deployment in a New Terraform Workspace
 1. To create a new Terraform workspace, run the `terraform workspace new my-new-workspace-name` command.
 1. To initialize the workspace, run the `terraform init` command.
 1. Edit `config-standard.tfvars` or `config-advanced.tfvars`:
@@ -276,6 +274,7 @@ You can scale an existing {{site.aws.cnqAWSshort}} cluster by changing the EC2 i
    qumulo_private_url_node1 = "https://{{site.exampleEndpointIP0}}"
    ```
 {% elsif page.deployment == "cfn" %}
+#### Step 1: Create a New CloudFormation Stack
 1. {{site.cnq.logIntoCFN}}
 1. On the **Stacks** page, in the upper right, click **Create stack > With new resources (standard)**.
 1. On the **Create stack** page, in the **Specify template** section, click **Amazon S3 URL**, enter the URL to your CloudFormation template, and then click **Next**.
