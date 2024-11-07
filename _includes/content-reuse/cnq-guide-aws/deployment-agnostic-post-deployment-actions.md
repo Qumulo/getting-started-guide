@@ -43,12 +43,10 @@ This section describes the common actions you can perform on a {{site.cnqShort}}
 Removing a node from an existing cluster is a two-step process:
 
 1. Remove the node from your cluster's quorum.
-1. Tidy up your AWS resources.
+1. Tidy up the AWS resources for the removed nodes.
 
 #### Step 1: Remove the Node from the Cluster's Quorum
 You must perform this step while the cluster is running.
-
-{% include important.html content="To avoid incurring additional costs, we recommend tidying up the resources that supported the removed infrastructure." %}
 
 1. Copy the `remove-nodes.sh` script from the {% if page.deployment == "tf" %}`aws-terraform-cnq-<x.y>/utilities`{% elsif page.deployment == "cfn" %}`aws-cloudformation-cnq-<x.y>/utilities`{% endif %} directory to a machine running in your VPC that has the AWS CLI tools installed (for example, an AWS Linux 2 AMI).
 
@@ -102,7 +100,8 @@ You must perform this step while the cluster is running.
 
 1. {{site.cnq.logIntoWebUI}}
 
-#### Step 2: Tidy Up Your AWS Resources
+#### Step 2: Tidy Up AWS Resources for Removed Nodes
+To avoid incurring additional costs, we recommend tidying up the AWS resources for the removed nodes.
 {% if page.deployment == "tf" %}
 1. Navigate to the `aws-terraform-cnq-<x.y>` directory.
 1. {{site.cnq.changeQnodeCount}} to a lower value (for example, `4`).
@@ -187,7 +186,7 @@ Increasing the soft capacity limit for an existing cluster is a two-step process
 {% elsif page.deployment == "cfn" %}
 1. {{site.cnq.cfnUpdateStackPersistentStorage}}
 1. {{site.cnq.cfnUseExistingTemplate}}
-1. On the **Specify stack details** page, select a higher value for **Soft Capacity Limit for the subsequent CNQ deployment** and then click **Next**.
+1. On the **Specify stack details** page, select a higher value for **Soft Capacity Limit** and then click **Next**.
 1. {{site.cnq.cfnRollbackOnFailure}}
 1. On the **Review &lt;my-stack-name&gt;** page, click **Submit**.
 
@@ -282,10 +281,10 @@ You can scale an existing {{site.aws.cnqAWSshort}} cluster by changing the EC2 i
 1. On the **Create stack** page, in the **Specify template** section, click **Amazon S3 URL**, enter the URL to your CloudFormation template, and then click **Next**.
 1. On the **Specify stack details** page, to use the same S3 buckets as before, enter _the same_ **Stack name** as the one you used for the [persistent storage](#deploy-persistent-storage) stack name and then review the information in the **Parameters** section:
 
-   1. For **QReplacementCluster**, click **Yes**.
-   1. For **QExistingDeploymentUniqueName**, enter the current stack name.
-   1. For **QInstanceType**, enter the EC2 instance type.
-   1. (Optional) To change the number of nodes, enter the **QNodeCount**
+   1. For **Qumulo EC2 instance type**, enter the EC2 instance type.
+   1. (Optional) To change the number of nodes, enter the **Number of Qumulo EC2 instances** 
+   1. For **Replacement Cluster**, select **Yes**.
+   1. For **Existing Deployment CloudFormation Stack Name**, enter the current stack name.
    1. Click **Next**.
 
 1. On the **Configure stack options** page, read and accept the two acknowledgements, and then click **Next**.
