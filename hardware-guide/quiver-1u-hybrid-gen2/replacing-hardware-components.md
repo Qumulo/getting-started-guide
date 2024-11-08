@@ -6,6 +6,7 @@ sidebar: hardware_guide_sidebar
 varRemovePCIeCard: <a href="#replace-pci-e-riser-card">Remove the PCIe card from the motherboard.</a>
 varHotPlug: You can replace this component without powering off the node.
 varNoHotPlug: To replace this component, you must first power off the node.
+platform: quiver
 ---
 
 {% include content-reuse/platform-agnostic-part-replacement-admonitions.md %}
@@ -187,6 +188,7 @@ Your {{site.q1uhg2}} chassis has 12 DIMM slots, with a locking latch on each sid
 ## To Replace the Node Chassis
 {% include important.html content="After you perform a chassis swap, you must reconfigure the IPMI settings for your node." %}
 
+### Step 1: Remove the Existing Components
 1. At the back of the node, disconnect the power cabling from both power supply units (PSUs) and [remove both existing PSUs](#replace-psu) from the node.
 
 1. Disconnect the network cabling from the NIC port and [remove the existing NIC](#replace-nic) from the node.
@@ -198,6 +200,7 @@ Your {{site.q1uhg2}} chassis has 12 DIMM slots, with a locking latch on each sid
    {% capture content_lift %}{{site.twoPeopleOrLift}}{% endcapture %}
    {% include important.html content=content_lift %}
 
+### Step 2: Install New Components
 1. Install the new chassis in the server rack.
 
    {% capture content_warp %}{{site.doNotWarpChassis}}{% endcapture %}
@@ -217,4 +220,4 @@ Your {{site.q1uhg2}} chassis has 12 DIMM slots, with a locking latch on each sid
 
    * If your replacement chassis doesn't come with PSUs, install and connect the existing PSUs.
 
-1. [Run the File Verification Tool (FVT) on the node.](getting-started.html#step-2-boot-by-using-the-qumulo-core-usb-drive-installer)
+{% include content-reuse/platform-agnostic-part-replacement-procedure-fvt.md %}
