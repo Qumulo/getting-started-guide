@@ -1,9 +1,11 @@
+{% if page.platform != 'quiver' %}
 ## To Perform the Part Replacement Procedure by Using the FVT
 {{site.partReplaceDefine}}
 
-{% if page.platform != 'hpe' %}
-{% capture content_tag %}{{site.partReplaceDcms}}{% endcapture %}
-{% include note.html content=content_tag %}
+  {% if page.platform != 'hpe' %}
+  {% capture content_tag %}{{site.partReplaceDcms}}{% endcapture %}
+  {% include note.html content=content_tag %}
+  {% endif %}
 {% endif %}
 
 1. Boot by using the latest version of the Qumulo Core USB Drive Installer.
