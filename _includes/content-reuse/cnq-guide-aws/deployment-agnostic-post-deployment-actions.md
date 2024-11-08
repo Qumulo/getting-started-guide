@@ -307,9 +307,9 @@ You can scale an existing {{site.aws.cnqAWSshort}} cluster by changing the EC2 i
    Terraform deletes resources according to the execution plan and displays the `Destroy complete!` message with a count of destroyed resources.
 {% elsif page.deployment == "cfn" %}
 1. To delete the previous CloudFormation stack, on the <strong>Stacks</strong> page, select the stack name for your previous deployment and then, in the upper right, click <strong>Stack actions &gt; Edit termination protection</strong>.
-1. In the **Edit termination protection for <stack-name>?** dialog box, under **Termination protection**, click **Deactivated** and then click **Save**.
+1. In the <strong>Edit termination protection for &lt;stack-name&gt;?</strong> dialog box, under <strong>Termination protection</strong>, click <strong>Deactivated</strong> and then click <strong>Save</strong>.
 1. On the <strong>Stacks</strong> page, select the stack name for your previous deployment and then, in the upper right, click <strong>Delete</strong>.
-1. In the **Delete stack?** dialog box, click **Delete**.
+1. In the <strong>Delete stack?</strong> dialog box, click <strong>Delete</strong>.
 1. To ensure that the stack is deleted correctly, watch the deletion process.
 {% endif %}
 
