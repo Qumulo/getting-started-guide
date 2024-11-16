@@ -4,7 +4,7 @@ This section explains how to deploy compute and cache resources for a Qumulo clu
 
 {{site.data.alerts.important}}
 <ul>
-  <li>Provisioning completes successfully when the provisioning instance shuts down automatically. If the provisioning instance doesn't shut down, the provisioning cycle has failed and you must troubleshoot it.  To monitor the provisioner's status, you can watch the Terraform status posts in your terminal or {{site.cnq.azureAppConfig}}.</li>
+  <li>Provisioning completes successfully when the Provisioner shuts down automatically. If the Provisioner doesn't shut down, the provisioning cycle has failed and you must troubleshoot it.  To monitor the provisioner's status, you can watch the Terraform status posts in your terminal or {{site.cnq.azureAppConfig}}.</li>
   <li>The first variable in the example configuration files in the <code>azure-terraform-cnq</code> repository is <code>deployment_name</code>. To help avoid conflicts between resource groups and other deployment components, Terraform ignores the <code>deployment_name</code> value and any changes to it. Terraform generates the additional <code>deployment_unique_name</code> variable; appends a random, 7-digit alphanumeric value to it; and then tags all future resources with this variable, which never changes during subsequent Terraform deployments.</li>
   <li>If you plan to deploy multiple Qumulo clusters, give the <code>q_cluster_name</code> variable a unique name for each cluster.</li>
 </ul>
