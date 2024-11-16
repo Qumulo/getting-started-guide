@@ -277,14 +277,59 @@ You can scale an existing {{site.aws.cnqAWSshort}} cluster by changing the EC2 i
 {% elsif page.deployment == "cfn" %}
 #### Step 1: Create a New CloudFormation Stack
 1. {{site.cnq.logIntoCFN}}
-1. On the **Stacks** page, in the upper right, click **Create stack > With new resources (standard)**.
-1. On the **Create stack** page, in the **Specify template** section, click **Amazon S3 URL**, enter the URL to your CloudFormation template, and then click **Next**.
-1. On the **Specify stack details** page, to use the same S3 buckets as before, enter _the same_ **Stack name** as the one you used for the [persistent storage](#deploy-persistent-storage) stack name and then review the information in the **Parameters** section:
 
-   1. For **Qumulo EC2 instance type**, enter the EC2 instance type.
-   1. (Optional) To change the number of nodes, enter the **Number of Qumulo EC2 instances** 
-   1. For **Replacement Cluster**, select **Yes**.
-   1. For **Existing Deployment CloudFormation Stack Name**, enter the current stack name.
+1. On the **Stacks** page, in the upper right, click **Create stack > With new resources (standard)**.
+
+1. On the **Create stack** page, in the **Specify template** section, click **Amazon S3 URL**, enter the URL to your CloudFormation template, and then click **Next**.
+
+1. On the **Specify stack details** page, take the following steps:
+
+   1. In the **Provide a stack name** section, enter a **Stack name**, for example `my-compute-cache-replacement-stack`.
+   
+   1. In the **Parameters** section, under **Cloud Native Qumulo**, take the following steps:
+
+      1. For **S3 bucket name**, enter [the name of the S3 bucket that you used to prepare your files](#prepare-required-files).
+
+      1. For **S3 key prefix**, enter your S3 bucket prefix.
+
+      1. For **S3 bucket region**, enter the same AWS region as the one for your S3 bucket.
+  
+      1. Select an **EC2 key pair**.
+
+      1. For **Environment type**, select either **Dev** or **Prod**.
+
+   1. Under **AWS network configuration**, take the following steps:
+
+      1. Select a **VPC ID**.
+     
+      1. Enter **CIDR #1 for the Qumulo security group**.
+
+      1. (Optional) Enter **CIDR #2 for the Qumulo security group**.
+   
+      1. Select the **Private subnet ID(s)**.
+
+   1. Under **Qumulo file data platform configuration**, take the following steps:
+
+      1. For the **Stack name from the persistent storage CloudFormation deployment**, enter [the name of the stack that you used to create your persistent storage](#persistent-storage-stack-name).
+
+      1. For **Hot or Cold** cluster, select an S3 storage class.
+
+      1. Select the **Qumulo EC2 instance type**.
+     
+      1. Enter the **Number of Qumulo EC2 instances**.
+
+         This number determines the number of nodes in your Qumulo cluster.
+
+      1. Enter the **Total number of Floating IPs for the Qumulo Cluster**.
+
+         {% include tip.html content="If you intend to scale out your Qumulo cluster, enter 6 floating IP addresses for each EC2 instance." %}
+
+      1. For **Replacement Cluster**, select **Yes**.
+
+      1. For **Existing Deployment CloudFormation Stack Name**, enter the current stack name, for example, `my-compute-cache-stack`.
+
+      1. Enter the **Qumulo software version**, **Qumulo cluster name**, and the **Qumulo cluster administrator password**.
+  
    1. Click **Next**.
 
 1. On the **Configure stack options** page, read and accept the two acknowledgements, and then click **Next**.
