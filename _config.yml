@@ -466,6 +466,7 @@ gns:
   protocolLocking: Protocol locks don&apos;t synchronize between the hub portal host cluster and the spoke portal host cluster. Specifically, NFSv3 or NLM byte-range locks, SMB share-mode locks, SMB byte-range locks, and SMB leases function independently on the two clusters.
   changeNotify: Qumulo Core doesn&apos;t send SMB2 `CHANGE_NOTIFY` messages for changes within the spoke portal root directory.
   quorumBounce: This action makes both clusters in the portal relationship unavailable for less than 30 seconds while the systems reconfigure.
+  portalDeleteOutput: The following is example output from the command that shows the portal ID, state, role, and root directory.
 
 RBACoverrides: For the S3 API and Qumulo REST API, if a user has the <a href="https://care.qumulo.com/hc/en-us/articles/360036591633">role-based access control privilege (RBAC)</a> to perform an API action, Qumulo Core <a href="#rbac-overrides">ignores the access policy</a> and permits the API action.
 
