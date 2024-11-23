@@ -129,7 +129,6 @@ Before configuring your host operating system (OS) for installing the Qumulo Cor
 <summary>Click to expand</summary>
 <ul>
   <li>To ensure that you have the features that the Qumulo Core Product Package requires, update the 5.10 kernel that Debian 11 ships with to a newer kernel, such as 6.1.0 (and higher). For more information, see <a target="_blank" href="https://wiki.debian.org/HowToUpgradeKernel">How to Upgrade the Linux Kernel</a> in the Debian documentation.</li>
-  <li>Configure <code>systemd-networkd</code> and <code>systemd-resolved</code>. For more information, see <a target="_blank" href="https://wiki.debian.org/SystemdNetworkd">Setting Up <code>systemd-networkd</code></a> and <a target="_blank" href="https://wiki.debian.org/NetworkConfiguration?highlight=%28resolved%29#Using_systemd-resolved_for_DNS_resolution">Using <code>systemd-resolved</code> for DNS resolution</a> in the Debian documentation.</li>
 </ul>  
 </details>
 
@@ -140,8 +139,6 @@ Before installing the Qumulo Core Product Package, you must configure your host 
 * To provide the `systemd-nspawn` tool for the Qumulo Core container, install the `systemd-container` package.
 
 * To ensure that Qumulo Core has full control over network configuration, disable or remove the default network configuration tool (such as ENI, netplan.io, NetworkManager and so on).
-
-* Ensure that `systemd-networkd` and `systemd-resolved` are installed and enabled. Qumulo Core uses these services, as well as the configuration files located in the `/etc/systemd/network` directory, to perform network configuration.
 
 
 ## To Install the Qumulo Core Product Package
@@ -171,6 +168,7 @@ Before installing the Qumulo Core Product Package, you must configure your host 
    sudo systemctl status qumulo-qcore.service
    ```
 
+
 ## Upgrading the Qumulo Core Product Package
 {{site.data.alerts.important}}
 <ul>
@@ -181,6 +179,7 @@ Before installing the Qumulo Core Product Package, you must configure your host 
 {{site.data.alerts.end}}
 
 Qumulo Core Product Package upgrades follow the standard [Qumulo Core upgrade process](../upgrading-qumulo-core/performing-upgrades.html). All Qumulo Core Product Package upgrades are [instant software upgrades](/administrator-guide/upgrading-qumulo-core/performing-upgrades.html#instant-software-upgrade) and never require a node to reboot (however, you can use the the Qumulo REST API or {% include qq.html command="reboot_start" %} command to perform a manual or rolling reboot).
+
 
 ## Troubleshooting the Qumulo Core Product Package
 Depending on the issue, you can troubleshoot the Qumulo Core Product Package from the host operating system or from within the Qumulo container. The following sections outline common scenarios and some potential troubleshooting approaches to them.
