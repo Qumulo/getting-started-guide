@@ -107,6 +107,9 @@ This section explains how to create the [spoke portal](how-portal-creation-enabl
 ### Step 2: Authorize the Portal Relationship
 This section explains how to authorize the [portal relationship](how-portal-creation-enables-global-namespace.html#portal-relationship) from the [hub portal](how-portal-creation-enables-global-namespace.html#hub-portal) to the [spoke portal](how-portal-creation-enables-global-namespace.html#spoke-portal).
 
+{% capture varQuorumBounce %}{{site.gns.quorumBounce}}{% endcapture %}
+{% include caution.html content=varQuorumBounce %}
+
 1. To find the hub portal ID, run the {% include qq.html command="portal_list" %} command.
 
    {% capture retrievePortalConfig %}To retrieve portal configuration information, run the {% include qq.html command="portal_list_spokes" %} and {% include qq.html command="portal_list_hubs" %} commands.{% endcapture %}
@@ -132,6 +135,3 @@ This section explains how to authorize the [portal relationship](how-portal-crea
    ```
 
    After a few seconds, the spoke portal enters the `Active` state as well. You can now use the spoke portal root directory.
-
-{% capture varQuorumBounce %}{{site.gns.quorumBounce}}{% endcapture %}
-{% include caution.html content=varQuorumBounce %}
