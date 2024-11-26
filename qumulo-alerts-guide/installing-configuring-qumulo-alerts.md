@@ -107,7 +107,7 @@ To be able to generate access tokens, you must create a local user for Qumulo Al
      <li><code>CLUSTER_READ</code>: View nodes, disks, protection status, and SSL certificate</li>
      <li><code>DNS_READ</code>: Read DNS setting</li>
      <li><code>ENCRYPTION_READ</code>: View the status of at rest encryption</li>
-     <li><code>FILE_FULL_ACCESS</code>: Provides full access to all files regardless of permissions</li>
+     <li><code>FILE_READ_ACCESS</code>: Provides read access to all files regardless of permissions</li>
      <li><code>FS_ATTRIBUTES_READ</code>: Read file system statistics</li>
      <li><code>FS_DELETE_TREE_READ</code>: View the status of directory tree delete operations</li>
      <li><code>FS_KEY_MANAGEMENT_READ</code>: Read and list public keys for various FS security features</li>
