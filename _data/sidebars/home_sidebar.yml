@@ -22,16 +22,16 @@ entries:
       url: /cloud-native-azure-administrator-guide/
       output: web
 
+    - title: Azure Native Qumulo Administrator Guide
+      url: /azure-native-administrator-guide/
+      output: web
+
     - title: Qumulo On-Premises Administrator Guide
       url: /administrator-guide/
       output: web
 
-    - title: Qumulo-Certified Hardware Servicing Guide
+    - title: Qumulo-Certified Platinum-Tier Hardware Servicing Guide
       url: /hardware-guide/
-      output: web
-
-    - title: Azure Native Qumulo Administrator Guide
-      url: /azure-native-administrator-guide/
       output: web
 
     - title: Qumulo qq CLI Command Guide

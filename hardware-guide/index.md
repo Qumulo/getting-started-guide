@@ -1,6 +1,6 @@
 ---
-title: "Qumulo-Certified Hardware Servicing Guide"
-summary: "The Qumulo-Certified Hardware Servicing Guide provides information about getting started with a particular node type as well as reference information for node racking and wiring, configuring Integrated Lights Out (iLO) or Intelligent Platform Management Interface (IPMI), drive bay mapping, panel LEDs, cluster networking, replacement of hardware components, and technical specifications."
+title: "Qumulo-Certified Platinum-Tier Hardware Servicing Guide"
+summary: "The Qumulo-Certified Platinum-Tier Hardware Servicing Guide provides information about getting started with a particular node type as well as reference information for node racking and wiring, configuring Integrated Lights Out (iLO) or Intelligent Platform Management Interface (IPMI), drive bay mapping, panel LEDs, cluster networking, replacement of hardware components, and technical specifications."
 layout: parent_landing_page
 permalink: /hardware-guide/
 redirect_from:

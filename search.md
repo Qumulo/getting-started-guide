@@ -3,7 +3,7 @@ title: "Search Results"
 permalink: search.html
 breadcrumbs: exclude
 search: exclude
-hideTOC: true
+toc: false
 vectaraScripts: true
 ---
 

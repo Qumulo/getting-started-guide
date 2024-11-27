@@ -401,13 +401,12 @@ azure:
   pricingCalculator: For more information about pay-as-you-go price estimates, see the <a href="https://azure.qumulo.com/calculator">Pricing and Performance Calculator</a>.
   detailedDeploymentInstructions: For detailed instructions, see <a href="deploying-instance-azure-native-qumulo.html">Deploying and Viewing Information about Your Azure Native Qumulo Instance</a>.
   anqColdImpact: The storage class has an impact on billing, metering, and how the system stores data.
+  cnqAzureLong: Cloud Native Qumulo on Azure
+  cnqAzureShort: CNQ on Azure
 
 aws:
   cnqAWSlong: Cloud Native Qumulo on AWS
   cnqAWSshort: CNQ on AWS
-azure:
-  cnqAzureLong: Cloud Native Qumulo on Azure
-  cnqAzureShort: CNQ on Azure
 
 cnqLong: Cloud Native Qumulo
 cnqShort: CNQ
@@ -479,12 +478,18 @@ udm:
 
 guides:
   anq: Azure Native Qumulo Administrator Guide
+  anqShort: Azure Native Qumulo Admin Guide
   cnq: Cloud Native Qumulo on AWS Administrator Guide
+  cnqShort: Cloud Native Qumulo on AWS Admin Guide
+  cnqAzure: Cloud Native Qumulo on Azure Administrator Guide
+  cnqAzureShort: Cloud Native Qumulo on Azure Admin Guide
   onprem: Qumulo On-Premises Administrator Guide
-  hard: Qumulo-Certified Hardware Servicing Guide
+  onpremShort: Qumulo On-Premises Admin Guide
+  hard: Qumulo-Certified Platinum-Tier Hardware Servicing Guide
   cli: Qumulo <code>qq</code> CLI Command Guide
   rest: Qumulo REST API Guide
   alert: Qumulo Alerts Administrator Guide
+  alertShort: Qumulo Alerts Admin Guide
   integ: Qumulo Integration Guide
 
 xrefUSBinstaller: <a href="https://docs.qumulo.com/hardware-guide/getting-started/creating-usb-drive-installer.html" class="no_icon">Qumulo Core USB Drive Installer</a>

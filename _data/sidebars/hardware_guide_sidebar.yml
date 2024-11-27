@@ -1,9 +1,9 @@
 entries:
 - title:
-  pdftitle: qumulo-certified-hardware-guide.pdf
+  pdftitle: qumulo-certified-platinum-tier-hardware-guide.pdf
   product:
   version:
-  guidetitle: Qumulo-Certified Hardware Servicing Guide
+  guidetitle: Qumulo-Certified Platinum-Tier Hardware Servicing Guide
   guideurl: /hardware-guide/      
   folders:
 
@@ -22,7 +22,7 @@ entries:
       output: pdf
       type: frontmatter
 
-  - title: Qumulo-Certified Hardware Servicing Guide
+  - title: Qumulo-Certified Platinum-Tier Hardware Servicing Guide
     output: web
     type: navi
     folderitems:

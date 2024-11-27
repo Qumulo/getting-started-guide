@@ -158,7 +158,7 @@ This section outlines the process of configuring and deploying {{site.azure.qumu
 
    * **Delegated Subnet:** The [delegated subnet](https://learn.microsoft.com/en-us/azure/virtual-network/subnet-delegation-overview) that the service uses to provision endpoints for your virtual network.
 
-     When you create your service instance, you can specify an existing delegated subnet or create a new one..
+     When you create your service instance, you can specify an existing delegated subnet or create a new one.
 
    * **Qumulo Service Resource:** The Azure resource that represents one instance of the service.
 

@@ -1,114 +1,141 @@
 ---
 title: "Qumulo Documentation"
-summary: "Welcome to the Qumulo Documentation Portal. This repository uses <a href='https://www.writethedocs.org/guide/docs-as-code/'>docs-as-code principles</a> to provide guidance about working with Qumulo offerings."
+summary: "Welcome to the Qumulo Documentation Portal. This repository uses <a href='https://www.writethedocs.org/guide/docs-as-code/'>docs-as-code principles</a> to provide guidance about deploying, configuring, and working with Qumulo offerings."
 permalink: index.html
 breadcrumbs: exclude
+tocTrue: true
 ---
 
 To get started, choose one of the following guides.
 
-
-<h2 class="frontpage">Self-Managed File System on Cloud Infrastructure</h2>
-<div class="landing-page-buttons">
-  <span class="guide-button">
-    <a class="multilink" href="cloud-native-aws-administrator-guide/">
-      <picture>
-        <source type="image/webp" srcset="images/cloud-native-qumulo-on-aws-administrator-guide.webp">
-        <source type="image/png" srcset="images/cloud-native-qumulo-on-aws-administrator-guide.png">
-        <img src="images/cloud-native-qumulo-on-aws-administrator-guide.png" alt="An image of a computer screen with a stylized Qumulo Core interface behind an image of a cloud, symbolizing cloud native deployments on AWS" class="landing-page-icon" width="301" height="301">
-      </picture><br>Cloud Native<br>Qumulo on AWS<br>Administrator Guide
+<h2 class="frontpage">Cloud: Self-Managed File System</h2>
+<div class="guide-buttons">
+  <div class="guide-button">
+    <a href="cloud-native-aws-administrator-guide/">
+      <figure>
+        <picture>
+          <source type="image/webp" srcset="images/cloud-native-qumulo-on-aws-administrator-guide.webp">
+          <source type="image/png" srcset="images/cloud-native-qumulo-on-aws-administrator-guide.png">
+          <img src="images/cloud-native-qumulo-on-aws-administrator-guide.png" alt="An image of a computer screen with a stylized Qumulo Core interface behind an image of a cloud, symbolizing cloud native deployments on AWS" width="301" height="301">
+        </picture>
+        <figcaption>{{site.guides.cnqShort}}</figcaption>
+      </figure>
     </a>
-  </span>
+  </div>
 
-  <span class="guide-button">
-    <a class="multilink" href="cloud-native-azure-administrator-guide/">
-      <picture>
-        <source type="image/webp" srcset="images/cloud-native-qumulo-on-azure-administrator-guide.webp">
-        <source type="image/png" srcset="images/cloud-native-qumulo-on-azure-administrator-guide.png">
-        <img src="images/cloud-native-qumulo-on-azure-administrator-guide.png" alt="An image of a computer screen with a stylized Qumulo Core interface behind an image of a cloud, symbolizing cloud native deployments on Azure" class="landing-page-icon" width="301" height="301">
-      </picture><br>Cloud Native<br>Qumulo on Azure<br>Administrator Guide
+  <div class="guide-button">
+    <a href="cloud-native-azure-administrator-guide/">
+      <figure>
+        <picture>
+          <source type="image/webp" srcset="images/cloud-native-qumulo-on-azure-administrator-guide.webp">
+          <source type="image/png" srcset="images/cloud-native-qumulo-on-azure-administrator-guide.png">
+          <img src="images/cloud-native-qumulo-on-azure-administrator-guide.png" alt="An image of a computer screen with a stylized Qumulo Core interface behind an image of a cloud, symbolizing cloud native deployments on Azure"  width="301" height="301">
+        </picture>
+        <figcaption>{{site.guides.cnqAzureShort}}</figcaption>
+      </figure>
     </a>
-  </span>
+  </div>
 </div>
 
-<h2 class="frontpage">Self-Managed File System on Hardware Infrastructure</h2>
-<div class="landing-page-buttons">
-  <span class="guide-button">
-    <a class="multilink" href="administrator-guide/">
+<h2 class="frontpage">Cloud: Qumulo-Managed File System</h2>
+<div class="guide-button">
+  <a href="azure-native-administrator-guide/">
+    <figure>
       <picture>
-        <source type="image/webp" srcset="images/on-premises-administrator-guide.webp">
-        <source type="image/png" srcset="images/on-premises-administrator-guide.png">
-        <img src="images/on-premises-administrator-guide.png" alt="An image of a computer screen with a stylized Qumulo Core interface behind an image of a server blade, symbolizing administering on-premises hardware" class="landing-page-icon" width="301" height="301">
-      </picture><br>{{site.guides.onprem}}
-    </a>
-  </span>
-
-  <span class="guide-button">
-    <a class="multilink" href="hardware-guide/">
-      <picture>
-        <source type="image/webp" srcset="images/hardware-guide.webp" width="301" height="301">
-        <source type="image/png" srcset="images/hardware-guide.png" width="301" height="301">
-        <img src="images/hardware-guide.png" alt="A stylized image of a server rack, symbolizing installing, configuring, and maintaining hardware" class="landing-page-icon" width="301" height="301">
-      </picture><br>{{site.guides.hard}}
-    </a>
-  </span>
-</div>
-
-<h2 class="frontpage">Qumulo-Managed File System on Cloud Infrastructure</h2>
-<span class="guide-button single-button">
-  <a class="multilink" href="azure-native-administrator-guide/">
-    <picture>
-      <source type="image/webp" srcset="images/azure-native-qumulo-administrator-guide.webp">
-      <source type="image/png" srcset="images/azure-native-qumulo-administrator-guide.png">
-      <img src="images/azure-native-qumulo-administrator-guide.png" alt="An image of a computer screen with a stylized Qumulo Core interface, symbolizing Azure native deployments" class="landing-page-icon" width="301" height="301">
-    </picture><br>{{site.guides.anq}}
+        <source type="image/webp" srcset="images/azure-native-qumulo-administrator-guide.webp">
+        <source type="image/png" srcset="images/azure-native-qumulo-administrator-guide.png">
+        <img src="images/azure-native-qumulo-administrator-guide.png" alt="An image of a computer screen with a stylized Qumulo Core interface, symbolizing Azure native deployments"  width="301" height="301">
+      </picture>
+      <figcaption>{{site.guides.anqShort}}</figcaption>
+    </figure>
   </a>
-</span>
+</div>
+
+<h2 class="frontpage">On-Premises: Self-Managed File System</h2>
+<div class="guide-buttons">
+  <div class="guide-button">
+    <a href="administrator-guide/">
+      <figure>
+        <picture>
+          <source type="image/webp" srcset="images/on-premises-administrator-guide.webp">
+          <source type="image/png" srcset="images/on-premises-administrator-guide.png">
+          <img src="images/on-premises-administrator-guide.png" alt="An image of a computer screen with a stylized Qumulo Core interface behind an image of a server blade, symbolizing administering on-premises hardware"  width="301" height="301">
+        </picture>
+        <figcaption>{{site.guides.onpremShort}}</figcaption>
+      </figure>
+    </a>
+  </div>
+
+  <div class="guide-button">
+    <a href="hardware-guide/">
+      <figure>  
+        <picture>
+          <source type="image/webp" srcset="images/hardware-guide.webp" width="301" height="301">
+          <source type="image/png" srcset="images/hardware-guide.png" width="301" height="301">
+          <img src="images/hardware-guide.png" alt="A stylized image of a server rack, symbolizing installing, configuring, and maintaining hardware"  width="301" height="301">
+        </picture>
+        <figcaption class="platinum-tier">{{site.guides.hard}}</figcaption>
+      </figure>
+    </a>
+  </div>
+</div>
 
 <h2 class="frontpage">Developer Tools and Interfaces</h2>
-<div class="landing-page-buttons">
-  <span class="guide-button">
-    <a class="multilink" href="qq-cli-command-guide/">
-      <picture>
-        <source type="image/webp" srcset="images/qumulo-qq-cli-command-guide.webp">
-        <source type="image/png" srcset="images/qumulo-qq-cli-command-guide.png">
-        <img src="images/qumulo-alerts-guide.png" alt="An image of a computer screen showing a terminal window with a Qumulo qq CLI command" class="landing-page-icon" width="301" height="301">
-      </picture><br>{{site.guides.cli}}
+<div class="guide-buttons">
+  <div class="guide-button">
+    <a href="qq-cli-command-guide/">
+      <figure>
+        <picture>
+          <source type="image/webp" srcset="images/qumulo-qq-cli-command-guide.webp">
+          <source type="image/png" srcset="images/qumulo-qq-cli-command-guide.png">
+          <img src="images/qumulo-alerts-guide.png" alt="An image of a computer screen showing a terminal window with a Qumulo qq CLI command"  width="301" height="301">
+        </picture>
+        <figcaption>{{site.guides.cli}}</figcaption>
+      </figure>
     </a>
-  </span>
+  </div>
 
-  <span class="guide-button">
-    <a class="multilink" href="rest-api-guide/">
-      <picture>
-        <source type="image/webp" srcset="images/qumulo-rest-api-guide.webp">
-        <source type="image/png" srcset="images/qumulo-rest-api-guide.png">
-        <img src="images/qumulo-rest-api-guide.png" alt="An image of a computer screen showing a terminal window with a Qumulo REST API call" class="landing-page-icon" width="301" height="301">
-      </picture><br>{{site.guides.rest}}
+  <div class="guide-button">
+    <a href="rest-api-guide/">
+      <figure>
+        <picture>
+          <source type="image/webp" srcset="images/qumulo-rest-api-guide.webp">
+          <source type="image/png" srcset="images/qumulo-rest-api-guide.png">
+          <img src="images/qumulo-rest-api-guide.png" alt="An image of a computer screen showing a terminal window with a Qumulo REST API call"  width="301" height="301">
+        </picture>
+        <figcaption>{{site.guides.rest}}</figcaption>
+      </figure>
     </a>
-  </span>
+  </div>
 </div>
 
 <h2 class="frontpage">External Alerting and Monitoring</h2>
-<div class="landing-page-buttons">
-  <span class="guide-button">
-    <a class="multilink" href="qumulo-alerts-guide/">
-      <picture>
-        <source type="image/webp" srcset="images/qumulo-alerts-guide.webp">
-        <source type="image/png" srcset="images/qumulo-alerts-guide.png">
-        <img src="images/qumulo-alerts-guide.png" alt="An image of a computer screen showing a warning triangle behind a stylized image of a cog wheel, symbolizing administering Qumulo Alerts instances" class="landing-page-icon" width="301" height="301">
-      </picture><br>{{site.guides.alert}}
+<div class="guide-buttons">
+  <div class="guide-button">
+    <a href="qumulo-alerts-guide/">
+      <figure>
+        <picture>
+          <source type="image/webp" srcset="images/qumulo-alerts-guide.webp">
+          <source type="image/png" srcset="images/qumulo-alerts-guide.png">
+          <img src="images/qumulo-alerts-guide.png" alt="An image of a computer screen showing a warning triangle behind a stylized image of a cog wheel, symbolizing administering Qumulo Alerts instances"  width="301" height="301">
+        </picture>
+        <figcaption>{{site.guides.alertShort}}</figcaption>
+      </figure>
     </a>
-  </span>
+  </div>
 
-  <span class="guide-button">
-    <a class="multilink" href="integration-guide/">
-      <picture>
-        <source type="image/webp" srcset="images/qumulo-integration-guide.webp">
-        <source type="image/png" srcset="images/qumulo-integration-guide.png">
-        <img src="images/qumulo-integration-guide.png" alt="A stylized image of two entities combining together with three items orbiting them, symbolizing integration" class="landing-page-icon" width="301" height="301">
-      </picture><br>{{site.guides.integ}}
+  <div class="guide-button">
+    <a href="integration-guide/">
+      <figure>
+        <picture>
+          <source type="image/webp" srcset="images/qumulo-integration-guide.webp">
+          <source type="image/png" srcset="images/qumulo-integration-guide.png">
+          <img src="images/qumulo-integration-guide.png" alt="A stylized image of two entities combining together with three items orbiting them, symbolizing integration"  width="301" height="301">
+        </picture>
+        <figcaption>{{site.guides.integ}}</figcaption>
+      </figure>
     </a>
-  </span>
+  </div>
 </div>
 
 ## Hot Topics
@@ -135,3 +162,6 @@ For information about upgrading, see:
 
 ## Reach Out to Us
 If you need help, [open a case](https://care.qumulo.com/s/submit-a-case), or {{site.contactQumuloCare}} through Slack, email, or by phone.
+
+## Report a Documentation Issue
+You can [view this page in GitHub](https://github.com/qumulo/docs/blob/gh-pages/README.md) and [suggest corrections by opening an issue](https://github.com/Qumulo/docs/issues).

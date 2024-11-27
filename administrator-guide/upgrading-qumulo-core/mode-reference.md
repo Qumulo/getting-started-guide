@@ -5,6 +5,6 @@ permalink: /administrator-guide/upgrading-qumulo-core/mode-reference.html
 redirect_from:
   - /administrator-guide/upgrades/mode-reference.html
 sidebar: administrator_guide_sidebar
-hideTOC: true
+toc: false
 include_content: content-reuse/admin-guides/upgrading-qumulo-core/mode-reference.md
 ---

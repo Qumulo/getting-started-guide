@@ -54,6 +54,86 @@ body {
   }
 }
 
+@media screen {
+  .projectTitle {
+    margin-left: 10px;
+  }
+
+  .platinum-tier {
+    line-height: 19px;
+  }
+
+  /* ----------------- LANDING PAGE STARTS ------------------- */
+  h2.frontpage {
+    font-size: 19px;
+    font-weight: bold;
+    line-height: unset;
+    margin: 20px auto 5px auto;
+  }
+
+  .guide-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;                    /* space between the buttons */
+  }
+
+  .guide-button {
+    display: inline-block;
+    width: 264px !important;
+    height: 97px !important;
+  }
+
+  .guide-button figure figcaption {
+    font-weight: bold;
+    padding-bottom: unset;
+    padding-top: unset;
+    max-width: unset;
+    margin-bottom: unset;
+    font-style: normal;
+    color: unset;
+  }
+
+  .guide-button figure {
+    margin-bottom: unset;
+    gap: 10px;                    /* space between the icon and text */
+  }
+
+  .guide-button figcaption {
+    font-size: 11.5pt;
+  }
+
+  .guide-button a,
+  .guide-button a:link,
+  .guide-button a:visited,
+  .guide-button a:hover {
+    background: #f0f0f0;
+    border: 1px solid #dddddd;
+    text-decoration: none;
+    padding-right: 10px;
+  }
+
+  .guide-button a:hover {
+    background: white;
+  }
+
+  .guide-button a,
+  .guide-button figure {
+    display: flex;
+    align-items: center;
+  }
+
+  .guide-button picture,
+  .landing-page-icon {
+    display: block;
+  }
+
+  .guide-button a figure picture img {
+    max-width: 80px !important;
+    max-height: 80px !important;
+    margin-left: 5px;
+  }
+  /* ------------------ LANDING PAGE ENDS -------------------- */
+}
 
 /* START API HEADING COLOURS */
 
@@ -582,81 +662,12 @@ h1.post-title-main:nth-child(1) {
   font-weight: bold; 
 }
 
-/* ----------------- LANDING PAGE STARTS ------------------- */
-
-.landing-page-buttons {
-  display:inline-block;
-  margin-top:20px;
-  margin-left:1px;
-  max-width:600px;
-}
-
-#visit-qumulo-care {
-  clear:both;
-}
-
-/* Refactoring of front page buttons in sections */
-.single-button {
-  float: none;
-  margin-top: 20px !important;
-  margin-bottom: 20px;
-}
-
-h2.frontpage {
-  clear: both;
-  font-size: 20px;
-  line-height: unset;
-  margin-bottom: -15px;
-}
-
-h2.frontpage:first-of-type {
-  clear: none;
-}
-/* Refactoring of front page buttons in sections */
-
-.guide-button {
-  background:#F0F0F0;
-  text-align:center;
-  width:200px;
-  height:200px;
-  display:inline-block;
-  float:left;
-  border:1px solid #dddddd;
-  margin-left: -1px;
-  margin-top: -1px;
-}
-
-.guide-button::after{
-  clear:both;
-}
-
-a.multilink, a.multilink:link, a.multilink:visited, a.multilink:hover {
-  padding:10px;
-  display:block;
-  color:#005d80;
-  font-weight:bold;
-  width:100%;
-  height:100%;
-  min-width:150px;
-  text-decoration:none;
-}
-
-a.multilink:hover {
-  background:white;
-}
-
-.landing-page-icon {
-  max-width:100px !important;
-  max-height:100px !important;
-  height:301px !important;
-  width:301px !important;
-}
-
 .three-grumpquats {
   max-width:220px;
   max-height:93px;
   height:255px;
   width:604px;
+  
 }
 
 .crumb {
@@ -1196,7 +1207,7 @@ span.projectTitle {
 
 .footer-grumpquats {
     text-align:center;
-    margin-top:-85px;
+    margin-top:-100px;
 }
 
 .footerMeta {
@@ -2139,7 +2150,7 @@ h4.panel-title {
   /* Ensure that there are two tiles per row
      on mobile devices. */
   .guide-button {
-    width: 50%;
+    width: 48% !important;
   }
   
   /* Ensure that text doesn't wrap weirdly around
@@ -2155,9 +2166,8 @@ h4.panel-title {
   }
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 536px) {
   .guide-button {
-    font-size: 11.5pt;
-    height: 250px;
+    width: 100% !important;
   }
 }
