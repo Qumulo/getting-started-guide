@@ -59,7 +59,11 @@ body {
     margin-left: 10px;
   }
 
-  .platinum-tier {
+  .platinum-tier-image {
+    margin-left: 10px !important;
+  }
+
+  .platinum-tier-caption {
     line-height: 19px;
   }
 
@@ -131,6 +135,7 @@ body {
     max-width: 80px !important;
     max-height: 80px !important;
     margin-left: 5px;
+    margin-top: 3px;
   }
   /* ------------------ LANDING PAGE ENDS -------------------- */
 }

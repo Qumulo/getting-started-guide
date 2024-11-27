@@ -29,7 +29,7 @@ To get started, choose one of the following guides.
         <picture>
           <source type="image/webp" srcset="images/cloud-native-qumulo-on-azure-administrator-guide.webp">
           <source type="image/png" srcset="images/cloud-native-qumulo-on-azure-administrator-guide.png">
-          <img src="images/cloud-native-qumulo-on-azure-administrator-guide.png" alt="An image of a computer screen with a stylized Qumulo Core interface behind an image of a cloud, symbolizing cloud native deployments on Azure"  width="301" height="301">
+          <img src="images/cloud-native-qumulo-on-azure-administrator-guide.png" alt="An image of a computer screen with a stylized Qumulo Core interface behind an image of a cloud, symbolizing cloud native deployments on Azure" width="301" height="301">
         </picture>
         <figcaption>{{site.guides.cnqAzureShort}}</figcaption>
       </figure>
@@ -44,7 +44,7 @@ To get started, choose one of the following guides.
       <picture>
         <source type="image/webp" srcset="images/azure-native-qumulo-administrator-guide.webp">
         <source type="image/png" srcset="images/azure-native-qumulo-administrator-guide.png">
-        <img src="images/azure-native-qumulo-administrator-guide.png" alt="An image of a computer screen with a stylized Qumulo Core interface, symbolizing Azure native deployments"  width="301" height="301">
+        <img src="images/azure-native-qumulo-administrator-guide.png" alt="An image of a computer screen with a stylized Qumulo Core interface, symbolizing Azure native deployments" width="301" height="301">
       </picture>
       <figcaption>{{site.guides.anqShort}}</figcaption>
     </figure>
@@ -59,7 +59,7 @@ To get started, choose one of the following guides.
         <picture>
           <source type="image/webp" srcset="images/on-premises-administrator-guide.webp">
           <source type="image/png" srcset="images/on-premises-administrator-guide.png">
-          <img src="images/on-premises-administrator-guide.png" alt="An image of a computer screen with a stylized Qumulo Core interface behind an image of a server blade, symbolizing administering on-premises hardware"  width="301" height="301">
+          <img src="images/on-premises-administrator-guide.png" alt="An image of a computer screen with a stylized Qumulo Core interface behind an image of a server blade, symbolizing administering on-premises hardware" width="301" height="301">
         </picture>
         <figcaption>{{site.guides.onpremShort}}</figcaption>
       </figure>
@@ -72,9 +72,9 @@ To get started, choose one of the following guides.
         <picture>
           <source type="image/webp" srcset="images/hardware-guide.webp" width="301" height="301">
           <source type="image/png" srcset="images/hardware-guide.png" width="301" height="301">
-          <img src="images/hardware-guide.png" alt="A stylized image of a server rack, symbolizing installing, configuring, and maintaining hardware"  width="301" height="301">
+          <img class="platinum-tier-image" src="images/hardware-guide.png" alt="A stylized image of a server rack, symbolizing installing, configuring, and maintaining hardware" width="301" height="301">
         </picture>
-        <figcaption class="platinum-tier">{{site.guides.hard}}</figcaption>
+        <figcaption class="platinum-tier-caption">{{site.guides.hard}}</figcaption>
       </figure>
     </a>
   </div>
@@ -88,7 +88,7 @@ To get started, choose one of the following guides.
         <picture>
           <source type="image/webp" srcset="images/qumulo-qq-cli-command-guide.webp">
           <source type="image/png" srcset="images/qumulo-qq-cli-command-guide.png">
-          <img src="images/qumulo-alerts-guide.png" alt="An image of a computer screen showing a terminal window with a Qumulo qq CLI command"  width="301" height="301">
+          <img src="images/qumulo-alerts-guide.png" alt="An image of a computer screen showing a terminal window with a Qumulo qq CLI command" width="301" height="301">
         </picture>
         <figcaption>{{site.guides.cli}}</figcaption>
       </figure>
@@ -101,7 +101,7 @@ To get started, choose one of the following guides.
         <picture>
           <source type="image/webp" srcset="images/qumulo-rest-api-guide.webp">
           <source type="image/png" srcset="images/qumulo-rest-api-guide.png">
-          <img src="images/qumulo-rest-api-guide.png" alt="An image of a computer screen showing a terminal window with a Qumulo REST API call"  width="301" height="301">
+          <img src="images/qumulo-rest-api-guide.png" alt="An image of a computer screen showing a terminal window with a Qumulo REST API call" width="301" height="301">
         </picture>
         <figcaption>{{site.guides.rest}}</figcaption>
       </figure>
@@ -117,7 +117,7 @@ To get started, choose one of the following guides.
         <picture>
           <source type="image/webp" srcset="images/qumulo-alerts-guide.webp">
           <source type="image/png" srcset="images/qumulo-alerts-guide.png">
-          <img src="images/qumulo-alerts-guide.png" alt="An image of a computer screen showing a warning triangle behind a stylized image of a cog wheel, symbolizing administering Qumulo Alerts instances"  width="301" height="301">
+          <img src="images/qumulo-alerts-guide.png" alt="An image of a computer screen showing a warning triangle behind a stylized image of a cog wheel, symbolizing administering Qumulo Alerts instances" width="301" height="301">
         </picture>
         <figcaption>{{site.guides.alertShort}}</figcaption>
       </figure>
@@ -130,7 +130,7 @@ To get started, choose one of the following guides.
         <picture>
           <source type="image/webp" srcset="images/qumulo-integration-guide.webp">
           <source type="image/png" srcset="images/qumulo-integration-guide.png">
-          <img src="images/qumulo-integration-guide.png" alt="A stylized image of two entities combining together with three items orbiting them, symbolizing integration"  width="301" height="301">
+          <img src="images/qumulo-integration-guide.png" alt="A stylized image of two entities combining together with three items orbiting them, symbolizing integration" width="301" height="301">
         </picture>
         <figcaption>{{site.guides.integ}}</figcaption>
       </figure>
