@@ -72,7 +72,7 @@ To get started, choose one of the following guides.
         <picture>
           <source type="image/webp" srcset="images/hardware-guide.webp" width="301" height="301">
           <source type="image/png" srcset="images/hardware-guide.png" width="301" height="301">
-          <img class="platinum-tier-image" src="images/hardware-guide.png" alt="A stylized image of a server rack, symbolizing installing, configuring, and maintaining hardware" width="301" height="301">
+          <img src="images/hardware-guide.png" alt="A stylized image of a server rack, symbolizing installing, configuring, and maintaining hardware" width="301" height="301">
         </picture>
         <figcaption class="platinum-tier-caption">{{site.guides.hard}}</figcaption>
       </figure>
