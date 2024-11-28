@@ -35,9 +35,12 @@ Follow the instructions in the ASUS documentation:
 
 
 <a id="replace-nvme-m2-boot-drive"></a>
-## To Replace the NVMe M.2 Boot Drive
+## To Replace the M.2 Boot Drive
 {{site.q1uag1Drives.internalBootDrive}}
 
+{{site.bootDriveInit}}
+
+{% include content-reuse/platform-agnostic-boot-drive-replacement.md %}
 
 <a id="replace-nvme-drive-front-storage-bay"></a>
 ## To Replace an NVMe Drive in Front Storage Bays

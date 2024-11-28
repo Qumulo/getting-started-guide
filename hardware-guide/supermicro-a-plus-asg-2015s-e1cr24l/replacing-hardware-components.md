@@ -13,6 +13,10 @@ sidebar: hardware_guide_sidebar
 ## To Replace a Drive
 Your {{site.sm2015s}} chassis contains 24 HDDs, 4 NVMe drives, and one NVMe boot drive in an internal M.2 expansion slot. For information about replacing a drive, see [Drive Bay Mapping](drive-bay-mapping.html) in this guide and [Storage Drives (HDD and NVMe)](https://www.supermicro.com/manuals/superstorage/MNL-2628.pdf#page=49) in the Supermicro documentation.
 
+## To Replace an M.2 Boot Drive
+{{site.bootDriveInit}}
+
+{% include content-reuse/platform-agnostic-boot-drive-replacement.md %}
 
 ## To Replace a Power Supply Unit (PSU)
 Your {{site.sm2015s}} chassis contains two PSUs. For information about replacing a PSU, see [Power Supply](https://www.supermicro.com/manuals/superstorage/MNL-2628.pdf#page=62) in the Supermicro documentation.

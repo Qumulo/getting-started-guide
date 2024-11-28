@@ -36,8 +36,11 @@ Each of the two [RAID module risers](#replace-raid-module-riser) on your chassis
 
 
 <a id="replace-nvme-m2-boot-drive"></a>
-## To Replace an NVMe M.2 Boot Drive
-Your {{site.fprx2540m7}} chassis contains two mirrored NVMe boot drives, each of which is inserted into an [interposer (controller) board](#replace-interposer-board). For more information, see [NVMe M.2 Boot Drive](drive-bay-mapping.html#nvme-m2-boot-drives).
+## Replacing an M.2 Boot Drive
+{{site.bootDriveInitPreamble}}
+
+### To Replace the M.2 Boot Drive in the Interposer Board
+Your {{site.fprx2540m7}} chassis contains two mirrored NVMe boot drives, each of which is inserted into an [interposer (controller) board](#replace-interposer-board).
 
 1. {{page.varNoHotPlug}}
 
@@ -48,7 +51,13 @@ Your {{site.fprx2540m7}} chassis contains two mirrored NVMe boot drives, each of
    1. <a href="https://docs.qumulo.com/pdf/fujitsu-primergy-rx2540-m7-upgrade-maintenance-manual-09-2023.pdf#page=216" class="pdf">Remove the M.2 SSD (p. 216)</a>.
    
    1. <a href="https://docs.qumulo.com/pdf/fujitsu-primergy-rx2540-m7-upgrade-maintenance-manual-09-2023.pdf#page=212" class="pdf">Install an M.2 SSD (p. 212)</a>.
+  
+### To Initialize the Replacement M.2 Boot Drive
+Your {{site.fprx2540m7}} chassis contains an M.2 boot drive. For more information, see [NVMe M.2 Boot Drive](drive-bay-mapping.html#nvme-m2-boot-drives).
 
+{{site.bootDriveInit}}
+
+{% include content-reuse/platform-agnostic-boot-drive-replacement.md %}
 
 <a id="replace-hdd"></a>
 ## To Replace an HDD

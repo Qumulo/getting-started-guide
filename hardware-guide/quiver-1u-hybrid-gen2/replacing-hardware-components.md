@@ -59,8 +59,10 @@ Your {{site.q1uhg2}} chassis contains a NIC inserted horizontally into the PCIe 
 
 
 <a id="replace-nvme-m2-boot-drive"></a>
-## To Replace the NVMe M.2 Boot Drive
-Your {{site.q1uhg2}} chassis contains an NVMe boot drive inserted vertically into an M.2 expansion slot on the PCIe riser card. For more information, see [NVMe M.2 Boot Drive](drive-bay-mapping.html#nvme-m2-boot-drive).
+## Replacing the M.2 Boot Drive
+{{site.bootDriveInitPreamble}} Your {{site.q1uhg2}} chassis contains an NVMe boot drive inserted vertically into an M.2 expansion slot on the PCIe riser card. For more information, see [NVMe M.2 Boot Drive](drive-bay-mapping.html#nvme-m2-boot-drive).
+
+### To Replace the M.2 Boot Drive in the PCIe Slot
 
 1. {{page.varNoHotPlug}}
 
@@ -80,6 +82,10 @@ Your {{site.q1uhg2}} chassis contains an NVMe boot drive inserted vertically int
    
 1. Insert the PCIe riser card vertically into the PCIe slot.
 
+### To Initialize the Replacement M.2 Boot Drive
+{{site.bootDriveInit}}
+
+{% include content-reuse/platform-agnostic-boot-drive-replacement.md %}
 
 <a id="replace-hdd"></a>
 ## To Replace an HDD

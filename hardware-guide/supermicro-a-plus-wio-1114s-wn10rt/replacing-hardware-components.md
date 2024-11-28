@@ -12,7 +12,7 @@ sidebar: hardware_guide_sidebar
 {% include content-reuse/platform-agnostic-part-replacement-procedure-fvt.md %}
 
 ## To Replace a Drive
-The ten hot-swap drive carriers are located at the front of your {{site.sm1114s}} chassis. The boot drive is located in the internal M.2 expansion slot.
+The ten hot-swap drive carriers are located at the front of your {{site.sm1114s}} chassis.
 
 Replacement drives, including the on-site spare drives that you received with your original nodes, are provided without a drive carrier. When replacing a faulty drive, you must remove the existing drive from its carrier and then insert the new drive into the carriers. The drive carriers are toolless and don't require any screws.
 
@@ -42,6 +42,12 @@ Replacement drives, including the on-site spare drives that you received with yo
 
 {% include note.html content="If you remove and reinsert a drive extremely quickly (faster than one second), the baseboard management controller (BMC) doesn't recognize the drive and the activity LEDs don't return to their normal states. To resolve this issue, remove the drive, wait five seconds, and then reinsert it." %}
 
+## To Replace an M.2 Boot Drive
+The boot drive is located in the internal M.2 expansion slot.
+
+{{site.bootDriveInit}}
+
+{% include content-reuse/platform-agnostic-boot-drive-replacement.md %}
 
 ## To Replace a Power Supply Unit (PSU)
 The two hot-swap PSUs are located at the front of your {{site.sm1114s}} chassis. If either of the two PSUs fails, the other PSU takes on the full load and lets the node continue operating without interruption.
