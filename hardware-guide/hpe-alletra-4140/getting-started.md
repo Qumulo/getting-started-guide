@@ -6,8 +6,12 @@ sidebar: hardware_guide_sidebar
 platform: all4140
 ---
 
-{% capture seeMore %}For information about installing your node and replacing hardware components, see [{{site.all4140}} System Maintenance and Service Guide](https://support.hpe.com/hpesc/public/docDisplay?docId=sd00003806en_us&docLocale=en_US) and [{{site.all4140}} Setup and Installation Guide](https://support.hpe.com/hpesc/public/docDisplay?docId=sd00003805en_us&docLocale=en_US in the HPE documentation.){% endcapture %}
-{% include tip.html content=seeMore %}
+{{site.data.alerts.note}}
+<ul>
+   <li>For information about installing your node and replacing hardware components, see <a href="https://support.hpe.com/hpesc/public/docDisplay?docId=sd00003806en_us&docLocale=en_US">{{site.all4140}} System Maintenance and Service Guide</a> and <a href="https://support.hpe.com/hpesc/public/docDisplay?docId=sd00003805en_us&docLocale=en_US">{{site.all4140}} Setup and Installation Guide</a> in the HPE documentation.</li>
+   <li>Qumulo Core is firmware-agnostic. We recommend managing your nodes' firmware by following recommendations from HPE.</li>
+</ul>
+{{site.data.alerts.end}}
 
 ## Prerequisites
 {{site.xrefUSBinstaller}}

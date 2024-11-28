@@ -29,14 +29,9 @@ For more information, see [49-Bay Drive Drawer 1 and 2 Numbering](https://suppor
 
 
 ## NVMe Boot Drive
-The NVMe boot drive is located inside the HPE NS204i-u Hot Plug Boot Optimized Storage Device.
+The two NVMe boot drives are located inside the HPE NS204i-u Hot Plug Boot Optimized Storage Device.
 
-{{site.data.alerts.important}}
-<ul>
-  <li>For help with locating the NS204i-u device and with replacement procedures, <a href="https://www.hpe.com/us/en/contact-hpe.html">contact HPE support</a>.</li>
-  <li>Before you remove the boot drive, {{site.contactQumuloCare}} for additional instructions.</li>
-</ul>
-{{site.data.alerts.end}}
+{% include important.html content="For help with locating the NS204i-u device and with replacement procedures, [contact HPE Support](https://www.hpe.com/us/en/contact-hpe.html)." %}
 
 For more information, see the following HPE documentation:
 
