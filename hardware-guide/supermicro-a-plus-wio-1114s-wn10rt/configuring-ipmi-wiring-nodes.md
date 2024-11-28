@@ -22,11 +22,8 @@ sidebar: hardware_guide_sidebar
 ## Step 2: Connecting the 100 Gbps Ports
 After you connect the IPMI port, connect your front-end and back-end 100 Gbps ports (compatible with QSFP28 and QSFP56). There are four 100 Gbps ports on the back of your node. To maximize redundancy, split interfaces across subnets by connecting each port to a different switch.
 
-| Port Location         | Port Labels            | Port Type  | Purpose                     |
-| --------------------- | ---------------------- | ---------- | --------------------------- |
-| Top row               | 2 (`eth3`), 1 (`eth2`) | Front end  | Communication with clients  |
-| Bottom row            | 2 (`eth5`), 1 (`eth4`) | Back end   | Communication between nodes |
-
+{% capture ethCommand %}{% include content-reuse/platform-agnostic-identify-eth-port.md %}{% endcapture %}
+{% include note.html content=ethCommand %}
 
 ## Step 3: Connecting the Power
 After you connect your 100 Gbps ports, connect power to the node. There are two power sockets on the back of your node. To maximize redundancy, connect each PSU to a separate power supply or power distribution unit (PDU).

@@ -21,11 +21,4 @@ sidebar: hardware_guide_sidebar
 
 {% include content-reuse/platform-agnostic-unified-networking-wiring.md bmcType="IPMI" ethernetSpeed="25 Gbps or 100 Gbps" portCompatibility=" (compatible with QSFP28 and QSFP56)" %}
 
-| NIC Manufacturer | Port Location | Port Labels |
-| ---------------- | ------------- | ----------- |
-| Broadcom         | Left          | 2 (`eth3`)  |
-| Broadcom         | Right         | 1 (`eth2`)  |
-| Mellanox         | Left          | 2 (`eth1`)  |
-| Mellanox         | Right         | 1 (`eth0`)  |
-
 {% include content-reuse/platform-agnostic-unified-networking-wiring-power.md ethernetSpeed="25 Gbps or 100 Gbps" %}

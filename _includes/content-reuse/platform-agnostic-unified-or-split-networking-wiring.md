@@ -6,8 +6,8 @@ After you connect the IPMI port, connect your {{include.ethernetSpeedSingleNIC}}
 
 * **Dual NIC:** {{site.splitNetDefine}} 
 
-{% capture ethDiff %}{{site.hardware.ethDiff}}{% endcapture %}
-{% include note.html content=ethDiff %}
+{% capture ethCommand %}{% include content-reuse/platform-agnostic-identify-eth-port.md %}{% endcapture %}
+{% include note.html content=ethCommand %}
 
 
 ## Step 3: Connecting the Power

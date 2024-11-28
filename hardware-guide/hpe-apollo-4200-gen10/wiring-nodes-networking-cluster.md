@@ -16,15 +16,8 @@ The following diagrams show the NIC and ports on {{site.a4200g10}} nodes.
 {% capture alt_tag %}NIC ports on {{site.a4200g10}} nodes{% endcapture %}
 {% include image.html alt=alt_tag file="hpe-networking-gen10-rear.png" %}
 
-{% capture ethDiff %}{{site.hardware.ethDiff}}{% endcapture %}
-{% include note.html content=ethDiff %}
-
-| NIC Manufacturer | Port Location | Port Labels |
-| ---------------- | ------------- | ----------- |
-| Broadcom         | Top           | 0 (`eth2`)  |
-| Broadcom         | Bottom        | 1 (`eth3`)  |
-| Mellanox         | Top           | 1 (`eth2`)  |
-| Mellanox         | Bottom        | 2 (`eth3`)  |
+{% capture ethCommand %}{% include content-reuse/platform-agnostic-identify-eth-port.md %}{% endcapture %}
+{% include note.html content=ethCommand %}
 
 ## Prerequisites
 

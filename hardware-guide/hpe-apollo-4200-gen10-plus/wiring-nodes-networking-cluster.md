@@ -13,7 +13,7 @@ The following diagrams show the NIC and ports on {{site.a4200g10p}} node types.
 {{site.data.alerts.important}}
 <ul>
   <li>For your node to work correctly, you must connect at least one port in the NIC.</li>
-  <li>{{site.hardware.ethDiff}}</li>
+  <li>{% include content-reuse/platform-agnostic-identify-eth-port.md %}</li>
 </ul>
 {{site.data.alerts.end}}
 

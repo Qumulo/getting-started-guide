@@ -251,7 +251,6 @@ cannotReorderNodes: it isn't possible to revert this operation or reorder nodes 
 hardware:
   ipmiConfig:
     smc: To configure the IPMI port, you must use the IPMI Management Utility installed on the motherboard. For more information, see <a href="https://www.supermicro.com/manuals/other/BMC_Users_Guide_X12_H12.pdf">Supermicro BMC User Guide X12</a>.
-  ethDiff: The <code>eth</code> port labels vary depending on the NIC manufacturer.
     
 led:
   red: <span class="emoji">🔴</span>
