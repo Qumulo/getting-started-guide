@@ -18,12 +18,12 @@ For information about replacing an NVMe drive, see [Storage Drives (NVMe)](https
 ## Replacing the M.2 Boot Drive
 {{site.bootDriveInitPreamble}}
 
-## To Replace the M.2 Boot Drive on a Riser Card
+### To Replace the M.2 Boot Drive on a Riser Card
 Your {{site.dl325g10p}} chassis contains one M.2 boot drive on a riser card.
 
 For information about replacing a boot drive, see [Removing and Replacing the Boot Device](https://support.hpe.com/hpesc/public/docDisplay?docId=a00093911en_us&page=GUID-E5F5E6D8-BCC3-429D-9180-82E1E1619F38.html) in the HPE documentation.
 
-## To Initialize the Replacement M.2 Boot Drive
+### To Initialize the Replacement M.2 Boot Drive
 {{site.bootDriveInit}}
 
 {% include content-reuse/platform-agnostic-boot-drive-replacement.md %}
