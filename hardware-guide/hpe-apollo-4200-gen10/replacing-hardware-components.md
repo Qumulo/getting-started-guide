@@ -15,10 +15,18 @@ Your {{site.a4200g10}} chassis contains either 24 or 9 HDD drives and 6, 4, or 3
 
 For information about replacing an HDD or SSD drive, see [Removing and Replacing a Hot-Plug Drive](https://support.hpe.com/hpesc/public/docDisplay?docId=a00061190en_us&page=GUID-55A7BABF-1B14-4F24-B1EE-359C37873904.html) in the HPE documentation.
 
-## To Replace an M.2 Boot Drive
-Your {{site.a4200g10}} chassis contains one boot drive. For more information, see [Boot Drive](front-rear-drives.html#boot-drive).
+## Replacing the M.2 Boot Drive
+{{site.bootDriveInitPreamble}}
+
+### To Replace the M.2 Boot Drive on a Riser Card
+Your {{site.a4200g10}} chassis contains one boot drive on a riser card. For more information, see [Boot Drive](front-rear-drives.html#boot-drive).
 
 For information about replacing an NVMe M.2 boot drive, see [Removing and Replacing the Boot Device](https://support.hpe.com/hpesc/public/docDisplay?docId=a00061190en_us&docLocale=en_US&page=GUID-64B9C290-9421-4536-BE32-B8F8A1C93669.html) in the HPE documentation.
+
+### To Initialize the Replacement M.2 Boot Drive
+{{site.bootDriveInit}}
+
+{% include content-reuse/platform-agnostic-boot-drive-replacement.md %}
 
 ## To Replace a Power Supply Unit (PSU)
 Your {{site.a4200g10}} chassis contains two PSUs.

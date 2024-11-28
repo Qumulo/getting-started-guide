@@ -15,10 +15,18 @@ Your {{site.all4140}} chassis contains either 60 or 80 HDDs and 8 SSD NVMe drive
 
 For information about replacing an HDD or SSD NVMe drive, see [Storage Drives (HDD and SSD NVMe)](https://support.hpe.com/hpesc/public/docDisplay?docId=sd00003806en_us&page=GUID-95022634-89E1-4F6B-8838-AEEA4CDFE580.html) in the HPE documentation.
 
-## To Replace an M.2 Boot Drive
-Your {{site.all4140}} chassis contains one NVMe boot drive in an internal M.2 expansion slot.
+## Replacing the M.2 Boot Drive
+{{site.bootDriveInitPreamble}}
+
+### To Replace an M.2 Boot Drive in a Server Module
+Your {{site.all4140}} chassis contains one NVMe boot drive in a server module.
 
 For information about replacing an M.2 boot drive, see [Installing an M.2 Solid State Drive](https://support.hpe.com/hpesc/public/docDisplay?docId=sd00003806en_us&page=GUID-F7B91A13-8AAC-4D4A-8967-FDAD49FF979A.html) in the HPE documentation.
+
+### To Initialize the Replacement M.2 Boot Drive
+{{site.bootDriveInit}}
+
+{% include content-reuse/platform-agnostic-boot-drive-replacement.md %}
 
 ## To Replace a Power Supply Unit (PSU)
 Your {{site.all4140}} chassis contains two PSUs.
