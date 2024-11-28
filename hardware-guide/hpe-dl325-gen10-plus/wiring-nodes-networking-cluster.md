@@ -10,6 +10,8 @@ sidebar: hardware_guide_sidebar
 
 {{site.splitNetDefine}}
 
+{% include content-reuse/platform-agnostic-identify-eth-port.md %}
+
 ## Node NICs and Ports
 The following diagram shows the NICs and ports on {{site.dl325g10p}} nodes. On this platform, there are two sets of NICs, one for the front end and one for the back end.
 

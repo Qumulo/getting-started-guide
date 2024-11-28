@@ -8,9 +8,11 @@ redirect_from:
 sidebar: hardware_guide_sidebar
 ---
 
+{% include content-reuse/hpe-apollo-4200-gen-9-90t-180t-288t-eops.md %}
+
 {{site.unifyNetDefine}}
 
-{% include content-reuse/hpe-apollo-4200-gen-9-90t-180t-288t-eops.md %}
+{% include content-reuse/platform-agnostic-identify-eth-port.md %}
 
 ## Node NICs and Ports
 The following diagrams show the NICs and ports on {{site.a4200g9}} node types.

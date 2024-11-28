@@ -7,6 +7,8 @@ redirect_from:
 sidebar: hardware_guide_sidebar
 ---
 
+{% include content-reuse/platform-agnostic-identify-eth-port.md %}
+
 ##  Prerequisites
 {{site.data.alerts.note}}
 {{site.jumboFramesPrereq}}

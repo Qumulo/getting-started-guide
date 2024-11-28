@@ -6,9 +6,11 @@ sidebar: hardware_guide_sidebar
 platform: all4110
 ---
 
-{% include content-reuse/run-anywhere-conditional-admonitions.md %}
+{% include important.html content="For your node to work correctly, you must connect at least one port in the NIC." %}
 
 ## Node NICs and Ports
+{% include content-reuse/run-anywhere-conditional-admonitions.md %}
+
 The following diagrams show the NICs and ports on {{site.all4110}} node types.
 
 {% capture alt_tag %}Back Diagram of the {{site.all4110}} Node{% endcapture %}

@@ -10,13 +10,13 @@ sidebar: hardware_guide_sidebar
 
 {{site.unifyNetDefine}}
 
+{% include content-reuse/platform-agnostic-identify-eth-port.md %}
+
 ## Node NIC and Ports
 The following diagrams show the NIC and ports on {{site.a4200g10}} nodes.
 
 {% capture alt_tag %}NIC ports on {{site.a4200g10}} nodes{% endcapture %}
 {% include image.html alt=alt_tag file="hpe-networking-gen10-rear.png" %}
-
-{% include content-reuse/platform-agnostic-identify-eth-port.md %}
 
 ## Prerequisites
 
