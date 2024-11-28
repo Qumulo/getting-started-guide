@@ -6,9 +6,9 @@ sidebar: hardware_guide_sidebar
 platform: q1uag1
 ---
 
-{% include content-reuse/run-anywhere-conditional-admonitions.md %}
-
 {% include content-reuse/platform-agnostic-unified-or-split-networking-cluster.md ethernetSpeed="100 Gbps" ethernetSpeedSingleNIC="100 Gbps" ethernetSpeedDualNIC="100 Gbps"%}
+
+{% include content-reuse/run-anywhere-conditional-admonitions.md %}
 
 ## Four-Node Cluster Architecture Diagrams
 

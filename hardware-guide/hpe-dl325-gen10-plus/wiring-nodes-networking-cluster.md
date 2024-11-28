@@ -15,9 +15,9 @@ sidebar: hardware_guide_sidebar
 ## Node NICs and Ports
 The following diagram shows the NICs and ports on {{site.dl325g10p}} nodes. On this platform, there are two sets of NICs, one for the front end and one for the back end.
 
-{% include important.html content="For your node to work correctly, you must connect at least one port in each NIC." %}
-
 {% capture alt_tag %}Front End (NIC1) and Back End (NIC2) ports on {{site.dl325g10p}} nodes.{% endcapture %}
 {% include image.html alt=alt_tag file="dl325-rear-networking.png" %}
 
 {% include content-reuse/platform-agnostic-split-wiring-networking-cluster.md ethernetSpeed="100 Gbps" %}
+
+{% include important.html content="For your node to work correctly, you must connect at least one port in each NIC." %}

@@ -15,9 +15,6 @@ sidebar: hardware_guide_sidebar
 ## Step 1: Verify Your Node
 {% include content-reuse/platform-agnostic-verify-node-preamble.md %}
 
-   {% capture alt_tag %}Front Diagram of the {{site.a4200g9}} Node{% endcapture %}
-   {% include image.html alt=alt_tag file="hpe-front-power.png" %}
-
 1. On the **HPE ProLiant** boot screen, do one of the following:
 
    * If the **Boot Mode: Legacy BIOS** message appears, skip the rest of this section and continue to [boot by using the Qumulo Core USB Drive Installer](#step-2-boot-by-using-the-qumulo-core-usb-drive-installer).
