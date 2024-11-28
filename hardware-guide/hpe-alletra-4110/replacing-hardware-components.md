@@ -18,12 +18,12 @@ For information about replacing an NVMe drive, see [Storage Drives (NVMe)](https
 ## Replacing the M.2 Boot Drive
 {{site.bootDriveInitPreamble}}
 
-## To Replace an M.2 Boot Drive in the Server Module
+### To Replace an M.2 Boot Drive in the Server Module
 Your {{site.all4110}} chassis contains one NVMe boot drive in a server module.
 
 For information about replacing an M.2 boot drive, see [Installing an M.2 Solid State Drive](https://support.hpe.com/hpesc/public/docDisplay?docId=sd00002471en_us&page=GUID-2E7D27B3-9665-4615-87A4-4256C3E8373D.html) in the HPE documentation.
 
-## To Initialize the Replacement M.2 Boot Drive
+### To Initialize the Replacement M.2 Boot Drive
 {{site.bootDriveInit}}
 
 {% include content-reuse/platform-agnostic-boot-drive-replacement.md %}
