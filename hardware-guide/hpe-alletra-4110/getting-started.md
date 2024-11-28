@@ -16,9 +16,6 @@ platform: all4110
 
 {% include content-reuse/platform-agnostic-verify-node-preamble.md %}
 
-   {% capture alt_tag %}Front Diagram of the {{site.all4110}} Node{% endcapture %}
-   {% include image.html alt=alt_tag file="hpe-alletra-4110-front-panel-power.png" %}
-
 ## Step 2: Boot by Using the Qumulo Core USB Drive Installer
 
 1. On the **HPE Alletra** boot screen, press **F11**.

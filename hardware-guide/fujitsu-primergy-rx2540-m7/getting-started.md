@@ -11,9 +11,6 @@ sidebar: hardware_guide_sidebar
 ## Step 1: Verify Your Node
 {% include content-reuse/platform-agnostic-verify-node-preamble.md %}
 
-   {% capture alt_tag %}Front Diagram of the {{site.fprx2540m7Long}} Node{% endcapture %}
-   {% include image.html alt=alt_tag file="fujitsu-primergy-rx2540-m7-front-diagram.png" url="images/fujitsu-primergy-rx2540-m7-front-diagram.png" %}
-
 
 ## Step 2: Boot by Using the Qumulo Core USB Drive Installer
 1. When the node powers on and begins to boot, on the **Fujitsu** screen, press **F12**.

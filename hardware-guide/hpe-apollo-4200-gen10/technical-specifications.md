@@ -4,7 +4,7 @@ summary: "This section provides technical specifications for HPE Apollo 4200 Gen
 permalink: /hardware-guide/hpe-apollo-4200-gen10/technical-specifications.html
 redirect_from:
   - /hardware/hpe-apollo-4200-gen10/technical-specifications.html
-search: exclude
+sidebar: hardware_guide
 ---
 
 <table cellspacing="0" cellpadding="0" class="tech-specs">

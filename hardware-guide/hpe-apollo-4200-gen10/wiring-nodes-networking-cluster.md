@@ -16,8 +16,7 @@ The following diagrams show the NIC and ports on {{site.a4200g10}} nodes.
 {% capture alt_tag %}NIC ports on {{site.a4200g10}} nodes{% endcapture %}
 {% include image.html alt=alt_tag file="hpe-networking-gen10-rear.png" %}
 
-{% capture ethCommand %}{% include content-reuse/platform-agnostic-identify-eth-port.md %}{% endcapture %}
-{% include note.html content=ethCommand %}
+{% include content-reuse/platform-agnostic-identify-eth-port.md %}
 
 ## Prerequisites
 

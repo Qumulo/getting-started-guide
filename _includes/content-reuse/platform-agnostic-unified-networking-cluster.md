@@ -1,5 +1,4 @@
-{% capture ethCommand %}{% include content-reuse/platform-agnostic-identify-eth-port.md %}{% endcapture %}
-{% include note.html content=ethCommand %}
+{% include content-reuse/platform-agnostic-identify-eth-port.md %}
 
 ##  Prerequisites
 {{site.data.alerts.note}}

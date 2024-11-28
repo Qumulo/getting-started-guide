@@ -7,11 +7,9 @@ sidebar: hardware_guide_sidebar
 
 {{site.unifyNetDefine}}
 
-## Node NICs and Ports
-{% include content-reuse/platform-agnostic-identify-eth-port.md %}
-
 {% include important.html content="For your node to work correctly, you must connect at least one port in the NIC." %}
 
+## Node NICs and Ports
 {% include content-reuse/platform-agnostic-unified-networking-cluster.md ethernetSpeed="10 Gbps or 25 Gbps"%}
 
 {% include arbitrary_image.html alt="Platform-Agnostic Unified Networking Four-Node Cluster Architecture Diagram" file="../platform-agnostic/images/platform-agnostic-unified-networking-four-node-cluster.png" %}

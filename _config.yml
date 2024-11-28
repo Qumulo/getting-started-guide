@@ -290,7 +290,7 @@ use40gbps: You can use 40 Gbps connections with 40 Gbps transceivers.
 jumboFramesPrereq: Before you create your Qumulo cluster, if your client environment requires Jumbo Frames (9,000 MTU), configure your switch to support a higher MTU.
 noNIC: For this platform, all models ship without NICs.
 
-unusedEthPorts: The two rightmost Ethernet ports on the back of your node are unused.{{site.exampleAccessTokenID1}}
+unusedEthPorts: The two rightmost Ethernet ports on the back of your node are unused.
 dualNICfrontBackEnd: For dual-NIC nodes, the left NIC is for the front end and the right NIC is for the back end.
 
 doNotWarpChassis: To avoid warping the chassis frame, always keep it level while you insert it into the server rack. Never insert the chassis at an angle and don&apos;t apply excessive pressure to it.
