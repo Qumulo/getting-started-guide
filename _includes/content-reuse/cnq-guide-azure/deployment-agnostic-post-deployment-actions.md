@@ -16,11 +16,11 @@ This section describes the common actions you can perform on a {{site.cnqShort}}
 
    ```
    qumulo_primary_ips = [
-     "{{site.exampleIP0}}",
      "{{site.exampleIP1}}",
      "{{site.exampleIP2}}",
      "{{site.exampleIP3}}",
-     "{{site.exampleIP4}}"
+     "{{site.exampleIP4}}",
+     "{{site.exampleIP5}}"
    ]
    ```
 {% capture verifyProvis %}To ensure that the Provisioner shut downs automatically, review the `last-run-status` parameter {{site.cnq.azureAppConfig}}.{% endcapture %}

@@ -53,26 +53,21 @@ This section explains how to deploy compute and cache resources for a Qumulo clu
 
    Outputs:
 
-   cluster_provisioned = "Success"
    deployment_unique_name = "{{site.cnq.deploymentUniqueNameExampleAzure}}"
-   ...
-   persistent_storage_bucket_names = tolist([
-     "{{site.exampleStorageAccountName1}}",
-     "{{site.exampleStorageAccountName2}}",
-     "{{site.exampleStorageAccountName3}}",
-     "{{site.exampleStorageAccountName3}}",
-   ])
-   qumulo_floating_ips = [
-     "{{site.exampleIP42}}",
-     "{{site.exampleIP84}}",
-     ...
-   ]
+   provisioner = {
+     "provisioner_ip_address" = "{{site.exampleIP0}}"
+     "qumulo_cluster_floating_ips" = [
+       "{{site.exampleIP42}}",
+       "{{site.exampleIP84}}",
+       ...
+     ]
+   }
    ...
    qumulo_primary_ips = [
-     "{{site.exampleIP0}}",
      "{{site.exampleIP1}}",
      "{{site.exampleIP2}}",
-     "{{site.exampleIP3}}"
+     "{{site.exampleIP3}}",
+     "{{site.exampleIP4}}"
    ]
    ...
    qumulo_private_url_node1 = "https://{{site.exampleEndpointIP0}}"
