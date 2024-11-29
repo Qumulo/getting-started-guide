@@ -87,7 +87,7 @@ Every Qumulo Core upgrade has two phases, _preparation_ and _commit_.
 
 1. Click **Upgrade...**
 
-{% if page.platform != 'cnq-aws' %}
+{% if page.platform == 'on-prem' %}
 1. Depending on the [upgrade mode for your release](mode-reference.html), do one of the following:
 
    * **Instant Software Upgrade:** In the **Ready to upgrade?** dialog box, confirm the current and new versions of Qumulo Core and then click **Start Upgrade**.
