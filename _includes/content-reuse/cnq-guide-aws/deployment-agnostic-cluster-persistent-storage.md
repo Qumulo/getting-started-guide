@@ -108,7 +108,7 @@ This section explains how to deploy the S3 buckets that act as persistent storag
         "{{site.exampleBucketName3}}",
         "{{site.exampleBucketName4}}",
       ]
-      deployment_unique_name = "{{site.cnq.deploymentUniqueNameExample}}"
+      deployment_unique_name = "{{site.cnq.deploymentUniqueNameExampleAWS}}"
       ...
       ```
 

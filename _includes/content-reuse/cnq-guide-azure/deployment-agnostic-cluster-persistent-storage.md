@@ -64,7 +64,7 @@ This section explains how to deploy the Azure Storage Accounts that act as persi
         "{{site.exampleStorageAccountName3}}",
         "{{site.exampleStorageAccountName4}}",
       ]
-      deployment_unique_name = "{{site.cnq.deploymentUniqueNameExample}}"
+      deployment_unique_name = "{{site.cnq.deploymentUniqueNameExampleAzure}}"
       ...
       ```
 

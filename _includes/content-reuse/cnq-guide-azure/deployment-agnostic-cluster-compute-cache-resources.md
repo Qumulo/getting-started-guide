@@ -54,7 +54,7 @@ This section explains how to deploy compute and cache resources for a Qumulo clu
    Outputs:
 
    cluster_provisioned = "Success"
-   deployment_unique_name = "{{site.cnq.deploymentUniqueNameExample}}"
+   deployment_unique_name = "{{site.cnq.deploymentUniqueNameExampleAzure}}"
    ...
    persistent_storage_bucket_names = tolist([
      "{{site.exampleStorageAccountName1}}",

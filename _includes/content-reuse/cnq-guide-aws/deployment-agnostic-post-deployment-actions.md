@@ -251,7 +251,7 @@ You can scale an existing {{site.aws.cnqAWSshort}} cluster by changing the EC2 i
    Outputs:
 
    cluster_provisioned = "Success"
-   deployment_unique_name = "{{site.cnq.deploymentUniqueNameExample}}"
+   deployment_unique_name = "{{site.cnq.deploymentUniqueNameExampleAWS}}"
    ...
    persistent_storage_bucket_names = tolist([
      "{{site.exampleBucketName1}}",
