@@ -168,7 +168,7 @@ Increasing the soft capacity limit for an existing cluster is a two-step process
      "{{site.exampleBucketName3}}",
      "{{site.exampleBucketName3}}",
    ]
-   deployment_unique_name = "lucia-deployment-GKMVD58UF2F"
+   deployment_unique_name = "{{site.cnq.deploymentUniqueNameExampleAWS}}"
    ...
    soft_capacity_limit = "1000 TB"
    ```

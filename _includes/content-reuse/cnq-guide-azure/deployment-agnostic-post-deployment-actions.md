@@ -46,7 +46,7 @@ Increasing the soft capacity limit for an existing cluster is a two-step process
 
    * The names of the created Azure Storage Accounts
 
-   * Your deployment’s unique name
+   * Your deployment's unique name
 
    * The new soft capacity limit
 
@@ -61,7 +61,7 @@ Increasing the soft capacity limit for an existing cluster is a two-step process
      "{{site.exampleBucketName3}}",
      "{{site.exampleBucketName3}}",
    ]
-   deployment_unique_name = "lucia-deployment-GKMVD58UF2F"
+   deployment_unique_name = "{{site.cnq.deploymentUniqueNameExampleAzure}}"
    ...
    soft_capacity_limit = "1000 TB"
    ```
