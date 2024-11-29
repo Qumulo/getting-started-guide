@@ -43,29 +43,10 @@ This section explains how to deploy the Azure Storage Accounts that act as persi
 
    1. {{site.cnq.reviewExecPlan}}
 
-      Terraform creates resources according the execution plan and displays:
-
-      * The `Apply complete!` message with a count of added resources
-
-      * The names of the created Storage Accounts
-
-      * Your deployment's unique name
-
-      For example:
-
+      Terraform creates resources according the execution plan  and displays your deployment's unique name. For example:
+      
       ```
-      Apply complete! Resources: 15 added, 0 changed, 0 destroyed.
-
-      Outputs:
-
-      bucket_names = [
-        "{{site.exampleStorageAccountName1}}",
-        "{{site.exampleStorageAccountName2}}",
-        "{{site.exampleStorageAccountName3}}",
-        "{{site.exampleStorageAccountName4}}",
-      ]
       deployment_unique_name = "{{site.cnq.deploymentUniqueNameExampleAzure}}"
-      ...
       ```
 
       {% include tip.html content="You will need the `deployment_unique_name` value to deploy your cluster." %}

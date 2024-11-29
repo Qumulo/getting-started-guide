@@ -36,8 +36,6 @@ This section explains how to deploy compute and cache resources for a Qumulo clu
 
    Terraform creates resources according the execution plan and displays:
 
-   * The `Apply complete!` message with a count of added resources
-
    * Your deployment's unique name
 
    * The IP address for your Provisioner
@@ -51,8 +49,6 @@ This section explains how to deploy compute and cache resources for a Qumulo clu
    For example:
 
    ```
-   Apply complete! Resources: 62 added, 0 changed, 0 destroyed.
-
    Outputs:
 
    deployment_unique_name = "{{site.cnq.deploymentUniqueNameExampleAzure}}"

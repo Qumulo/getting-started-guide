@@ -40,29 +40,9 @@ Increasing the soft capacity limit for an existing cluster is a two-step process
 
    {{site.cnq.reviewExecPlan}}
 
-   {{site.cnq.tfCreatesNewStorageAccounts}} and displays:
-
-   * The `Apply complete!` message with a count of changed resources
-
-   * The names of the created Azure Storage Accounts
-
-   * Your deployment's unique name
-
-   * The new soft capacity limit
+   {{site.cnq.tfCreatesNewStorageAccounts}} and displays the new soft capacity limit. For example:
 
    ```
-   Apply complete! Resources: 0 added, 1 changed, 0 destroyed.
-
-   Outputs:
-
-   bucket_names = [
-     "{{site.exampleBucketName1}}",
-     "{{site.exampleBucketName2}}",
-     "{{site.exampleBucketName3}}",
-     "{{site.exampleBucketName3}}",
-   ]
-   deployment_unique_name = "{{site.cnq.deploymentUniqueNameExampleAzure}}"
-   ...
    soft_capacity_limit = "1000 TB"
    ```
 
