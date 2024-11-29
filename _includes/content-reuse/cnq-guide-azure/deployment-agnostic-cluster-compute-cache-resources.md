@@ -40,6 +40,8 @@ This section explains how to deploy compute and cache resources for a Qumulo clu
 
    * Your deployment's unique name
 
+   * The IP address for your Provisioner
+
    * The floating IP addresses for your Qumulo cluster
 
    * The primary (static) IP addresses for your Qumulo cluster
