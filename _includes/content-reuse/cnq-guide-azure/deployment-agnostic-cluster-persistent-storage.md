@@ -47,7 +47,7 @@ This section explains how to deploy the Azure Storage Accounts that act as persi
 
       * The names of the created persistent storage accounts
  
-      * Your deployment's unique name
+      * Your persistent storage resource group's unique name
 
       For example:
       
