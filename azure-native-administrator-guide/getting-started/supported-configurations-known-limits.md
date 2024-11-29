@@ -5,7 +5,7 @@ redirect_from:
   - /azure-administrator-guide/getting-started/supported-configurations-known-limits.html
 permalink: /azure-native-administrator-guide/getting-started/supported-configurations-known-limits.html
 sidebar: azure_native_administrator_guide_sidebar
-platform: azure
+platform: anq
 include_content: content-reuse/admin-guides/getting-started/supported-configurations-known-limits.md
 ---
 
