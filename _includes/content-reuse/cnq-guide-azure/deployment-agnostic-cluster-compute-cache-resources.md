@@ -10,7 +10,13 @@ This section explains how to deploy compute and cache resources for a Qumulo clu
 </ul>
 {{site.data.alerts.end}}
 
-1. Configure your Virtual Network to use the `Microsoft.KeyVault` and `Microsoft.Storage` service endpoints.
+1. To add service endpoints to your Virtual Network, take the following steps:
+
+   1. In the Azure Portal, click **Virtual Network**.
+
+   1. On the left panel, click **Settings > Service endpoints**.
+
+   1. On the **Service endpoints** page, add the `Microsoft.KeyVault` and `Microsoft.Storage` service endpoints to your Virtual Network.
 
    {% include important.html content="It isn't possible to deploy your cluster without these endpoints." %}
 
