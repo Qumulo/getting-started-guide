@@ -1,6 +1,6 @@
 ## How Continuous Replication Works
 
-{% if page.platform == 'on-prem' or page.platform == 'cnq-aws' %}
+{% if page.platform == 'on-prem' or page.platform == 'cnq-aws' or page.platform == 'cnq-azure' %}
 {% include important.html content="Qumulo Core supports replication between different versions only if either the source or target cluster is running Qumulo Core 2.12.0 (or higher). For more information, see [Replication Version Requirements and Upgrade Recommendations](../upgrading-qumulo-core/replication-version-requirements-upgrade-recommendations.html)." %}
 {% else %}
 {% include important.html content="Qumulo Core supports replication between different versions only if either the source or target cluster is running Qumulo Core 2.12.0 (or higher). For more information, see [Replication Version Requirements](../getting-started/replication-version-requirements.html)" %}
