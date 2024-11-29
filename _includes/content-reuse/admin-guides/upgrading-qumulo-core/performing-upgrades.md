@@ -2,13 +2,13 @@
 <ul>
   <li>{{page.varContactQumuloCare}}</li>
   <li>{{page.varRollingRebootRefresh}}</li>
-{% if page.platform == 'aws' %}<li>{{site.cnqLong}} doesn't differentiate between upgrade modes and all upgrades are <em>instant software upgrades</em> that have a downtime of less than 30 seconds and don't disrupt the operation of the cluster.</li>{% endif %}
+{% if page.platform == 'cnq-aws' %}<li>{{site.cnqLong}} doesn't differentiate between upgrade modes and all upgrades are <em>instant software upgrades</em> that have a downtime of less than 30 seconds and don't disrupt the operation of the cluster.</li>{% endif %}
 </ul>
 {{site.data.alerts.end}}
 
 {{site.nexusDownloads}} {{site.loginRequired}}.
 
-{% if page.platform != 'aws' %}
+{% if page.platform == 'cnq-aws' %}
 ## Understanding the Differences Between Upgrade Modes
 For information about which upgrade modes different Qumulo Core releases use, see [Qumulo Core Upgrade Mode Reference](mode-reference.html).
 
@@ -68,7 +68,7 @@ Every Qumulo Core upgrade has two phases, _preparation_ and _commit_.
 ## Upgrading Your Qumulo Cluster
 {{site.data.alerts.important}}
 <ul>
-  <li>Before beginning the upgrade process, make sure that you have the {% if page.platform != 'aws' %}correct <a href="https://nexus.qumulo.com/downloads?platform=cloud">cloud upgrade image</a>{{site.loginRequired}} or{% endif %} <a href="https://nexus.qumulo.com/downloads?platform=onprem">on-premises upgrade image</a>{{site.loginRequired}}. {% if page.platform == 'aws' %}{{site.cnqShort}} uses the <a href="https://docs.qumulo.com/administrator-guide/getting-started/installing-product-package.html">Qumulo Core Product Package</a> (which doesn't have separate versions for on-premises and cloud platforms) as a deployment artifact. For this reason, you must use the on-premises upgrade image to upgrade a {{site.cnqShort}} cluster.{% endif %}</li>
+  <li>Before beginning the upgrade process, make sure that you have the {% if page.platform == 'cnq-aws' %}correct <a href="https://nexus.qumulo.com/downloads?platform=cloud">cloud upgrade image</a>{{site.loginRequired}} or{% endif %} <a href="https://nexus.qumulo.com/downloads?platform=onprem">on-premises upgrade image</a>{{site.loginRequired}}. {% if page.platform == 'cnq-aws' %}{{site.cnqShort}} uses the <a href="https://docs.qumulo.com/administrator-guide/getting-started/installing-product-package.html">Qumulo Core Product Package</a> (which doesn't have separate versions for on-premises and cloud platforms) as a deployment artifact. For this reason, you must use the on-premises upgrade image to upgrade a {{site.cnqShort}} cluster.{% endif %}</li>
   <li>To allow certain background processes to run, multiple sequential Qumulo Core upgrades might require a waiting period between specific releases. Before installing multiple Qumulo Core releases within an extended maintenance window, {{site.contactQumuloCare}}.</li>
   <li>When the node to which you are connected reboots, the Qumulo Core Web UI might redirect you to the <strong>Cluster is booting...</strong> page. To view the reboot status, you can connect to a different node or wait until the current node goes online and then click <strong>Support > Software Upgrade</strong>.</li>
   <li>During rolling reboots, the system reboots one or more nodes (depending on the configured protection level) in the cluster in succession. If your cluster is under heavy load due to write or delete operations, this process can take a long time.</li>
@@ -87,7 +87,7 @@ Every Qumulo Core upgrade has two phases, _preparation_ and _commit_.
 
 1. Click **Upgrade...**
 
-{% if page.platform != 'aws' %}
+{% if page.platform == 'cnq-aws' %}
 1. Depending on the [upgrade mode for your release](mode-reference.html), do one of the following:
 
    * **Instant Software Upgrade:** In the **Ready to upgrade?** dialog box, confirm the current and new versions of Qumulo Core and then click **Start Upgrade**.

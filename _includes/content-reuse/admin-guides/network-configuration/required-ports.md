@@ -1,4 +1,4 @@
-{% if page.platform == 'on-prem' or page.platform == 'aws' %}
+{% if page.platform == 'on-prem' or page.platform == 'cnq-aws' %}
 {{site.data.alerts.note}}
 <ul>
   <li>Communication <em>between</em> nodes in a cluster must be possible on any port.</li>
@@ -25,7 +25,7 @@
       <td>TCP</td>
       <td>FTP</td>
     </tr>
-{% if page.platform == 'on-prem' or page.platform == 'aws' %}
+{% if page.platform == 'on-prem' or page.platform == 'cnq-aws' %}
     <tr>
       <td>22</td>
       <td>TCP</td>
