@@ -6,7 +6,7 @@ redirect_from:
 permalink: /cloud-native-aws-administrator-guide/upgrading-qumulo-core/replication-version-requirements-upgrade-recommendations.html
 sidebar: cloud_native_aws_administrator_guide_sidebar
 varExample: The following example shows replication options for a cluster running the 
-platform: aws
+platform: cnq-aws
 include_content: content-reuse/admin-guides/upgrading-qumulo-core/replication-version-requirements-upgrade-recommendations.md
 ---
 
