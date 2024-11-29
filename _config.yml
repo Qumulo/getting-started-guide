@@ -436,6 +436,7 @@ cnq:
   copyDebAndConfig: Copy `qumulo-core.deb` and `host_configuration.tar.gz` into the directory named after the Qumulo Core version (in this example, it is `7.2.3.2`).
   deploymentUniqueNameExampleAWS: myname-deployment-ABCDE01EG2H
   deploymentUniqueNameExampleAzure: mynameCompute-ABCDEFG
+  persistentStorageResourceGroupAzure: mynamePStore-abcde
   paramStore: (In AWS Systems Manager, click <strong>Application Management &gt; Parameter Store &gt; /qumulo/&lt;my-stack-name&gt;/last-run-status</strong>. On the <strong>History</strong> tab, click <span class="emoji">⚙️</span>, and then in the <strong>Preferences</strong> dialog box, click <strong>Parameter history properties &gt; Value &gt; Confirm</strong>.)
   azureAppConfig: in Azure App Configuration (on the left navigation panel, click <strong>Operations &gt; Configuration Explorer</strong>)
   tfDispExecPlan: Terraform displays the execution plan.

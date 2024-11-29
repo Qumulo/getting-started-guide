@@ -43,10 +43,24 @@ This section explains how to deploy the Azure Storage Accounts that act as persi
 
    1. {{site.cnq.reviewExecPlan}}
 
-      Terraform creates resources according the execution plan  and displays your deployment's unique name. For example:
+      Terraform creates resources according the execution plan and displays:
+
+      * The names of the created persistent storage accounts
+ 
+      * Your deployment's unique name
+
+      For example:
       
       ```
-      deployment_unique_name = "{{site.cnq.deploymentUniqueNameExampleAzure}}"
+      Outputs:
+
+      persistent_storage_accounts = [
+        "{{site.exampleStorageAccountName1}}",
+        "{{site.exampleStorageAccountName2}}",
+        "{{site.exampleStorageAccountName3}}",
+        "{{site.exampleStorageAccountName4}}",
+      ]
+      persistent_storage_resource_group = "{{site.cnq.persistentStorageResourceGroupAzure}}"
       ```
 
-      {% include tip.html content="You will need the `deployment_unique_name` value to deploy your cluster." %}
+      {% include tip.html content="You will need the `persistent_storage_resource_group` value to deploy your cluster." %}
