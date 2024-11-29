@@ -1,4 +1,4 @@
-{% if page.platform != 'cnq-aws' %}
+{% if page.platform == 'on-prem' %}
 For information about upgrade types for each release, see <a href='mode-reference.html'>Qumulo Core Upgrade Mode Reference</a>.
 {% endif %}
 
@@ -61,7 +61,7 @@ For information about upgrade types for each release, see <a href='mode-referenc
 * Resolved an issue with the **APIs & Tools** page in the Qumulo Core Web UI not showing certain REST endpoints correctly
 {% endif %}
 
-{% if page.platform != 'cnq-aws' or page.platform != 'cnq-azure' %}
+{% if page.platform == 'on-prem' %}
 ## Qumulo Core 7.1.4
 {{page.varDownloadsRelnotes}}
 * {{page.varNoPublicChanges}}
