@@ -2,13 +2,13 @@
 <ul>
   <li>{{page.varContactQumuloCare}}</li>
   <li>{{page.varRollingRebootRefresh}}</li>
-{% if page.platform != 'cnq-aws' %}<li>{{site.cnqLong}} doesn't differentiate between upgrade modes and all upgrades are <em>instant software upgrades</em> that have a downtime of less than 30 seconds and don't disrupt the operation of the cluster.</li>{% endif %}
+{% if page.platform == 'cnq-aws' or page.platform == 'cnq-azure' %}<li>{{site.cnqLong}} doesn't differentiate between upgrade modes and all upgrades are <em>instant software upgrades</em> that have a downtime of less than 30 seconds and don't disrupt the operation of the cluster.</li>{% endif %}
 </ul>
 {{site.data.alerts.end}}
 
 {{site.nexusDownloads}} {{site.loginRequired}}.
 
-{% if page.platform != 'cnq-aws' %}
+{% if page.platform == 'on-prem' %}
 ## Understanding the Differences Between Upgrade Modes
 For information about which upgrade modes different Qumulo Core releases use, see [Qumulo Core Upgrade Mode Reference](mode-reference.html).
 
