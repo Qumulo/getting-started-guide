@@ -2,8 +2,6 @@
 ## Step 1: Deploying Cluster Persistent Storage
 This section explains how to deploy the Azure Storage Accounts that act as persistent storage for your Qumulo cluster.
 
-{% include important.html content="Your Azure Storage Account Container must have hierarchical spaces enabled." %}
-
 1. Log in to Nexus and click **Downloads > {{site.cnq.nexusDropDown}}**.
 
 1. On the **Azure** tab and, in the **Download the required files** section, select the Qumulo Core version that you want to deploy and then download the corresponding Terraform configuration, Debian package, and host configuration file.
