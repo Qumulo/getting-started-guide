@@ -6,7 +6,7 @@ Because Qumulo has no control over the host operating system (OS), the following
 <details>
 <summary>Click to expand</summary>
 <ul>
-  <li><strong>Web UI:</strong> The Qumulo Core Product Package has no kiosk mode. The Web UI runs directly on your node.</li>  
+  <li><strong>Web UI:</strong> The Qumulo Core Product Package has no kiosk mode. The Qumulo Core Web UI runs directly on your node.</li>  
   <li><strong>Well-Known <code>admin</code> User:</strong> When you use the Qumulo Core Product Package, changing the <code>admin</code> user's password has no effect on the host OS. You must create your own users on the host OS.</li>
   <li><strong>Automatic SSH Configuration:</strong> Any SSH configuration set by using <a target="_blank" href="https://docs.qumulo.com/qq-cli-command-guide/multitenancy/"><code>multitenancy</code></a> REST APIs have no effect on the host OS. You must configure SSH on the host OS.</li>
   <li>

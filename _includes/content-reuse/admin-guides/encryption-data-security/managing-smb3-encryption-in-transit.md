@@ -68,7 +68,7 @@ The following table explains the possible levels of encryption of clusters and s
 
 
 ## Configuring Cluster-Level and Share-Level Encryption
-This section explains how to configure cluster-level encryption in Qumulo Core by using the Web UI and `qq` CLI and how to configure share-level encryption by using the `qq` CLI.
+This section explains how to configure cluster-level encryption in Qumulo Core by using the Qumulo Core Web UI and `qq` CLI and how to configure share-level encryption by using the `qq` CLI.
 
 ### To Configure Cluster-Level Encryption by Using the Qumulo Core Web UI
 
@@ -78,7 +78,7 @@ This section explains how to configure cluster-level encryption in Qumulo Core b
 
 1. On the **SMB Settings** page, select an encryption level.
 
-   The Web UI shows any unencrypted shares on your cluster.
+   The Qumulo Core Web UI shows any unencrypted shares on your cluster.
 
 1. Click **Configure SMB**.
 

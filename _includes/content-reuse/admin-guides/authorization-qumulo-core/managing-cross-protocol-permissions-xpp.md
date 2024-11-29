@@ -31,7 +31,7 @@ This section gives examples of common workflow scenarios and explains how Qumulo
 
 * **Mixed-Protocol Workflows (Mostly NFS)** Qumulo core operates as expected, with one exception: To preserve compatibility, Qumulo Core permits SMB clients to add access control entries (ACEs) to files and directories
  
-{% include note.html content="XPP reveals permissions that Native Permissions Mode hides. This can trigger security checks from `ssh` and `sshd` commands. If you use `ssh` to access NFS home directories, see [Using SSH with Cross-Protocol Permissions](https://care.qumulo.com/hc/en-us/articles/360022920274) for more information." %}
+{% include note.html content="XPP reveals permissions that Native Permissions Mode hides. This can trigger security checks from SSH and SSHD. If you use SSH to access NFS home directories, see [Using SSH with Cross-Protocol Permissions](https://care.qumulo.com/hc/en-us/articles/360022920274) for more information." %}
 
 
 ## To Manage Cross-Protocol Permissions (XPP)

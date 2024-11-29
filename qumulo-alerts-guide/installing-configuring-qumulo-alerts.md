@@ -57,7 +57,7 @@ Git creates a directory called `QumuloAlerts` and places the necessary files in 
 ### Step 2: Create a Local User for Qumulo Alerts
 To be able to generate access tokens, you must create a local user for Qumulo Alerts.
 
-1. Use SSH to log in to any node in your cluster.
+1. To connect to a node in your cluster as the `root` user, use SSH and then run the `sudo -s` command.
 
 1. To create a local user, run the {% include qq.html command="auth_add_user" %} command and specify a name and password.
 

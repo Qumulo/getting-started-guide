@@ -417,8 +417,8 @@ cnq:
   cloneOpenRepo: to your system and navigate to the directory into which you cloned the repository
   logIntoCFN: Log in to the <a href="https://console.aws.amazon.com/cloudformation/home">AWS CloudFormation console</a>.
   logIntoS3: Log in to the <a href="https://console.aws.amazon.com/s3/home">Amazon S3 console</a>.
-  logIntoWebUI: To check that the cluster is healthy, log in to the Web UI.
-  logIntoWebUIcapacity: To check the cluster's total usable storage, log in to the Web UI.
+  logIntoWebUI: To check that the cluster is healthy, log in to the Qumulo Core Web UI.
+  logIntoWebUIcapacity: To check the cluster's total usable storage, log in to the Qumulo Core Web UI.
   changeQnodeCount: Edit <code>config-standard.tfvars</code> or <code>config-advanced.tfvars</code> and change the value of <code>q_node_count</code>
   changeQnodeCountAzure: Edit <code>terraform.tfvars</code> and change the value of <code>q_node_count</code>
   runTFapply: Run the <code>terraform apply</code> command.

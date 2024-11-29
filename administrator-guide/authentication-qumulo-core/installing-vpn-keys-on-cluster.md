@@ -38,7 +38,7 @@ Before you begin, make sure that you have done the following.
 
 1. Install the `qq` CLI on the same computer. For more information, see [Getting Started with the qq CLI](../qq-cli/getting-started.html).
 
-1. To log in to your cluster, use the `qq` CLI and specify your cluster's IP address. For example:
+1. To log in to your cluster, use the `qq` CLI and specify the IP address of a node in the cluster. For example:
 
    ```bash
    qq --host {{site.exampleIP0}} login
@@ -62,17 +62,17 @@ Before you begin, make sure that you have done the following.
 
 
 ## To Install VPN Keys from a Node
-{% include note.html content="On macOS and Linux, you can use the `scp` and `ssh` tools. On Windows Server 2022, Windows Server 2019, and Windows 10 (build 1809 and higher), we recommend [installing OpenSSH](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse)." %}
+{% include note.html content="On macOS and Linux, you can use SCP and SSH. On Windows Server 2022, Windows Server 2019, and Windows 10 (build 1809 and higher), we recommend [installing OpenSSH](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse)." %}
 
 {{page.varCopyFile}}
 
-1. To copy the VPN key files to one of your nodes, run the `scp` command. For example:
+1. To copy the VPN key files to one of your nodes, use SCP. For example:
 
    ```bash
    scp /my-path/* admin@{{site.exampleIP0}}:~/
    ```
 
-1. To connect to the node to which you copied the VPN key files, run the `ssh` command. For example:
+1. To log in to the node to which you copied the VPN key files, use SSH. For example:
 
    ```bash
    ssh admin@{{site.exampleIP0}}

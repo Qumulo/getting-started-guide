@@ -1,14 +1,14 @@
 {% capture differentTerms %}It is possible to confuse the terms _access token_ and _session token_. Unlike access tokens, session tokens are short-lived and require a password to refresh, for example, to authenticate by using the {% include qq.html command="login" %} command. Access tokens are the focus of this section.{% endcapture %}
 {% include tip.html content=differentTerms %}
 
-In Qumulo Core 5.3.0 (and higher), you can use _access tokens_ to let a user authenticate to the Qumulo Core REST API without having to complete repetitive login procedures.
+In Qumulo Core 5.3.0 (and higher), you can use _access tokens_ to let a user authenticate to the Qumulo REST API without having to complete repetitive login procedures.
 
 Access tokens are long-lived. They provide an alternative to session-based authentication that the {% include qq.html command="login" %} command and the Qumulo Core Web UI use. They also support support authentication for services, long-lived automation processes, and programmatic REST API access that doesn't require user input.
 
 {{site.data.alerts.caution}}
 <ul>
   <li>{{page.varAccessTokenWarning}} {{page.varAccessTokenBestPractices}}</li>
-  <li>Because a token allows indefinite authentication to the associated user's account, we strongly recommend against creating tokens for individual Qumulo Core REST API users. For more information, see <a href="#best-practices-using-access-tokens">Best Practices for Using Access Tokens</a>.</li>
+  <li>Because a token allows indefinite authentication to the associated user's account, we strongly recommend against creating tokens for individual Qumulo REST API users. For more information, see <a href="#best-practices-using-access-tokens">Best Practices for Using Access Tokens</a>.</li>
 </ul>
 {{site.data.alerts.end}}
 
@@ -104,10 +104,10 @@ $ qq auth_create_access_token jane --expiration-time '01/01/2023 00:00'
 {{site.data.alerts.end}}
 
 ### Using Bearer Tokens for Authentication
-A Qumulo Core access token [returns a _bearer token_](#json-bearer-token), an item in the `Authorization` HTTP header which acts as the authentication mechanism for the Qumulo Core REST API.
+A Qumulo Core access token [returns a _bearer token_](#json-bearer-token), an item in the `Authorization` HTTP header which acts as the authentication mechanism for the Qumulo REST API.
 
 #### REST API
-When you use the Qumulo Core REST API, add the bearer token to the `Authorization` HTTP header. For example:
+When you use the Qumulo REST API, add the bearer token to the `Authorization` HTTP header. For example:
 
 ```
 Authorization: Bearer access-v1:abAcde...==
@@ -300,7 +300,7 @@ This section lists the best practices for limiting the exposure to lost credenti
 {{page.varAccessTokenWarning}} {{page.varAccessTokenAdminWarning}}
 
 ### Generating Tokens for Service Accounts
-When you connect external services to the Qumulo Core REST API, we recommend creating a service account with limited privileges for each individual service and generating an access token for each service account.
+When you connect external services to the Qumulo REST API, we recommend creating a service account with limited privileges for each individual service and generating an access token for each service account.
 
 #### To Create a New Service Account
 
@@ -343,7 +343,7 @@ We strongly recommend rotating access tokens for a service account at a regular 
 
 1. In the credential store of your service, replace the old access token with the new one.
 
-1. Test that your service account can access the Qumulo Core REST API.
+1. Test that your service account can access the Qumulo REST API.
 
 1. Confirm that there is nothing else relying on the old access token by disabling it first. If this causes any disruptions then you can re-enable it while you resolve the issue.
 

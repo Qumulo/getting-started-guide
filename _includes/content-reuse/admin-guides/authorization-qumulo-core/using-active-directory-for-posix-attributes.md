@@ -12,7 +12,7 @@ Whenever this user identity is required (for example, to check permissions), Qum
 {% include note.html content="The full credential expansion method lets your Qumulo Core cluster support more than 16 group memberships for your NFS users, as long as Active Directory manages the group memberships." %}
 
 ## Enabling Active Directory for POSIX Attributes in Qumulo Core
-This section explains how to enable Active Directory for POSIX attributes in Qumulo Core by using the Web UI and REST API.
+This section explains how to enable Active Directory for POSIX attributes in Qumulo Core by using the Qumulo Core Web UI and Qumulo REST API.
 
 ### To Enable Active Directory for POSIX Attributes by Using the Qumulo Core Web UI
 
@@ -38,7 +38,7 @@ When your cluster joins Active Directory, all SMB sessions and NFS operations re
 
 {{page.varMapExample}}
 
-### To Manage Active Directory for POSIX Attributes by Using the Qumulo Core REST API
+### To Manage Active Directory for POSIX Attributes by Using the Qumulo REST API
 To toggle Qumulo Core's ability to use Active Directory for POSIX attributes, use the fields `use_ad_posix_attributes` and `base_dn` for the following REST API endpoints.
 
 * **Get Configuration and Status:** `/v1/ad/status`

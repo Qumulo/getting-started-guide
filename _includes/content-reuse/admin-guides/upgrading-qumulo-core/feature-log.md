@@ -6,7 +6,7 @@ For information about upgrade types for each release, see <a href='mode-referenc
 
 ## Qumulo Core 7.3.0
 {{page.varDownloadsRelnotes}}
-* Added the _self-service_ permission model to Qumulo Core REST API access tokens and made changes to corresponding `qq` CLI commands
+* Added the _self-service_ permission model to Qumulo REST API access tokens and made changes to corresponding `qq` CLI commands
 * Made it possible for a user to perform operations on their own access keys without having RBAC privileges
 * Resolved issues concerning cached data on a spoke portal host cluster, directory metadata block updates made by S3 API actions, and the `GetObject` S3 API action with the Veeam client
 
@@ -57,7 +57,7 @@ For information about upgrade types for each release, see <a href='mode-referenc
 {{site.data.alerts.end}}
 
 * {{page.varNoPublicChanges}}
-* Resolved an issue with the **APIs & Tools** page in the Web UI not showing certain REST endpoints correctly
+* Resolved an issue with the **APIs & Tools** page in the Qumulo Core Web UI not showing certain REST endpoints correctly
 
 {% if page.platform == 'cnq-aws' %}
 ## Qumulo Core 7.1.4
@@ -113,7 +113,7 @@ Extended S3 object versioning support to additional API actions
 * Made significant improvements in SMB random small-write performance
 * Added partial support for new S3 API actions
 * Configured Qumulo Core to take daily snapshots at regular intervals throughout the day
-* Made changes to the Qumulo Core REST API and the `qq` CLI to accommodate improvements in snapshot and at-rest encryption functionality
+* Made changes to the Qumulo REST API and the `qq` CLI to accommodate improvements in snapshot and at-rest encryption functionality
 * Revised permissions for SMB `copychunk` requests
 * Resolved a minor issue with AD authentication, an issue with `.snapshot` directories in Windows Command Prompt, and an issue with SMB copy operations and long share names and volume labels
 
@@ -128,7 +128,7 @@ Extended S3 object versioning support to additional API actions
 ## Qumulo Core 6.3.1.1
 {{page.varDownloadsRelnotes}}
 {% include important.html content="This release resolves an issue with memory utilization during secure credential handling." %}
-* Added support for storing and retrieving custom metadata and tags by using the S3 API and Qumulo Core REST API and made supporting changes to the API and `qq` CLI
+* Added support for storing and retrieving custom metadata and tags by using the S3 API and Qumulo REST API and made supporting changes to the API and `qq` CLI
 * Added the optional `data_revision` field for all REST resources that return file or stream attributes
 * Resolved an issue with a third-party GSS authentication library
 
@@ -215,8 +215,8 @@ Extended S3 object versioning support to additional API actions
 </ul>
 {{site.data.alerts.end}}
 
-* Added Adaptive Data Protection to the Qumulo Core REST API and `qq` CLI and made performance improvements
-* Added Transparent Platform Refresh to the Qumulo Core REST API and `qq` CLI
+* Added Adaptive Data Protection to the Qumulo REST API and `qq` CLI and made performance improvements
+* Added Transparent Platform Refresh to the Qumulo REST API and `qq` CLI
 * Added S3 configuration settings to the Qumulo Core Web UI
 * Improved hard link creation
 
@@ -225,7 +225,7 @@ Extended S3 object versioning support to additional API actions
 * Added support for new S3 API actions, snapshot locking for replication target relationships, and lock configuration to the Qumulo Core Web UI
 * Enabled the Search Trusted Domains Active Directory configuration option by default
 * Upgraded the host and container images
-* Revised the Qumulo Core REST API for snapshots
+* Revised the Qumulo REST API for snapshots
 * Added `qq` CLI commands for lock key functionality
 * Added a `qq` CLI command for viewing blocked upgrade status
 * Updated the OpenMetrics API Specification
@@ -283,7 +283,7 @@ Extended S3 object versioning support to additional API actions
 * Introduced optional HTTP mode for the S3 API
 * Made SSL certificate changes for the S3 API without a cluster restart
 * Added audit syslog in JSON format
-* Made corresponding changes and additions to the Qumulo Core REST API and `qq` CLI
+* Made corresponding changes and additions to the Qumulo REST API and `qq` CLI
 * Fixed issues with the Qumulo Core Web UI, directory access by non-root users on Linux, and changed caching for some OpenMetrics API metrics
 
 ## Qumulo Core 5.3.4
@@ -312,7 +312,7 @@ Extended S3 object versioning support to additional API actions
 * Added SMB2 `CHANGE_NOTIFY` parity with Windows
 * New Qumulo OpenMetrics API metrics
 * Added expiration time for access tokens
-* Improved the Qumulo Core REST API
+* Improved the Qumulo REST API
 
 ## Qumulo Core 5.3.1
 {{page.varDownloadsRelnotes}}
@@ -356,7 +356,7 @@ Extended S3 object versioning support to additional API actions
 ## Qumulo Core 5.2.2
 {{page.varDownloadsRelnotes}}
 * Made improvements to the Qumulo Core Web UI on the NFS Exports and Role Management pages
-* Adjusted the Qumulo Core REST API endpoint `/v1/smb/sessions` and the corresponding `qq` CLI command
+* Adjusted the Qumulo REST API endpoint `/v1/smb/sessions` and the corresponding `qq` CLI command
 * Fixed an issue that occurs during NFSv4.1 failover
 * Fixed an issue that prevents a cluster from forming due to an incorrect HDD-SSD ratio.
 
@@ -383,7 +383,7 @@ Extended S3 object versioning support to additional API actions
 * Improved NLM and NFSv4.1 locking
 * Updated Mellanox NIC firmware
 * Made improvements to the Qumulo Core Web UI on the **APIs & Tools**, **Add Nodes**, and **Active Directory** pages
-* Added NFS fields to the Qumulo Core REST API and `qq` CLI
+* Added NFS fields to the Qumulo REST API and `qq` CLI
 * Deprecated the `/v2/upgrade/status` REST API
 * Updated security permissions for home directories
 * Prohibited the use of the switch-user command

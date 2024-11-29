@@ -67,7 +67,7 @@ Windows 7, Windows Server 2008 R2 (or higher)
 
 1. Click **Finish**.
 
-1. To confirm that your SMB share is visible to your Qumulo cluster, log in to the Web UI and click **Sharing > SMB Shares**.
+1. To confirm that your SMB share is visible to your Qumulo cluster, log in to the Qumulo Core Web UI and click **Sharing > SMB Shares**.
 
 
 ## To Change the Configuration for an Existing Share on Your Windows Machine

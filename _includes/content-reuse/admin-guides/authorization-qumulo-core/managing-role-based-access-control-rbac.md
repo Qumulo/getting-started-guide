@@ -24,7 +24,7 @@ This role is suitable for system administrators. Users with this role have full 
 * Changing of ownership and permissions for any files and directories in any current and future directories
 
 ### Data-Administrators
-This role is suitable for Qumulo Core REST API and `qq` CLI users who don't have access to the Qumulo Core Web UI but have the same file privileges as those of the Administrators role, including:
+This role is suitable for Qumulo REST API and `qq` CLI users who don't have access to the Qumulo Core Web UI but have the same file privileges as those of the Administrators role, including:
 
 * Read and write permissions for all NFS, SMB, quota, and snapshot APIs
 * Read-only permissions for local API users

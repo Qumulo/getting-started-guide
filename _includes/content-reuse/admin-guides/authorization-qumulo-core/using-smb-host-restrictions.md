@@ -37,4 +37,4 @@ For information about viewing, modifying, and removing host restrictions and hid
 
 * {% include qq.html command="smb_modify_settings" %}
 
-  {% include tip.html content="To hide an SMB share in the Web UI, append `$` to its name. To access the share, you must use the fully qualified domain name (FQDN). For example: `\\storage.example.com\MyShare$`." %}
+  {% include tip.html content="To hide an SMB share in the Qumulo Core Web UI, append `$` to its name. To access the share, you must use the fully qualified domain name (FQDN). For example: `\\storage.example.com\MyShare$`." %}

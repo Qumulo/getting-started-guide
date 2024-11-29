@@ -11,7 +11,7 @@ When you no longer [connect to Cloud-Based Monitoring by using a custom proxy](c
 
 ## To Restore the Default Values for Cloud-Based and Nexus Monitoring by Using the qq CLI
 
-1. Connect to your cluster by using SSH. For example:
+1. Connect to a node in your cluster by using SSH. For example:
 
    ```bash
    ssh admin@{{site.exampleIP0}}

@@ -21,7 +21,7 @@ The following key terms help define the components of Global Namespace functiona
 
 * <a id="portal-root-directory"></a>**Spoke Portal Root Directory, Hub Portal Root Directory:** A directory on a cluster that uses a portion of its file system for the _hub portal_ or _spoke portal_.
 
-  According to the file system permissions that a hub portal might impose, you can access a portal root directory by using NFSv3, SMB, or the Qumulo Core REST API.
+  According to the file system permissions that a hub portal might impose, you can access a portal root directory by using NFSv3, SMB, or the Qumulo REST API.
 
   {% capture spokePortalsReadOnly %}{{site.gns.spokePortalsReadOnly}}{% endcapture %}
   {% include note.html content=spokePortalsReadOnly %}

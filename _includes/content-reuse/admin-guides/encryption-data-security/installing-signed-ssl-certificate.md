@@ -29,7 +29,7 @@
      -out private.key
    ```
 
-1. Run the {% include qq.html command="login" %} command to log in to your Qumulo cluster as an administrator. For example:
+1. Run the {% include qq.html command="login" %} command to log in to a node in your Qumulo cluster as an administrator. For example:
 
    ```bash
    qq login \

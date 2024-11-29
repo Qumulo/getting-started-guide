@@ -89,7 +89,7 @@ Before you can use Cloud-Based Monitoring and Remote Support:
         <td><code>ep1.qumulo.com</code></td>
         <td>
           <p>Remote Support</p>
-          {% include important.html content="If your organization has an intrusion detection device or a firewall that performs SSL or HTTPS deep-packet inspection, you must add an exception to the IP address that resolves to `ep1.qumulo.com`. To identify this IP address, log in to your Qumulo cluster and run the `nslookup ep1.qumulo.com` command." %}
+          {% include important.html content="If your organization has an intrusion detection device or a firewall that performs SSL or HTTPS deep-packet inspection, you must add an exception to the IP address that resolves to `ep1.qumulo.com`. To identify this IP address, log in to a node in your Qumulo cluster and run the `nslookup ep1.qumulo.com` command." %}
         </td>
       </tr>
       <tr>
