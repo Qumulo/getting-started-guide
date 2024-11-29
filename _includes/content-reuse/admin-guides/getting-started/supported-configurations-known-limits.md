@@ -101,7 +101,7 @@ Qumulo Core requires switches that meet the following criteria:
       <td>Cluster Size</td>
 {% if page.platform != 'anq' %}
       <td>265 nodes</td>
-{% elsif %}
+{% else %}
       <td>100 nodes</td>
 {% endif %}
     </tr>
