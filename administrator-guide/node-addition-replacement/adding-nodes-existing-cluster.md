@@ -24,7 +24,12 @@ If Qumulo Core doesn't discover any unconfigured nodes, it displays the message 
 
 
 ## Step 1: Resolve Drive Compatibility Issues
-{% include important.html content="If the version of Qumulo Core on your existing nodes predates the Qumulo-certified drives that you received with your new nodes, you can't install a lower version of Qumulo Core on your new node and Qumulo Core displays the message **Installation failed**. Use the cluster logs to identify any incompatible drives." %}
+{{site.data.alerts.important}}
+<ul>
+  <li>If the version of Qumulo Core on your existing nodes predates the Qumulo-certified drives that you received with your new nodes, you can't install a lower version of Qumulo Core on your new node and Qumulo Core displays the message <strong>Installation failed</strong>. Use the cluster logs to identify any incompatible drives.</li>
+  <li></li>
+</ul>
+{{site.data.alerts.end}}
 
 To receive support for new, Qumulo-certified drives, do one of the following:
 

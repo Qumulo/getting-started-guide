@@ -426,7 +426,7 @@ cnq:
   runTFdestroy: Run the <code>terraform destroy</code> command.
   runTFdestroyWithFile: Run the <code>terraform destroy -var-file config-standard.tfvars</code> command.
   tfCreatesNewBuckets: Terraform creates new S3 buckets as necessary
-  tfCreatesNewStorageAccounts: Terraform creates new Azure Storage Accounts as necessary
+  tfCreatesNewStorageAccounts: Terraform creates new Azure Storage Accounts as necessarydocker run -ti --user $(id -u):$(id -g) --entrypoint /bin/bash -v $(pwd):/src docs-builder -c "bundle update --bundler; bundle install"
   cfnUpdateStackComputeCache: On the <strong>Stacks</strong> page, select <a href="#compute-cache-stack-name">your compute and cache deployment stack</a> and then, in the upper right, click <strong>Update</strong>.
   cfnUpdateStackPersistentStorage: On the <strong>Stacks</strong> page, select <a href="#persistent-storage-stack-name">your persistent storage stack</a> and then, in the upper right, click <strong>Update</strong>.
   cfnUseExistingTemplate: On the <strong>Update stack</strong> page, click <strong>Use existing template</strong> and then click <strong>Next</strong>.
@@ -493,6 +493,11 @@ guides:
   alert: Qumulo Alerts Administrator Guide
   alertShort: Qumulo Alerts Admin Guide
   integ: Qumulo Integration Guide
+
+hardware:
+  gold: Gold-Tier hardware
+  platinum: Qumulo-Certified Platinum-Tier hardware
+    onlyThis: This section applies only the Qumulo-Certified Platinum-Tier hardware.
 
 xrefUSBinstaller: <a href="https://docs.qumulo.com/hardware-guide/getting-started/creating-usb-drive-installer.html" class="no_icon">Qumulo Core USB Drive Installer</a>
 xref:
