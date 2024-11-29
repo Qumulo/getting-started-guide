@@ -98,12 +98,12 @@ Qumulo Core requires switches that meet the following criteria:
   </thead>
   <tbody>
     <tr>
-      <td>On-Premises Cluster Size</td>
+      <td>Cluster Size</td>
+{% if page.platform == 'on-prem' or page.platform == 'cnq-azure' or page.platform =='cnq-aws' %}
       <td>265 nodes</td>
-    </tr>
-    <tr>
-      <td>Cloud Cluster Size</td>
+{% elsif page.platform == 'anq' %}
       <td>100 nodes</td>
+{% endif %}
     </tr>
     <tr>
       <td>NFS Exports</td>
