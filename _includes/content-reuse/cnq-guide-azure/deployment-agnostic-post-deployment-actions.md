@@ -40,9 +40,27 @@ Increasing the soft capacity limit for an existing cluster is a two-step process
 
    {{site.cnq.reviewExecPlan}}
 
-   {{site.cnq.tfCreatesNewStorageAccounts}} and displays the new soft capacity limit. For example:
+   {{site.cnq.tfCreatesNewStorageAccounts}} and displays:
+
+   * The names of the created persistent storage accounts
+
+   * Your persistent storage resource group's unique name
+
+   * The new soft capacity limit
+
+   For example:
 
    ```
+   Outputs:
+
+   persistent_storage_accounts = [
+     "{{site.exampleStorageAccountName1}}",
+     "{{site.exampleStorageAccountName2}}",
+     "{{site.exampleStorageAccountName3}}",
+     "{{site.exampleStorageAccountName4}}",
+   ]
+   persistent_storage_resource_group = "{{site.cnq.persistentStorageResourceGroupAzure}}"
+   ...
    soft_capacity_limit = "1000 TB"
    ```
 
