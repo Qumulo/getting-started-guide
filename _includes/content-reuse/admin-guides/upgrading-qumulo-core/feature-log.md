@@ -20,8 +20,8 @@ For information about upgrade types for each release, see <a href='mode-referenc
 </ul>
 {{site.data.alerts.end}}
 
-* Added support for read-only Global Namespace functionality between two or more Qumulo clusters.
 * Made CNQ on Azure available on Qumulo Nexus.
+* Added support for read-only Global Namespace functionality between two or more Qumulo clusters.
 * Added support for three-node clusters to CNQ on Azure and CNQ on AWS.
 * Added support for CNQ clusters that adjust to multi-AZ configurations automatically.
 * Improved S3 Object Lock functionality and made changes to corresponding S3 API actions.
@@ -58,6 +58,7 @@ For information about upgrade types for each release, see <a href='mode-referenc
 {{site.data.alerts.end}}
 
 * {{page.varNoPublicChanges}}
+* Made CNQ on AWS available on Qumulo Nexus.
 * Resolved an issue with the **APIs & Tools** page in the Qumulo Core Web UI not showing certain REST endpoints correctly
 {% endif %}
 
