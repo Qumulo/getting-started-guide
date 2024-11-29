@@ -5,7 +5,7 @@ redirect_from:
   - /aws-administrator-guide/getting-started/supported-configurations-known-limits.html
 permalink: /cloud-native-aws-administrator-guide/getting-started/supported-configurations-known-limits.html
 sidebar: cloud_native_aws_administrator_guide_sidebar
-platform: cnq-aws
+platform: aws
 include_content: content-reuse/admin-guides/getting-started/supported-configurations-known-limits.md
 ---
 
