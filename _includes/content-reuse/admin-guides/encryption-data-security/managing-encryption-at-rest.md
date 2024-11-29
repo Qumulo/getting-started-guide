@@ -161,6 +161,3 @@ This section explains how to rotate the master key and check the encryption stat
 * Qumulo Core doesn't encrypt host file system data on the node (such as system logs, core files, and so on).
 
 * Qumulo Core doesn't support removing encryption from encrypted clusters.
-
-* On encrypted systems, single-stream throughput and latency might experience up to 5-10% degradation for writes and up to 5% for reads.
-
