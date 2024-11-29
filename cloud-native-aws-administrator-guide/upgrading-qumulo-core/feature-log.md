@@ -7,6 +7,6 @@ permalink: /cloud-native-aws-administrator-guide/upgrading-qumulo-core/feature-l
 sidebar: cloud_native_aws_administrator_guide_sidebar
 varNoPublicChanges: The majority of functionality and stability improvements in this Qumulo Core release are internal.
 varDownloadsRelnotes: <p><a target="_blank" href="https://nexus.qumulo.com/downloads/">Downloads and Release Notes</a></p>
-platform: aws
+platform: cnq-aws
 include_content: content-reuse/admin-guides/upgrading-qumulo-core/feature-log.md
 ---

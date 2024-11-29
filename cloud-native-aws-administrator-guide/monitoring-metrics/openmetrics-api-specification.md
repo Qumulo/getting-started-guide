@@ -6,6 +6,6 @@ redirect_from:
 permalink: /cloud-native-aws-administrator-guide/monitoring-and-metrics/openmetrics-api-specification.html
 sidebar: cloud_native_aws_administrator_guide_sidebar
 include_content: content-reuse/admin-guides/monitoring-and-metrics/openmetrics-api-specification.md
-platform: aws
+platform: cnq-aws
 ---
 

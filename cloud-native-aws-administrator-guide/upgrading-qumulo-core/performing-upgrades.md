@@ -14,5 +14,5 @@ varUpgradeTwoPhase: "Run the [`qq upgrade_cluster`](https://docs.qumulo.com/qq-c
 varUpgrade5101Flags: "Use the `--rolling` flag to specify rolling reboot, and the `--path` flag to specify the path to the upgrade file."
 varUpgrade506: "Run the [`qq upgrade_cluster`](https://docs.qumulo.com/qq-cli-command-guide/upgrade/upgrade_cluster.html) command and use the `--path` flag to specify the path to the upgrade file."
 include_content: content-reuse/admin-guides/upgrading-qumulo-core/performing-upgrades.md
-platform: aws
+platform: cnq-aws
 ---
