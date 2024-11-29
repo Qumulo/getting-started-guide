@@ -497,7 +497,7 @@ guides:
 hardware:
   gold: Gold-Tier hardware
   platinum: Qumulo-Certified Platinum-Tier hardware
-    onlyThis: This section applies only the Qumulo-Certified Platinum-Tier hardware.
+  platinumOnlyThis: This section applies only the Qumulo-Certified Platinum-Tier hardware.
 
 xrefUSBinstaller: <a href="https://docs.qumulo.com/hardware-guide/getting-started/creating-usb-drive-installer.html" class="no_icon">Qumulo Core USB Drive Installer</a>
 xref:
