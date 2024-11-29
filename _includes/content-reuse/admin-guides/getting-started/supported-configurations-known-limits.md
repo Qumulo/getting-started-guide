@@ -99,9 +99,9 @@ Qumulo Core requires switches that meet the following criteria:
   <tbody>
     <tr>
       <td>Cluster Size</td>
-{% if page.platform == 'on-prem' or page.platform == 'cnq-azure' or page.platform =='cnq-aws' %}
+{% if page.platform != 'anq' %}
       <td>265 nodes</td>
-{% elsif page.platform == 'anq' %}
+{% elsif %}
       <td>100 nodes</td>
 {% endif %}
     </tr>

@@ -31,7 +31,7 @@ For information about upgrade types for each release, see <a href='mode-referenc
 * Added REST API resources and `qq` CLI commands for creation and membership change of CNQ clusters.
 * Resolved an issue with an SSL configuration change while the S3 server is in plaintext mode.
 
-{% if page.platform == 'cnq-aws' or page.platform == 'cnq-azure' %}
+{% if page.platform == 'on-prem' or page.platform == 'cnq-aws' %}
 ## Qumulo Core 7.2.2
 {{page.varDownloadsRelnotes}}
 * Configured Qumulo Core to permit more than 10 floating IP addresses for each node
