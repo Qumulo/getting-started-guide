@@ -251,6 +251,7 @@ cannotReorderNodes: it isn't possible to revert this operation or reorder nodes 
 hardware:
   ipmiConfig:
     smc: To configure the IPMI port, you must use the IPMI Management Utility installed on the motherboard. For more information, see <a href="https://www.supermicro.com/manuals/other/BMC_Users_Guide_X12_H12.pdf">Supermicro BMC User Guide X12</a>.
+  fromAIC: in the documentation provided to Qumulo by AIC
     
 led:
   red: <span class="emoji">🔴</span>
@@ -318,6 +319,9 @@ sm2015s: Supermicro 2015S
 
 q1uhg2Long: Quiver 1U Hybrid Gen2
 q1uhg2: Quiver 1UH Gen2
+
+q2uhg2Long: Quiver 2U Hybrid Gen2
+q2uhg2: Quiver 2UH Gen2
 
 q1uag1Long: Quiver 1U All-NVMe Gen1
 q1uag1: Quiver 1UA Gen1
