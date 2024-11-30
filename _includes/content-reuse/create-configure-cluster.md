@@ -12,6 +12,7 @@
 
 1. On the **2. Confirm cluster protection level** page, Qumulo Core selects the recommended 2, 3, or 4-drive protection level based on your cluster size and node type.
 
+{% if page.platform != 'q2uhg2' %}
 1. If the **Customize Protection Level** option appears, you can increase your system resilience by selecting 3- or 4-drive protection.
 
    {{site.data.alerts.important}}
@@ -24,6 +25,7 @@
      <li>Using 3- or 4-drive protection reduces the total capacity of your cluster.</li>
    </ul>
    {{site.data.alerts.end}}
+{% endif %}
 
 1. Enter a password for the administrative account and click **Create Cluster**.
 

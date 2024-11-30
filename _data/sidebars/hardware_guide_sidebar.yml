@@ -374,6 +374,39 @@ entries:
       url: /hardware-guide/quiver-1u-hybrid-gen2/technical-specifications.html
       output: web
 
+  - title: Quiver 2U Hybrid Gen2
+    url: /hardware-guide/quiver-2u-hybrid-gen2/index.html
+    output: web, pdf
+    folderitems:
+
+    - title: Configuring IPMI and Wiring Nodes
+      url: /hardware-guide/quiver-2u-hybrid-gen2/configuring-ipmi-wiring-nodes.html
+      output: web, pdf
+
+    - title: Getting Started
+      url: /hardware-guide/quiver-2u-hybrid-gen2/getting-started.html
+      output: web, pdf
+
+    - title: Drive Bay Mapping
+      url: /hardware-guide/quiver-2u-hybrid-gen2/drive-bay-mapping.html
+      output: web, pdf
+
+    - title: Panel LEDs
+      url: /hardware-guide/quiver-2u-hybrid-gen2/panel-leds.html
+      output: web, pdf
+
+    - title: Cluster Networking
+      url: /hardware-guide/quiver-2u-hybrid-gen2/networking-cluster.html
+      output: web, pdf
+
+    - title: Replacing Hardware Components
+      url: /hardware-guide/quiver-2u-hybrid-gen2/replacing-hardware-components.html
+      output: web, pdf
+
+    - title: Technical Specifications
+      url: /hardware-guide/quiver-2u-hybrid-gen2/technical-specifications.html
+      output: web
+
   - title: Supermicro A+ ASG-1014S-ACR12N4H
     url: /hardware-guide/supermicro-a-plus-asg-1014s-acr12n4h/index.html
     output: web, pdf
