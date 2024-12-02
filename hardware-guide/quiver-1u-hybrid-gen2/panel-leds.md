@@ -31,21 +31,3 @@ Each NVMe drive carrier has one LED.
 | {{site.led.blue}} (solid blue)   | Drive present |
 | {{site.led.orange}} (solid amber)  | Drive failed  |
 | Off               | Slot empty    |
-
-
-## Rear LAN LEDs
-
-On the back of your node, LAN LEDs are located behind the vent holes on the NIC. Each port has one light.
-
-{{site.data.alerts.note}}
-<ul>
-  <li>{{site.noNIC}}</li>
-  <li>Network traffic <em>doesn't</em> affect the speed of the light's blinking.</li>
-</ul>
-{{site.data.alerts.end}}
-
-
-| Color            | Status             | Description      |
-| ---------------- | ------------------ | ---------------- |
-| &#8212;          | Off                | No link          |
-| {{site.led.green}} (solid green) | On or blinking     | Link established |

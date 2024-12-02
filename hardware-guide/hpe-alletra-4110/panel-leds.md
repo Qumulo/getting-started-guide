@@ -44,16 +44,3 @@ On the back of your node, there is a UID LED.
 | {{site.led.blue}} (0.25 s. blinking blue)  | Manual iLO reboot sequence has been initiated     |
 | {{site.led.blue}} (0.125 s. blinking blue) | Manual iLO reboot sequence is in progress         |
 | Off                                        | UID deactivated                                   |
-
-
-## Rear LAN LEDs
-On the back of your node, LAN LEDs are located behind the vent holes on the NIC. Each port has one light.
-
-{{site.data.alerts.note}}
-Network traffic <em>doesn't</em> affect the speed of the light's blinking.
-{{site.data.alerts.end}}
-
-| Color                            | Status             | Description      |
-| -------------------------------- | ------------------ | ---------------- |
-| &#8212;                          | Off                | No link          |
-| {{site.led.green}} (solid green) | On or blinking     | Link established |

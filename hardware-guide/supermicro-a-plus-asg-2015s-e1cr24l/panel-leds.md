@@ -6,7 +6,6 @@ sidebar: hardware_guide_sidebar
 ---
 
 ## Front Panel LEDs and Buttons
-
 On the front, right side of your node, there are seven LEDs. The following table describes the UID button and LED, the Information LED, and the Power LED.
 
 | Label                         | Color and Behavior                                                                           | Description                                       |
@@ -27,7 +26,6 @@ On the front, right side of your node, there are seven LEDs. The following table
 
 
 ## NVMe Drive Carrier LEDs
-
 Each NVMe drive carrier has two LEDs.
 
 | Label                  | Color or Behavior                              | Description                         |
@@ -42,15 +40,3 @@ Each NVMe drive carrier has two LEDs.
 | Activity LED           | {{site.led.blue}} (solid blue)                 | Idle NVMe drive installed           |
 | Activity LED           | {{site.led.blue}} (blinking blue)              | Drive active                        |
 | Activity LED           | Off                                            | Idle SATA drive installed           |
-
-
-## Rear LAN LEDs
-
-On the back of your node, LAN LEDs are located behind the vent holes on the NIC. Each port has one light.
-
-{% include note.html content="Network traffic *doesn't* affect the speed of the light's blinking." %}
-
-| Color            | Status             | Description      |
-| ---------------- | ------------------ | ---------------- |
-| &#8212;          | Off                | No link          |
-| {{site.led.green}} (solid green) | On or blinking     | Link established |

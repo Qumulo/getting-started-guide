@@ -24,14 +24,3 @@ On the front, right side of your node, there are five LEDs.
 | Power         | {{site.led.green}} (solid green)       | On                                          |
 
 {% include note.html content="During normal operation, the **Lan B** LED might appear to be lit slightly when the **Disk Activity** LED is on." %}
-
-## Rear LAN LEDs
-
-On the back of your node, LAN LEDs are located behind the vent holes on the NIC. Each port has one light.
-
-{% include note.html content="Network traffic *doesn't* affect the speed of the light's blinking." %}
-
-| Color            | Status             | Description      |
-| ---------------- | ------------------ | ---------------- |
-| &#8212;          | Off                | No link          |
-| {{site.led.green}} (solid green) | On or blinking     | Link established |

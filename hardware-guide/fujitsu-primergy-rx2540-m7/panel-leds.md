@@ -35,14 +35,3 @@ Each HDD drive carrier in the front and NVMe carrier in the back has two LEDs.
 | ------------ | ---------------------------- |
 | Drive Error  | {{site.led.orange}} (orange) |
 | Drive Access | {{site.led.green}} (green)   |
-
-
-## Rear LAN LEDs
-On the back of your node, LAN LEDs are located behind the vent holes on the NIC. Each port has one light.
-
-{% include note.html content="Network traffic _doesn't_ affect the speed of the light's blinking." %}
-
-| Color                            | Status             | Description      |
-| -------------------------------- | ------------------ | ---------------- |
-| &#8212;                          | Off                | No link          |
-| {{site.led.green}} (solid green) | On or blinking     | Link established |
