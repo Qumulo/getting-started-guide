@@ -33,7 +33,7 @@ methods:
     - code: '200'
       description: Return value on success
     summary: Get current status of restriper, including data protection status and
-      current restripe phase (if running)
+      current restriper phase (if running)
 rest_endpoint: /v1/cluster/protection/restriper/status
 api_version: v1
 permalink: /rest-api-guide/cluster-data-protection/cluster_protection_restriper_status.html

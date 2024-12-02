@@ -53,7 +53,10 @@
     </tr>
     <tr>
       <td>Domain-Functional Level</td>
-      <td>Microsoft Windows Server 2008 R2 (and higher) {% include note.html content="Qumulo Core doesn't support Samba Domain Controllers." %}</td>
+      <td>
+        Microsoft Windows Server 2008 R2 (and higher)
+        {% include note.html content="Qumulo Core doesn't support Samba Domain Controllers." %}
+      </td>
     </tr>
     <tr>
       <td>Kerberos V5 Encryption Types</td>
@@ -188,7 +191,7 @@ Qumulo Core requires switches that meet the following criteria:
       <td>Usable Provisioned Capacity on Cluster</td>
       <td>100%</td>
     </tr>
-{% endif %}
+{% endif %}   
     <tr>
       <td>NFS Sockets</td>
       <td>
@@ -202,14 +205,17 @@ Qumulo Core requires switches that meet the following criteria:
         5,000 TCP sockets for each node
         {% include note.html content="A client configured with the SMB Multichannel feature uses multiple sockets." %}
       </td>
-    </tr>    
-    <tr>
-      <td>REST API Sockets</td>
-      <td>1,000 TCP sockets for each node</td>
     </tr>
     <tr>
       <td>S3 API Sockets</td>
+      <td>
+        8,000 TCP sockets for each node
+        {% include note.html content="By default, a maximum of 5,000 connections can execute actively." %}
+      </td>
+    </tr>
+    <tr>
+      <td>REST API Sockets</td>
       <td>1,000 TCP sockets for each node</td>
-    </tr>    
+    </tr>     
   </tbody>
 </table>

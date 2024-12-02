@@ -30,8 +30,10 @@ methods:
         \ the hub portal (if in a relationship)\",\n            \"type\": \"string\"\
         \n          },\n          \"hub_port\": {\n            \"description\": \"\
         TCP port for the cluster with the hub portal (if in a relationship)\",\n \
-        \           \"type\": \"number\"\n          }\n        }\n      }\n    }\n\
-        \  }\n}"
+        \           \"type\": \"number\"\n          },\n          \"hub_id\": {\n\
+        \            \"description\": \"Corresponding remote hub portal id (if in\
+        \ a relationship)\",\n            \"type\": \"number\"\n          }\n    \
+        \    }\n      }\n    }\n  }\n}"
     responses:
     - code: '200'
       description: Return value on success

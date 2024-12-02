@@ -54,10 +54,12 @@ This section explains how to create the [spoke portal](how-portal-creation-enabl
    The spoke portal enters the `Pending` state. The following is example output from the command.
 
    ```
-   ID  State    Hub          Spoke Root        Hub Root ID
-   ==  =======  ===========  ================  ===========
-   2   Pending  {{site.exampleIP0}}  /remote/projects  3
+   ID  State    Spoke Root        Hub Host     Hub Root ID  Hub Portal ID
+   ==  =======  ================  ===========  ===========  =============
+   2   Pending  /remote/projects  {{site.exampleIP0}}  3            4
    ```
+
+   Hub Portal ID `4` is the ID that the hub portal host cluster allocated for this portal relationship. You can use it to authorize the relationship on the hub portal host cluster as described later.
 
    If Qumulo Core can't establish a connection from the cluster with the spoke portal portion to the cluster with the hub portal portion, it displays an error message and the spoke portal enters the `Unlinked` state.
 
@@ -129,9 +131,9 @@ This section explains how to authorize the [portal relationship](how-portal-crea
    The following is example output from the command that shows that the portal relationship for the hub portal is in the `Active` state.
 
    ```
-   ID  State   Root       Peer Address  Peer Name
-   ==  ======  =========  ============  =========
-   4   Active  /projects  {{site.exampleIP1}}   qfsd-edge
+   ID  State   Hub Root   Spoke Host   Spoke Name
+   ==  ======  =========  ===========  ==========
+   4   Active  /projects  {{site.exampleIP1}}  qfsd-edge
    ```
 
    After a few seconds, the spoke portal enters the `Active` state as well. You can now use the spoke portal root directory.

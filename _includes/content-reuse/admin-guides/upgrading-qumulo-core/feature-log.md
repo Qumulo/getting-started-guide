@@ -4,6 +4,17 @@ For information about upgrade types for each release, see <a href='mode-referenc
 
 <style>div#toc{height:200px;overflow:auto;}</style>
 
+## Qumulo Core 7.3.1
+{{page.varDownloadsRelnotes}}
+* Made it easier to authorize hub portals from the hub portal host cluster by adding information to REST APIs and `qq` CLI commands
+* Improved the behavior of NFSv3 and NFSv4.1 `ACCESS` commands
+* Increased the S3 connection limit
+* Configured Qumulo Core to permit (but ignore) out-of-spec query parameters for S3 API actions
+* Reverted floating IP assignment to Qumulo Core functionality prior to version 7.1.0
+* Added a REST API and a `qq` CLI command for querying the current fault tolerance of an object-backed cluster
+* Resolved an issue with NLM connections
+* Resolved an issue with tree deletion operations
+
 ## Qumulo Core 7.3.0
 {{page.varDownloadsRelnotes}}
 * Added the _self-service_ permission model to Qumulo REST API access tokens and made changes to corresponding `qq` CLI commands

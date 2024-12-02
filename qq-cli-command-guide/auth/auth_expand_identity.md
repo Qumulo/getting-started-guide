@@ -36,6 +36,10 @@ optional_options:
   help: Print result as JSON object.
   name: --json
   required: false
+- alternate: []
+  help: Print QFSD Access Tokens and S3 Access Keys associated with the user.
+  name: --show-access-tokens
+  required: false
 permalink: /qq-cli-command-guide/auth/auth_expand_identity.html
 positional_options:
 - help: A name or a SID, optionally qualified with a domain prefix (e.g "local:name",
@@ -50,7 +54,7 @@ synopsis: Find equivalent identities and full group membership.
 title: qq auth_expand_identity
 usage: qq auth_expand_identity [-h] [--auth-id AUTH_ID] [--uid UID] [--gid GID] [--sid
   SID] [--name NAME] [--domain {LOCAL,WORLD,POSIX_USER,POSIX_GROUP,ACTIVE_DIRECTORY}]
-  [--json] [identifier]
+  [--json] [--show-access-tokens] [identifier]
 zendesk_source: qq CLI Command Guide
 
 ---

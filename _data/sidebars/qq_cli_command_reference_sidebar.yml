@@ -753,6 +753,13 @@ entries:
     url: /qq-cli-command-guide/nodes/
   - folderitems:
     - output: web,pdf
+      title: object_backed_fault_tolerance_get
+      url: /qq-cli-command-guide/object/object_backed_fault_tolerance_get.html
+    output: web,pdf
+    title: object
+    url: /qq-cli-command-guide/object/
+  - folderitems:
+    - output: web,pdf
       title: portal_authorize_hub
       url: /qq-cli-command-guide/portal/portal_authorize_hub.html
     - output: web,pdf
