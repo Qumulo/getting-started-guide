@@ -6,7 +6,9 @@ sidebar: hardware_guide_sidebar
 varRemovePCIeCard: <a href="#replace-pci-e-riser-card">Remove the PCIe card from the motherboard.</a>
 varHotPlug: You can replace this component without powering off the node.
 varNoHotPlug: To replace this component, you must first power off the node.
-platform: quiver
+platform:
+  - quiver
+  - q2uhg2
 ---
 
 For detailed hardware replacement instructions, see <a href="https://docs.qumulo.com/pdf/quiver-2uh-hybrid-rackmount-chassis-user-manual.pdf#page=11" class="pdf">RSC-2MS Rackmount Chassis User's Manual</a> {{site.hardware.fromAIC}}.

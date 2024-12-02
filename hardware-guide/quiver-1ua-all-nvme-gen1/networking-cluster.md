@@ -3,7 +3,9 @@ title: "Networking Your Quiver 1U All-NVMe Gen1 Cluster"
 summary: "This section explains how to network a Quiver 1U All-NVMe Gen1 cluster."
 permalink: /hardware-guide/quiver-1ua-all-nvme-gen1/networking-cluster.html
 sidebar: hardware_guide_sidebar
-platform: q1uag1
+platform:
+  - quiver
+  - q1uag1
 ---
 
 {% include content-reuse/platform-agnostic-unified-or-split-networking-cluster.md ethernetSpeed="100 Gbps" ethernetSpeedSingleNIC="100 Gbps" ethernetSpeedDualNIC="100 Gbps"%}

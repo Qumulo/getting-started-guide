@@ -3,7 +3,9 @@ title: "Getting Started with Qumulo on HPE Alletra 4110"
 summary: "This section explains how to prepare HPE Alletra 4110 nodes for creating a Qumulo cluster. This guide is for system administrators, professional service providers, and colleagues in your organization who are responsible for installing and configuring server hardware."
 permalink: /hardware-guide/hpe-alletra-4110/getting-started.html
 sidebar: hardware_guide_sidebar
-platform: all4110
+platform:
+  - hpe
+  - all4110
 ---
 
 {% capture seeMore %}For information about installing your node and replacing hardware components, see [{{site.all4110}} System Maintenance and Service Guide](https://support.hpe.com/hpesc/public/docDisplay?docLocale=en_US&docId=sd00002471en_us) and [{{site.all4110}} System Setup and Installation Guide](https://support.hpe.com/hpesc/public/docDisplay?docLocale=en_US&docId=sd00002563en_us) in the HPE documentation.{% endcapture %}

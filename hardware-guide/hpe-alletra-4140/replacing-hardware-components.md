@@ -3,7 +3,9 @@ title: "Replacing Hardware Components in Your HPE Alletra 4140 Nodes"
 summary: "This section explains how to replace hardware components in HPE Alletra 4140 nodes."
 permalink: /hardware-guide/hpe-alletra-4140/replacing-hardware-components.html
 sidebar: hardware_guide_sidebar
-platform: hpe
+platform:
+  - hpe
+  - all4140
 ---
 
 {% include content-reuse/platform-agnostic-part-replacement-admonitions.md %}

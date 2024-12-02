@@ -3,7 +3,9 @@ title: "Replacing Hardware Components in Your HPE Apollo Gen9 Nodes"
 summary: "This section explains how to replace hardware components in HPE Apollo Gen9 nodes."
 permalink: /hardware-guide/hpe-apollo-4200-gen9/replacing-hardware-components.html
 sidebar: hardware_guide_sidebar
-platform: hpe
+platform:
+  - hpe
+  - all4200g9
 ---
 
 {% include content-reuse/platform-agnostic-part-replacement-admonitions.md %}

@@ -6,7 +6,9 @@ sidebar: hardware_guide_sidebar
 varRemovePCIeCard: <a href="#replace-pci-e-riser-card">Remove the PCIe card from the motherboard.</a>
 varHotPlug: You can replace this component without powering off the node.
 varNoHotPlug: To replace this component, you must first power off the node.
-platform: quiver
+platform:
+  - quiver
+  - q1uag1
 ---
 
 {% include content-reuse/platform-agnostic-part-replacement-admonitions.md %}

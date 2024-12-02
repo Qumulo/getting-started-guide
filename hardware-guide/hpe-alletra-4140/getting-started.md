@@ -3,7 +3,9 @@ title: "Getting Started with Qumulo on HPE Alletra 4140"
 summary: "This section explains how to prepare HPE Alletra 4140 nodes for creating a Qumulo cluster. This guide is for system administrators, professional service providers, and colleagues in your organization who are responsible for installing and configuring server hardware."
 permalink: /hardware-guide/hpe-alletra-4140/getting-started.html
 sidebar: hardware_guide_sidebar
-platform: all4140
+platform:
+  - hpe
+  - all4140
 ---
 
 {{site.data.alerts.note}}

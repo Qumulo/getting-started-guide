@@ -3,7 +3,9 @@ title: "Getting Started with Qumulo on Quiver 1U All-NVMe Gen1"
 summary: "This section explains how to prepare Quiver 1UA Gen1 nodes for creating a Qumulo cluster."
 permalink: /hardware-guide/quiver-1ua-all-nvme-gen1/getting-started.html
 sidebar: hardware_guide_sidebar
-platform: q1uag1
+platform:
+  - quiver
+  - q1uag1
 ---
 
 ## Step 1: Verify Your Node

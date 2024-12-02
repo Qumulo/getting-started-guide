@@ -3,7 +3,9 @@ title: "Replacing Hardware Components in Your HPE Apollo 4200 Gen10 Nodes"
 summary: "This section explains how to replace hardware components in HPE Apollo 4200 Gen10 nodes."
 permalink: /hardware-guide/hpe-apollo-4200-gen10/replacing-hardware-components.html
 sidebar: hardware_guide_sidebar
-platform: hpe
+platform:
+  - hpe
+  - a4200g10
 ---
 
 {% include content-reuse/platform-agnostic-part-replacement-admonitions.md %}

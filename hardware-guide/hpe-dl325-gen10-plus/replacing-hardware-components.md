@@ -3,7 +3,9 @@ title: "Replacing Hardware Components in Your HPE DL325 Gen10 Plus"
 summary: "This section explains how to replace hardware components in HPE DL325 Gen10 Plus nodes."
 permalink: /hardware-guide/hpe-dl325-gen10-plus/replacing-hardware-components.html
 sidebar: hardware_guide_sidebar
-platform: hpe
+platform:
+  - hpe
+  - dl325g10p
 ---
 
 {% include content-reuse/platform-agnostic-part-replacement-admonitions.md %}

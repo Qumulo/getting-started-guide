@@ -3,7 +3,9 @@ title: "Getting Started with Qumulo on Quiver 2U Hybrid Gen2"
 summary: "This section explains how to prepare Quiver 2UH Gen2 nodes for creating a Qumulo cluster."
 permalink: /hardware-guide/quiver-2u-hybrid-gen2/getting-started.html
 sidebar: hardware_guide_sidebar
-platform: q2uhg2
+platform:
+  - quiver
+  - q2uhg2
 ---
 
 ## Step 1: Verify Your Node
