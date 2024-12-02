@@ -249,6 +249,9 @@ rackNewNodes: 1. Rack and wire your new nodes and then power them on.
 cannotReorderNodes: it isn't possible to revert this operation or reorder nodes after adding them to a cluster.
 
 hardware:
+  gold: Gold-Tier hardware
+  platinum: Qumulo-Certified Platinum-Tier hardware
+  platinumOnlyThis: This section applies only the Qumulo-Certified Platinum-Tier hardware.
   ipmiConfig:
     smc: To configure the IPMI port, you must use the IPMI Management Utility installed on the motherboard. For more information, see <a href="https://www.supermicro.com/manuals/other/BMC_Users_Guide_X12_H12.pdf">Supermicro BMC User Guide X12</a>.
   fromAIC: in the documentation provided to Qumulo by AIC
@@ -499,11 +502,6 @@ guides:
   alert: Qumulo Alerts Administrator Guide
   alertShort: Qumulo Alerts Admin Guide
   integ: Qumulo Integration Guide
-
-hardware:
-  gold: Gold-Tier hardware
-  platinum: Qumulo-Certified Platinum-Tier hardware
-  platinumOnlyThis: This section applies only the Qumulo-Certified Platinum-Tier hardware.
 
 xrefUSBinstaller: <a href="https://docs.qumulo.com/hardware-guide/getting-started/creating-usb-drive-installer.html" class="no_icon">Qumulo Core USB Drive Installer</a>
 xref:
