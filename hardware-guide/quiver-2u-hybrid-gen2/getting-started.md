@@ -13,7 +13,7 @@ platform:
 
 
 ## Step 2: Boot by Using the Qumulo Core USB Drive Installer
-1. When the node powers on and begins to boot, on the **ASUS** screen, press **F8**.
+1. When the node powers on and begins to boot, enter the boot menu.
 
    {{site.data.alerts.note}}
    <ul>
@@ -22,7 +22,7 @@ platform:
    </ul>
    {{site.data.alerts.end}}
 
-1. On the **Please select boot device:** screen, select your USB drive (usually labeled with `UEFI OS`) and boot into it.
+1. On the boot device selection screen, select your USB drive (usually labeled with `UEFI OS`) and boot into it.
 
    The Qumulo Core installation begins.
 
