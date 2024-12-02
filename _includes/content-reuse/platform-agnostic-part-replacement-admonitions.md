@@ -1,3 +1,4 @@
+{% unless page.platform contains 'quiver' %}
 {{site.data.alerts.caution}}
 <ul>
   <li>We strongly recommend engaging an on-site engineer to replace failed hardware components including but not limited to any procedure that:
@@ -10,3 +11,4 @@
   <li>We don’t recommend updating firmware on Qumulo-certified hardware nodes unless the equipment manufacturer or a member of the Qumulo Care team advises you to do so. For questions about this process, {{site.contactQumuloCare}}.</li>
 </ul>
 {{site.data.alerts.end}}
+{% endunless %}
