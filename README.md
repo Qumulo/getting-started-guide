@@ -70,9 +70,9 @@ To get started, choose one of the following guides.
     <a href="hardware-guide/">
       <figure>  
         <picture>
-          <source type="image/webp" srcset="images/hardware-guide.webp" width="301" height="301">
-          <source type="image/png" srcset="images/hardware-guide.png" width="301" height="301">
-          <img src="images/hardware-guide.png" alt="A stylized image of a server rack, symbolizing installing, configuring, and maintaining hardware" width="301" height="301">
+          <source type="image/webp" srcset="images/qumulo-certified-platinum-tier-hardware-servicing-guide.webp" width="301" height="301">
+          <source type="image/png" srcset="images/qumulo-certified-platinum-tier-hardware-servicing-guide.png" width="301" height="301">
+          <img src="images/qumulo-certified-platinum-tier-hardware-servicing-guide.png" alt="A stylized image of a server rack, symbolizing installing, configuring, and maintaining hardware" width="301" height="301">
         </picture>
         <figcaption class="platinum-tier-caption">{{site.guides.hard}}</figcaption>
       </figure>
