@@ -1,4 +1,4 @@
-{% include content-reuse/platform-agnostic-identify-eth-port.md %}
+{% include content-reuse/hardware-guides/platform-agnostic-identify-eth-port.md %}
 
 ## Prerequisites
 {{site.data.alerts.note}}
