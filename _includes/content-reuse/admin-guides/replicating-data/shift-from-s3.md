@@ -137,7 +137,7 @@ This section describes how to use the Qumulo Core Web UI 4.2.5 (and higher) to c
 
    {% include note.html content="For work estimates, Shift-From jobs calculate the total number of files and bytes in a job's bucket prefix. This requires the job to use the [`ListObjectV2` S3 action](https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListObjectsV2.html) once for every 5,000 objects (or 200 times for every 1 million objects)." %}
 
-{% include content-reuse/shift-view-config-details-stop-job-repeat-job-delete-relationship.md %}
+{% include content-reuse/admin-guides/replicating-data/shift-view-config-details-stop-job-repeat-job-delete-relationship.md %}
 
 
 ## Using the Qumulo CLI to Copy Files and Manage Relationships
@@ -183,7 +183,7 @@ The CLI returns the details of the relationship in JSON format, for example:
 }
 ```
 
-{% include content-reuse/shift-view-config-details-status-shift-relationship.md %}
+{% include content-reuse/admin-guides/replicating-data/shift-view-config-details-status-shift-relationship.md %}
 
   ```json
   [
@@ -221,11 +221,11 @@ The CLI returns the details of the relationship in JSON format, for example:
     }
   ]
   ```
-{% include content-reuse/shift-view-status-description.md %}
+{% include content-reuse/admin-guides/replicating-data/shift-view-status-description.md %}
 
   Shift-From performs a single task that estimates the amount of content to copy by listing all files and summing up their contents. Until this task is complete, the `percent_complete` field is set to `"None"` and the `estimated_end_time` field is set to `""`. To list the bucket prefix content in sets of 5,000 objects, this task uses the [`ListObjectV2` S3 action](https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListObjectsV2.html).
 
-{% include content-reuse/shift-view-status-stop-repeat-copy-job-delete-relationship.md %}
+{% include content-reuse/admin-guides/replicating-data/shift-view-status-stop-repeat-copy-job-delete-relationship.md %}
 
 
 ## Troubleshooting Copy Job Issues

@@ -8,9 +8,9 @@ platform:
   - all4110
 ---
 
-{% include content-reuse/platform-agnostic-part-replacement-admonitions.md %}
+{% include content-reuse/hardware-guide/platform-agnostic-part-replacement-admonitions.md %}
 
-{% include content-reuse/platform-agnostic-part-replacement-procedure-fvt.md %}
+{% include content-reuse/hardware-guide/platform-agnostic-part-replacement-procedure-fvt.md %}
 
 ## To Replace an NVMe Drive
 Your {{site.all4110}} chassis contains either 20 or 10 NVMe drives.
@@ -28,7 +28,7 @@ For information about replacing an M.2 boot drive, see [Installing an M.2 Solid 
 ### To Initialize the Replacement M.2 Boot Drive
 {{site.bootDriveInit}}
 
-{% include content-reuse/platform-agnostic-boot-drive-replacement.md %}
+{% include content-reuse/hardware-guide/platform-agnostic-boot-drive-replacement.md %}
 
 ## To Replace a Power Supply Unit (PSU)
 Your {{site.all4110}} chassis contains two PSUs.

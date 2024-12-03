@@ -153,4 +153,4 @@ Ensure that the number of static and floating IP addresses is equal to or greate
 
 
 <a id="monitoring-data-protection-reconfiguration"></a>
-{% include content-reuse/monitoring-data-protection-reconfiguration-process.md %}
+{% include content-reuse/admin-guides/node-addition-replacement/monitoring-data-protection-reconfiguration-process.md %}

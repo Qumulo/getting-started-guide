@@ -11,7 +11,7 @@ We make sure that every one of our engineers has deep experience with file stora
 We take pride in helping our customers and coming up with solutions for every specific issue.
 
 ## Ways to Get Help
-{% include content-reuse/qumulo-care-ways-to-get-help.md %}
+{% include content-reuse/qumulo-care/qumulo-care-ways-to-get-help.md %}
 
 ## Support Hours
 The Qumulo Care team is available Monday to Friday, 24&times;5 to answer your questions and requests. During off hours, a team member is on call 24&times;7 for when you might need help the most.
@@ -19,7 +19,7 @@ The Qumulo Care team is available Monday to Friday, 24&times;5 to answer your qu
 ## Qumulo Care Response Times
 The service availability and initial response time vary based on an issue's severity level, starting from the time when the Qumulo Care team first learns about the issue.
 
-{% include content-reuse/qumulo-care-response-times.md %}
+{% include content-reuse/qumulo-care/qumulo-care-response-times.md %}
 
 ## Slack Tips and Tricks
 The Qumulo Care team monitors the [qumulocare Slack channel](https://qumulocare.slack.com/) during our normal Monday-to-Friday, 24&times;5 standard support hours. If you are currently a Qumulo customer, the fastest way to reach us is by using your dedicated Slack channel.

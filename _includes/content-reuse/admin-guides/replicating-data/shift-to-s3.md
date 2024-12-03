@@ -205,7 +205,7 @@ This section describes how to use the Qumulo Core Web UI 3.2.5 (and higher) to c
 
    The copy job begins.
 
-{% include content-reuse/shift-view-config-details-stop-job-repeat-job-delete-relationship.md %}
+{% include content-reuse/admin-guides/replicating-data/shift-view-config-details-stop-job-repeat-job-delete-relationship.md %}
 
 
 ## Using the Qumulo CLI to Copy Files and Manage Relationships
@@ -251,7 +251,7 @@ The CLI returns the details of the relationship in JSON format, for example:
 }
 ```
 
-{% include content-reuse/shift-view-config-details-status-shift-relationship.md %}
+{% include content-reuse/admin-guides/replicating-data/shift-view-config-details-status-shift-relationship.md %}
 
   ```json
   [
@@ -289,9 +289,9 @@ The CLI returns the details of the relationship in JSON format, for example:
     }
   ]
   ```
-{% include content-reuse/shift-view-status-description.md %}
+{% include content-reuse/admin-guides/replicating-data/shift-view-status-description.md %}
 
-{% include content-reuse/shift-view-status-stop-repeat-copy-job-delete-relationship.md %}
+{% include content-reuse/admin-guides/replicating-data/shift-view-status-stop-repeat-copy-job-delete-relationship.md %}
 
 
 ## Troubleshooting Copy Job Issues

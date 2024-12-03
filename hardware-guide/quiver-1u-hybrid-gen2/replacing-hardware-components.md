@@ -11,7 +11,7 @@ platform:
   - q1uhg2
 ---
 
-{% include content-reuse/platform-agnostic-part-replacement-admonitions.md %}
+{% include content-reuse/hardware-guide/platform-agnostic-part-replacement-admonitions.md %}
 
 
 ## To Remove and Replace the Top Cover
@@ -87,7 +87,7 @@ Your {{site.q1uhg2}} chassis contains a NIC inserted horizontally into the PCIe 
 ### To Initialize the Replacement M.2 Boot Drive
 {{site.bootDriveInit}}
 
-{% include content-reuse/platform-agnostic-boot-drive-replacement.md %}
+{% include content-reuse/hardware-guide/platform-agnostic-boot-drive-replacement.md %}
 
 <a id="replace-hdd"></a>
 ## To Replace an HDD
@@ -228,4 +228,4 @@ Your {{site.q1uhg2}} chassis has 12 DIMM slots, with a locking latch on each sid
 
    * If your replacement chassis doesn't come with PSUs, install and connect the existing PSUs.
 
-{% include content-reuse/platform-agnostic-part-replacement-procedure-fvt.md %}
+{% include content-reuse/hardware-guide/platform-agnostic-part-replacement-procedure-fvt.md %}

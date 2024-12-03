@@ -16,9 +16,9 @@ sidebar: hardware_guide_sidebar
 {% capture alt_tag %}Back Diagram of the {{site.sm1014sLong}} Node{% endcapture %}
 {% include image.html alt=alt_tag file="supermicro-1014s-back-diagram.png" url="/hardware-guide/supermicro-a-plus-asg-1014s-acr12n4h/images/supermicro-1014s-back-diagram.png" %}
 
-{% include content-reuse/platform-agnostic-ipmi.md %}
+{% include content-reuse/hardware-guide/platform-agnostic-ipmi.md %}
 {{site.hardware.ipmiConfig.smc}}
 
-{% include content-reuse/platform-agnostic-unified-networking-wiring.md bmcType="IPMI" ethernetSpeed="25 Gbps or 100 Gbps" portCompatibility=" (compatible with QSFP28 and QSFP56)" %}
+{% include content-reuse/hardware-guide/platform-agnostic-unified-networking-wiring.md bmcType="IPMI" ethernetSpeed="25 Gbps or 100 Gbps" portCompatibility=" (compatible with QSFP28 and QSFP56)" %}
 
-{% include content-reuse/platform-agnostic-unified-networking-wiring-power.md ethernetSpeed="25 Gbps or 100 Gbps" %}
+{% include content-reuse/hardware-guide/platform-agnostic-unified-networking-wiring-power.md ethernetSpeed="25 Gbps or 100 Gbps" %}

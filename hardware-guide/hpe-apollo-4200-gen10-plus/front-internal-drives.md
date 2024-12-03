@@ -52,7 +52,7 @@ The internal SFF drive row flips up behind the internal LFF drive row. Bays 1-4 
 
 
 ## Boot Drive
-{% include content-reuse/platform-agnostic-boot-drive-additional-instructions.md %}
+{% include content-reuse/hardware-guide/platform-agnostic-boot-drive-additional-instructions.md %}
 
 The boot drive is located inside the node at the indicated location. The drive is mounted onto a PCI Express slot and connected to the motherboard with a SATA cable.
 

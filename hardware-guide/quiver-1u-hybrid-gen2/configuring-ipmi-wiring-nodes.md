@@ -12,7 +12,7 @@ sidebar: hardware_guide_sidebar
 {% capture alt_tag %}Back Diagram of the {{site.q1uhg2Long}} Node{% endcapture %}
 {% include image.html alt=alt_tag file="quiver-1u-hybrid-gen2-back-diagram.png" url="/hardware-guide/quiver-1u-hybrid-gen2/images/quiver-1u-hybrid-gen2-back-diagram.png" %}
 
-{% include content-reuse/platform-agnostic-ipmi.md %}
+{% include content-reuse/hardware-guide/platform-agnostic-ipmi.md %}
 To configure the IPMI port, you must use the BMC UI. For more information, see the [BMC section in the {{site.q1uhg2Long}} Service Guide (p.107)](https://care.qumulo.com/hc/en-us/articles/19236348044947-Quiver-1U-Hybrid-Gen2-Service-Guide) {{site.loginRequired}}.
 
 ### To Configure the IPMI Port by Using ipmitool
@@ -52,6 +52,6 @@ In the following examples, the `lan set 1` command specifies LAN channel 1.
 
 1. To reset the BMC to allow the new configuration to take effect, run the `ipmitool mc reset cold` command.
 
-{% include content-reuse/platform-agnostic-unified-networking-wiring.md bmcType="iRMC" ethernetSpeed="25 Gbps or 100 Gbps" portCompatibility=" (compatible with QSFP28 and QSFP56)" %}
+{% include content-reuse/hardware-guide/platform-agnostic-unified-networking-wiring.md bmcType="iRMC" ethernetSpeed="25 Gbps or 100 Gbps" portCompatibility=" (compatible with QSFP28 and QSFP56)" %}
 
-{% include content-reuse/platform-agnostic-unified-networking-wiring-power.md ethernetSpeed="25 Gbps or 100 Gbps" %}
+{% include content-reuse/hardware-guide/platform-agnostic-unified-networking-wiring-power.md ethernetSpeed="25 Gbps or 100 Gbps" %}

@@ -8,7 +8,7 @@ varHotPlug: You can replace this component without powering off the node.
 varNoHotPlug: To replace this component, you must first power off the node.
 ---
 
-{% include content-reuse/platform-agnostic-part-replacement-admonitions.md %}
+{% include content-reuse/hardware-guide/platform-agnostic-part-replacement-admonitions.md %}
 
 ## To Remove and Replace the Top Cover
 {{site.fprx2540m7followDocs}} <a href="https://docs.qumulo.com/pdf/fujitsu-primergy-rx2540-m7-upgrade-maintenance-manual-09-2023.pdf#page=58" class="pdf">Removing the top covers (p. 58)</a>.
@@ -57,7 +57,7 @@ Your {{site.fprx2540m7}} chassis contains an M.2 boot drive. For more informatio
 
 {{site.bootDriveInit}}
 
-{% include content-reuse/platform-agnostic-boot-drive-replacement.md %}
+{% include content-reuse/hardware-guide/platform-agnostic-boot-drive-replacement.md %}
 
 <a id="replace-hdd"></a>
 ## To Replace an HDD

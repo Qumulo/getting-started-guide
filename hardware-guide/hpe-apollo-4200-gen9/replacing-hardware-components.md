@@ -8,9 +8,9 @@ platform:
   - all4200g9
 ---
 
-{% include content-reuse/platform-agnostic-part-replacement-admonitions.md %}
+{% include content-reuse/hardware-guide/platform-agnostic-part-replacement-admonitions.md %}
 
-{% include content-reuse/platform-agnostic-part-replacement-procedure-fvt.md %}
+{% include content-reuse/hardware-guide/platform-agnostic-part-replacement-procedure-fvt.md %}
 
 ## To Replace a HDD or a SSD Drive
 Your {{site.a4200g9}} chassis contains 24, 18, or 9 HDD drives and 9, 4, or 3 SSD drives. For more information, see [Front and Rear Drive Bays](front-rear-drives.html).
@@ -26,7 +26,7 @@ Your {{site.a4200g9}} chassis contains one boot drive. For more information, see
 ### To Initialize the Replacement Boot Drive
 {{site.bootDriveInit}}
 
-{% include content-reuse/platform-agnostic-boot-drive-replacement.md %}
+{% include content-reuse/hardware-guide/platform-agnostic-boot-drive-replacement.md %}
 
 ## To Replace a Power Supply Unit (PSU)
 Your {{site.a4200g9}} chassis contains two PSUs.

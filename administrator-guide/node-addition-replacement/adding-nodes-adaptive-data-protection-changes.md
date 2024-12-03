@@ -59,4 +59,4 @@ A cluster's data protection configuration includes the stripe configuration (for
 
 1. To confirm the configuration with the selected node-add and data protection configuration operations, enter `yes`.
 
-{% include content-reuse/monitoring-data-protection-reconfiguration-process.md %}
+{% include content-reuse/admin-guides/node-addition-replacement/monitoring-data-protection-reconfiguration-process.md %}

@@ -29,4 +29,4 @@ CN=Users,DC=my,DC=example,DC=com;CN=Computers,DC=stuff,DC=example,DC=com
 
 
 ## Using the Active Directory Domain Controller as the NTP Server
-{% include content-reuse/kerberos-ntp-server.md %}
+{% include content-reuse/admin-guides/kerberos/kerberos-ntp-server.md %}

@@ -8,9 +8,9 @@ platform:
   - a4200g10p
 ---
 
-{% include content-reuse/platform-agnostic-part-replacement-admonitions.md %}
+{% include content-reuse/hardware-guide/platform-agnostic-part-replacement-admonitions.md %}
 
-{% include content-reuse/platform-agnostic-part-replacement-procedure-fvt.md %}
+{% include content-reuse/hardware-guide/platform-agnostic-part-replacement-procedure-fvt.md %}
 
 ## To Replace a HDD or SSD Drive
 Your {{site.a4200g10p}} chassis contains either 24 or 9 HDDs and either 8 or 3 SSDs.
@@ -28,7 +28,7 @@ For information about replacing an M.2 boot drive, see [Installing an M.2 Solid 
 ### To Initialize the Replacement M.2 Boot Drive
 {{site.bootDriveInit}}
 
-{% include content-reuse/platform-agnostic-boot-drive-replacement.md %}
+{% include content-reuse/hardware-guide/platform-agnostic-boot-drive-replacement.md %}
 
 ## To Replace a Power Supply Unit (PSU)
 Your {{site.a4200g10p}} chassis contains two PSUs.

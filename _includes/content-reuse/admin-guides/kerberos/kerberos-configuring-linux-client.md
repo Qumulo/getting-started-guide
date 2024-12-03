@@ -300,6 +300,6 @@ In environments where Linux systems map exactly to end users that have `kinit`-b
 {% include important.html content="The user you logged in to the AD domain with is the owner of any new files." %}
 
 ## Network Time Protocol (NTP) Server
-{% include content-reuse/kerberos-ntp-server.md %}
+{% include content-reuse/admin-guides/kerberos/kerberos-ntp-server.md %}
 
 There are many NTP d&aelig;mons for Linux. For example, Ubuntu uses the [NTP functionality in systemd](https://ubuntu.com/server/docs/use-timedatectl-and-timesyncd) (`timedatectl` and `timesyncd`).

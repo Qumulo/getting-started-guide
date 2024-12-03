@@ -9,7 +9,7 @@ sidebar: hardware_guide_sidebar
 {% include important.html content=askFujitsu %}
 
 ## Step 1: Verify Your Node
-{% include content-reuse/platform-agnostic-verify-node-preamble.md %}
+{% include content-reuse/hardware-guide/platform-agnostic-verify-node-preamble.md %}
 
 
 ## Step 2: Boot by Using the Qumulo Core USB Drive Installer
@@ -24,4 +24,4 @@ sidebar: hardware_guide_sidebar
 
 ## Step 3: Create and Configure Your Cluster
 The Qumulo Installer runs automatically.
-{% include content-reuse/create-configure-cluster.md %}
+{% include content-reuse/hardware-guide/create-configure-cluster.md %}
