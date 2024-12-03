@@ -25,10 +25,12 @@ Follow the instructions in the SC-2MS Rackmount Chassis User's Manual: <a href="
 {% include content-reuse/hardware-guides/platform-agnostic-boot-drive-replacement.md %}
 
 
-## To Replace an HDD
-Your {{site.q2uhg2}} chassis contains 24 HDDs. For more information, see [Internal HDD Drives](drive-bay-mapping.html#internal-hdd-drives).
+## To Replace an HDD Drive
+Your {{site.q2uhg2}} chassis contains 24 HDDs. For more information about drive location and mapping, see [Internal HDD Drives](drive-bay-mapping.html#internal-hdd-drives).
 
-Follow the instructions in the SC-2MS Rackmount Chassis User's Manual: <a href="https://docs.qumulo.com/pdf/quiver-2uh-hybrid-rackmount-chassis-user-manual.pdf#page=16" class="pdf">Hard Disk Drive (p. 16)</a>.
+
+## To Replace an NVMe Drive
+Your {{site.q2uhg2}} chassis contains 6 NVMe drives. For more information about drive location and mapping, see [Rear NVMe Drives](drive-bay-mapping.html#rear-nvme-drives).
 
 
 ## To Replace a Power Supply Unit (PSU)
@@ -42,8 +44,8 @@ Follow the instructions in the SC-2MS Rackmount Chassis User's Manual: <a href="
 ## To Replace the Node Chassis
 {% include important.html content="After you perform a chassis swap, you must reconfigure the IPMI settings for your node." %}
 
-1. Remove the existing components from the chassis.
+1. Remove the existing HDD and NVMe drives, the boot drive, and the NIC from the chassis.
 
-1. Install the new components in the chassis.
+1. Install the existing components in the new chassis.
 
 {% include content-reuse/hardware-guides/platform-agnostic-part-replacement-procedure-fvt.md %}
