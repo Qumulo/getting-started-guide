@@ -22,7 +22,7 @@ sidebar: hardware_guide_sidebar
 {% include image.html alt=alt_tag file="hpe-gen10-drives-rear.png" %}
 
 ## Boot Drive
-{% include content-reuse/hardware-guide/platform-agnostic-boot-drive-additional-instructions.md %}
+{% include content-reuse/hardware-guides/platform-agnostic-boot-drive-additional-instructions.md %}
 
 ### 36T and 90T Nodes
 In 36T and 90T nodes, the boot drive is located in the second LFF drive row.

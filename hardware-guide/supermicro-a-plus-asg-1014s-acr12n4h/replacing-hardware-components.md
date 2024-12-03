@@ -7,9 +7,9 @@ redirect_from:
 sidebar: hardware_guide_sidebar
 ---
 
-{% include content-reuse/hardware-guide/platform-agnostic-part-replacement-admonitions.md %}
+{% include content-reuse/hardware-guides/platform-agnostic-part-replacement-admonitions.md %}
 
-{% include content-reuse/hardware-guide/platform-agnostic-part-replacement-procedure-fvt.md %}
+{% include content-reuse/hardware-guides/platform-agnostic-part-replacement-procedure-fvt.md %}
 
 ## To Replace a Drive
 Your {{site.sm1014s}} chassis contains 12 HDDs, 4 NVMe drives, and one NVMe boot drive in an internal M.2 expansion slot. For information about replacing a drive, see [Drive Bay Mapping](drive-bay-mapping.html) and the following topics in the Supermicro documentation.
@@ -21,7 +21,7 @@ Your {{site.sm1014s}} chassis contains 12 HDDs, 4 NVMe drives, and one NVMe boot
 ## To Replace an M.2 Boot Drive
 {{site.bootDriveInit}}
 
-{% include content-reuse/hardware-guide/platform-agnostic-boot-drive-replacement.md %}
+{% include content-reuse/hardware-guides/platform-agnostic-boot-drive-replacement.md %}
 
 ## To Replace a Power Supply Unit (PSU)
 Your {{site.sm1014s}} chassis contains two PSUs. For information about replacing a PSU, see [Power Supply](https://www.supermicro.com/manuals/superserver/1U/MNL-2436.pdf#page=48) in the Supermicro documentation.

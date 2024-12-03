@@ -7,7 +7,7 @@ redirect_from:
 sidebar: hardware_guide_sidebar
 ---
 
-{% include content-reuse/hardware-guide/hpe-apollo-4200-gen-9-90t-180t-288t-eops.md %}
+{% include content-reuse/hardware-guides/hpe-apollo-4200-gen-9-90t-180t-288t-eops.md %}
 
 ## Front LFF Drive Row
 {% capture alt_tag %}The front large form factor drive row in the {{site.a4200g9}} node{% endcapture %}
@@ -22,7 +22,7 @@ sidebar: hardware_guide_sidebar
 {% include image.html alt=alt_tag file="hpe-gen9-drives-rear.png" %}
 
 ## Boot Drive
-{% include content-reuse/hardware-guide/platform-agnostic-boot-drive-additional-instructions.md %}
+{% include content-reuse/hardware-guides/platform-agnostic-boot-drive-additional-instructions.md %}
 
 The following diagram shows the boot drive in {{site.a4200g9}} 90T, 180T, and 288T nodes.
 

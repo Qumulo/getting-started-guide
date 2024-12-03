@@ -7,7 +7,7 @@ sidebar: hardware_guide_sidebar
 
 {{site.unifyNetDefine}}
 
-{% include content-reuse/hardware-guide/platform-agnostic-identify-eth-port.md %}
+{% include content-reuse/hardware-guides/platform-agnostic-identify-eth-port.md %}
 
 ## Node NIC and Ports
 The following diagrams show the NIC and ports on {{site.a4200g10p}} node types.

@@ -10,7 +10,7 @@ platform:
 
 {% include content-reuse/platform-agnostic-unified-or-split-networking-cluster.md ethernetSpeed="100 Gbps" ethernetSpeedSingleNIC="100 Gbps" ethernetSpeedDualNIC="100 Gbps"%}
 
-{% include content-reuse/hardware-guide/run-anywhere-conditional-admonitions.md %}
+{% include content-reuse/hardware-guides/run-anywhere-conditional-admonitions.md %}
 
 ## Four-Node Cluster Architecture Diagrams
 

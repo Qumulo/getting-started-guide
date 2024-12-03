@@ -7,13 +7,13 @@ redirect_from:
 sidebar: hardware_guide_sidebar
 ---
 
-{% include content-reuse/hardware-guide/hpe-apollo-4200-gen-9-90t-180t-288t-eops.md %}
+{% include content-reuse/hardware-guides/hpe-apollo-4200-gen-9-90t-180t-288t-eops.md %}
 
 ## Prerequisites
 {{site.xrefUSBinstaller}}
 
 ## Step 1: Verify Your Node
-{% include content-reuse/hardware-guide/platform-agnostic-verify-node-preamble.md %}
+{% include content-reuse/hardware-guides/platform-agnostic-verify-node-preamble.md %}
 
 1. On the **HPE ProLiant** boot screen, do one of the following:
 
@@ -91,4 +91,4 @@ Perform the following steps on every node in your cluster.
 
 ## Step 5: Create and Configure Your Cluster
 
-{% include content-reuse/hardware-guide/create-configure-cluster.md %}
+{% include content-reuse/hardware-guides/create-configure-cluster.md %}

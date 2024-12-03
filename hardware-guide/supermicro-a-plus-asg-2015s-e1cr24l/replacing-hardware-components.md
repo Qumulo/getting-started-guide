@@ -7,7 +7,7 @@ sidebar: hardware_guide_sidebar
 
 For detailed hardware component replacement instructions, navigate to the <a href="https://www.supermicro.com/en/products/system/storage/2u/asg-2015s-e1cr24l">Storage A+ Server ASG-2015S-E1CR24L</a> in the Supermicro documentation, click **Resources & Downloads**, and then scroll down to the **User's Manuals** section.
 
-{% include content-reuse/hardware-guide/platform-agnostic-part-replacement-admonitions.md %}
+{% include content-reuse/hardware-guides/platform-agnostic-part-replacement-admonitions.md %}
 
 * **Motherboard:** {{site.partReplaceDcmsShort}}
 
@@ -22,4 +22,4 @@ For detailed hardware component replacement instructions, navigate to the <a hre
 
 {{site.bootDriveInit}}
   
-{% include content-reuse/hardware-guide/platform-agnostic-boot-drive-replacement.md %}
+{% include content-reuse/hardware-guides/platform-agnostic-boot-drive-replacement.md %}

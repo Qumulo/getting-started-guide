@@ -11,7 +11,7 @@ platform:
   - q1uag1
 ---
 
-{% include content-reuse/hardware-guide/platform-agnostic-part-replacement-admonitions.md %}
+{% include content-reuse/hardware-guides/platform-agnostic-part-replacement-admonitions.md %}
 
 ## To Remove and Replace the Top Cover
 Follow the instructions in the ASUS documentation:
@@ -42,7 +42,7 @@ Follow the instructions in the ASUS documentation:
 
 {{site.bootDriveInit}}
 
-{% include content-reuse/hardware-guide/platform-agnostic-boot-drive-replacement.md %}
+{% include content-reuse/hardware-guides/platform-agnostic-boot-drive-replacement.md %}
 
 <a id="replace-nvme-drive-front-storage-bay"></a>
 ## To Replace an NVMe Drive in Front Storage Bays
@@ -110,4 +110,4 @@ Follow the instructions for [removing and installing a DIMM](https://dlcdnets.as
 
    * If your replacement chassis doesn't come with PSUs, install and connect the existing PSUs.
 
-{% include content-reuse/hardware-guide/platform-agnostic-part-replacement-procedure-fvt.md %}
+{% include content-reuse/hardware-guides/platform-agnostic-part-replacement-procedure-fvt.md %}

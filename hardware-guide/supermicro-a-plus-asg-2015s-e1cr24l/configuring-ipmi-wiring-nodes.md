@@ -13,9 +13,9 @@ sidebar: hardware_guide_sidebar
 {% capture alt_tag %}Back Diagram of the {{site.sm2015sLong}} Node{% endcapture %}
 {% include image.html alt=alt_tag file="supermicro-2015s-back-diagram.png" %}
 
-{% include content-reuse/hardware-guide/platform-agnostic-ipmi.md %}
+{% include content-reuse/hardware-guides/platform-agnostic-ipmi.md %}
 {{site.hardware.ipmiConfig.smc}}
 
-{% include content-reuse/hardware-guide/platform-agnostic-unified-networking-wiring.md bmcType="IPMI" ethernetSpeed="25 Gbps or 100 Gbps" portCompatibility=" (compatible with QSFP28 and QSFP56)" %}
+{% include content-reuse/hardware-guides/platform-agnostic-unified-networking-wiring.md bmcType="IPMI" ethernetSpeed="25 Gbps or 100 Gbps" portCompatibility=" (compatible with QSFP28 and QSFP56)" %}
 
-{% include content-reuse/hardware-guide/platform-agnostic-unified-networking-wiring-power.md ethernetSpeed="25 Gbps or 100 Gbps" %}
+{% include content-reuse/hardware-guides/platform-agnostic-unified-networking-wiring-power.md ethernetSpeed="25 Gbps or 100 Gbps" %}

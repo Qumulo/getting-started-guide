@@ -26,4 +26,4 @@ For the second row, box 3 holds bays 1-8 and box 4 holds bays 1-2.
 ## Boot Drive
 The boot drive is in box 1, bay 1.
 
-{% include content-reuse/hardware-guide/platform-agnostic-boot-drive-additional-instructions.md %}
+{% include content-reuse/hardware-guides/platform-agnostic-boot-drive-additional-instructions.md %}

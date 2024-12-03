@@ -16,7 +16,7 @@ platform:
 
 ## Step 1: Verify Your Node
 
-{% include content-reuse/hardware-guide/platform-agnostic-verify-node-preamble.md %}
+{% include content-reuse/hardware-guides/platform-agnostic-verify-node-preamble.md %}
 
 ## Step 2: Boot by Using the Qumulo Core USB Drive Installer
 
@@ -78,6 +78,6 @@ For help with troubleshooting your node, {{site.contactQumuloCare}}.
 
    
 ## Step 4: Create and Configure Your Cluster
-{% include content-reuse/hardware-guide/run-anywhere-conditional-admonitions.md %}
+{% include content-reuse/hardware-guides/run-anywhere-conditional-admonitions.md %}
 
-{% include content-reuse/hardware-guide/create-configure-cluster.md %}
+{% include content-reuse/hardware-guides/create-configure-cluster.md %}

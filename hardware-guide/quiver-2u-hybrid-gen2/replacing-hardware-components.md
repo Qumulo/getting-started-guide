@@ -13,7 +13,7 @@ platform:
 
 For detailed hardware replacement instructions, see <a href="https://docs.qumulo.com/pdf/quiver-2uh-hybrid-rackmount-chassis-user-manual.pdf#page=11" class="pdf">RSC-2MS Rackmount Chassis User's Manual</a> {{site.hardware.fromAIC}}.
 
-{% include content-reuse/hardware-guide/platform-agnostic-part-replacement-admonitions.md %}
+{% include content-reuse/hardware-guides/platform-agnostic-part-replacement-admonitions.md %}
 
 ## To Remove and Replace the Top Cover
 Follow the instructions in the SC-2MS Rackmount Chassis User's Manual: <a href="https://docs.qumulo.com/pdf/quiver-2uh-hybrid-rackmount-chassis-user-manual.pdf#page=13" class="pdf">Top Cover (p. 13)</a>.
@@ -22,7 +22,7 @@ Follow the instructions in the SC-2MS Rackmount Chassis User's Manual: <a href="
 ## To Initialize the Replacement M.2 Boot Drive
 {{site.bootDriveInit}} For more information, see [NVMe M.2 Boot Drive](drive-bay-mapping.html#nvme-m2-boot-drive).
 
-{% include content-reuse/hardware-guide/platform-agnostic-boot-drive-replacement.md %}
+{% include content-reuse/hardware-guides/platform-agnostic-boot-drive-replacement.md %}
 
 
 ## To Replace an HDD
@@ -46,4 +46,4 @@ Follow the instructions in the SC-2MS Rackmount Chassis User's Manual: <a href="
 
 1. Install the new components in the chassis.
 
-{% include content-reuse/hardware-guide/platform-agnostic-part-replacement-procedure-fvt.md %}
+{% include content-reuse/hardware-guides/platform-agnostic-part-replacement-procedure-fvt.md %}

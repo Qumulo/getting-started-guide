@@ -7,9 +7,9 @@ redirect_from:
 sidebar: hardware_guide_sidebar
 ---
 
-{% include content-reuse/hardware-guide/platform-agnostic-part-replacement-admonitions.md %}
+{% include content-reuse/hardware-guides/platform-agnostic-part-replacement-admonitions.md %}
 
-{% include content-reuse/hardware-guide/platform-agnostic-part-replacement-procedure-fvt.md %}
+{% include content-reuse/hardware-guides/platform-agnostic-part-replacement-procedure-fvt.md %}
 
 ## To Replace a Drive
 The ten hot-swap drive carriers are located at the front of your {{site.sm1114s}} chassis.
@@ -47,7 +47,7 @@ The boot drive is located in the internal M.2 expansion slot.
 
 {{site.bootDriveInit}}
 
-{% include content-reuse/hardware-guide/platform-agnostic-boot-drive-replacement.md %}
+{% include content-reuse/hardware-guides/platform-agnostic-boot-drive-replacement.md %}
 
 ## To Replace a Power Supply Unit (PSU)
 The two hot-swap PSUs are located at the front of your {{site.sm1114s}} chassis. If either of the two PSUs fails, the other PSU takes on the full load and lets the node continue operating without interruption.
