@@ -57,7 +57,12 @@ The following privileges are required for continuous replication.
 
    1. For **Port Number**, click **Default (3712)** or enter a custom port.
 
-      {% include note.html content="Your organization's firewall might require a custom port." %}
+      {{site.data.alerts.note}}
+      <ul>
+        <li>Every node on the target cluster uses port 3712 to listen for incoming replication connections.</li>
+        <li>If a source cluster is unable to reach a target cluster on port 3712, you must configure your firewall, by mapping an external IP address and port number to the target cluster's IP address and port number.</li>
+      </ul>
+      {{site.data.alerts.end}}
       
 1. Click **Add Blackout Window** and then select the days of the week and time when replication suspends.
 
