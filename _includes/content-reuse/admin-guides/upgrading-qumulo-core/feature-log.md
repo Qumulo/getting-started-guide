@@ -4,8 +4,9 @@ For information about upgrade types for each release, see <a href='mode-referenc
 
 <style>div#toc{height:200px;overflow:auto;}</style>
 
-## Qumulo Core 7.3.1
+## Qumulo Core 7.3.1.1
 {{page.varDownloadsRelnotes}}
+{% include important.html content="For clusters that have only tagged VLANs but no untagged networks, this release resolves an issue in Qumulo Core 7.3.1 where it was possible for the default gateways to be copied incorrectly during the upgrade process, resulting in a potential cluster outage." %}
 * Made it easier to authorize hub portals from the hub portal host cluster by adding information to REST APIs and `qq` CLI commands
 * Improved the behavior of NFSv3 and NFSv4.1 `ACCESS` commands
 * Increased the S3 connection limit
