@@ -7,7 +7,7 @@ sidebar: hardware_guide_sidebar
 
 {{site.unifyNetDefine}}
 
-{% capture OneOrTwoNICs %}The most common configuration for a {{site.sm2015s}} node includes a single NIC in position 1, corresponding to the <a href="getting-started.html">NIC (LAN1) LED on the front panel</a>.{% endcapture %}
+{% capture OneOrTwoNICs %}The most common configuration for a {{site.sm2015s}} node includes a single NIC in position 1, corresponding to the NIC (LAN1) LED on the front panel.{% endcapture %}
 {% include note.html content=OneOrTwoNICs %}
 
 {% capture alt_tag %}Back Diagram of the {{site.sm2015sLong}} Node{% endcapture %}

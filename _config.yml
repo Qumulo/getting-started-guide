@@ -497,6 +497,7 @@ guides:
   onprem: Qumulo On-Premises Administrator Guide
   onpremShort: Qumulo On-Premises Admin Guide
   hard: Qumulo-Certified Platinum-Tier Hardware Servicing Guide
+  hardGold: Gold-Tier Hardware Servicing Guide for Qumulo
   cli: Qumulo <code>qq</code> CLI Command Guide
   rest: Qumulo REST API Guide
   alert: Qumulo Alerts Administrator Guide

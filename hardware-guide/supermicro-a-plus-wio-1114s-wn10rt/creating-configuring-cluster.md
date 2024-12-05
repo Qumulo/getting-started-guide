@@ -1,7 +1,11 @@
 ---
-title: "Getting Started with Qumulo on Supermicro A+ ASG-2015S-E1CR24L"
-summary: "This section explains how to prepare Supermicro 2015S nodes for creating a Qumulo cluster."
-permalink: /hardware-guide/supermicro-a-plus-asg-2015s-e1cr24l/getting-started.html
+title: "Creating and Configuring a Qumulo Cluster with Supermicro A+ WIO 1114S-WN10RT Nodes"
+summary: "This section explains how to prepare Supermicro 1114S nodes for creating a Qumulo cluster."
+permalink: /hardware-guide/supermicro-a-plus-wio-1114s-wn10rt/creating-configuring-cluster.html
+redirect_from:
+  - /supermicro.html
+  - /hardware/supermicro-a-plus-wio-1114s-wn10rt/getting-started.html
+  - /hardware-guide/supermicro-a-plus-wio-1114s-wn10rt/getting-started.html
 sidebar: hardware_guide_sidebar
 ---
 
@@ -18,8 +22,12 @@ sidebar: hardware_guide_sidebar
 
 1. On the **Please select boot device:** screen, select your USB drive (usually labeled with `UEFI OS`) and boot into it.
 
-   The Qumulo Core installation begins.
 
-## Step 3: Create and Configure Your Cluster
+## Step 3: Install Qumulo Core
+
+{% include content-reuse/hardware-guides/install-qumulo-core.md %}
+   
+
+## Step 4: Create and Configure Your Cluster
 
 {% include content-reuse/hardware-guides/create-configure-cluster.md %}

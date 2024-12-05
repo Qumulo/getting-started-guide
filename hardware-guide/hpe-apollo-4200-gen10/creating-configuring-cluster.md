@@ -1,9 +1,10 @@
 ---
-title: "Getting Started with Qumulo on HPE Apollo 4200 Gen10"
+title: "Creating and Configuring a Qumulo Cluster with HPE Apollo 4200 Gen10 Nodes"
 summary: "This section explains how to prepare HPE Apollo 4200 Gen10 nodes for creating a Qumulo cluster. This guide is for system administrators, professional service providers, and colleagues in your organization who are responsible for installing and configuring server hardware."
-permalink: /hardware-guide/hpe-apollo-4200-gen10/getting-started.html
+permalink: /hardware-guide/hpe-apollo-4200-gen10/creating-configuring-cluster.html
 redirect_from:
   - /hardware/hpe-apollo-4200-gen10/getting-started.html
+  - /hardware-guide/hpe-apollo-4200-gen10/getting-started.html
 sidebar: hardware_guide_sidebar
 ---
 

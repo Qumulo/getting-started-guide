@@ -17,7 +17,7 @@ entries:
       title: Documentation Home
       url: /index.html
     - output: web
-      title: Qumulo qq CLI Command Guide Home
+      title: Guide Table of Contents
       url: /qq-cli-command-guide/
     - output: web
       title: Contacting the Qumulo Care Team

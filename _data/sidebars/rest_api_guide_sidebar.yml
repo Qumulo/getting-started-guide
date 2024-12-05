@@ -17,7 +17,7 @@ entries:
       title: Documentation Home
       url: /index.html
     - output: web
-      title: Qumulo REST API Guide Home
+      title: Guide Table of Contents
       url: /rest-api-guide/
     - output: web
       title: Contacting the Qumulo Care Team

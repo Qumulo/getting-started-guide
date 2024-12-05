@@ -31,7 +31,7 @@ entries:
       url: /index.html
       output: web
 
-    - title: Qumulo Alerts Administrator Guide Home
+    - title: Guide Table of Contents
       url: /qumulo-alerts-guide/
       output: web
 

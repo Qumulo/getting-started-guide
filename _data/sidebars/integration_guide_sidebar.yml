@@ -29,7 +29,7 @@ entries:
       url: /index.html
       output: web
 
-    - title: Qumulo Integration Guide Home
+    - title: Guide Table of Contents
       url: /integration-guide/
       output: web
 

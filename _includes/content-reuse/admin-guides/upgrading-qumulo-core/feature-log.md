@@ -451,7 +451,7 @@ Extended S3 object versioning support to additional API actions
 * Improved read performance for previously read large files
 * Improved write performance for certain platforms and workloads
 * Improved cluster resilience on Azure
-* Added support for HPE Broadcom NICs and updated the NIC and SKU reference
+* Added support for HPE Broadcom NICs and updated the NIC and node type reference
 * Made improvements to the Qumulo Core Web UI
 * Fixed issues related to snapshots of directories with SMB-illegal characters and localized Active Directory installations.
 

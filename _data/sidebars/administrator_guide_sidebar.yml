@@ -31,7 +31,7 @@ entries:
       url: /index.html
       output: web
 
-    - title: Administrator Guide Home
+    - title: Guide Table of Contents
       url: /administrator-guide/
       output: web
 

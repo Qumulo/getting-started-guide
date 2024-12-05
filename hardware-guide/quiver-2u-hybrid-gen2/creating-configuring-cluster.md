@@ -1,11 +1,13 @@
 ---
-title: "Getting Started with Qumulo on Quiver 1U All-NVMe Gen1"
-summary: "This section explains how to prepare Quiver 1UA Gen1 nodes for creating a Qumulo cluster."
-permalink: /hardware-guide/quiver-1ua-all-nvme-gen1/getting-started.html
+title: "Creating and Configuring a Qumulo Cluster with Quiver 2U Hybrid Gen2 Nodes"
+summary: "This section explains how to prepare Quiver 2UH Gen2 nodes for creating a Qumulo cluster."
+permalink: /hardware-guide/quiver-2u-hybrid-gen2/creating-configuring-cluster.html
+redirect_from:
+  - /hardware-guide/quiver-2u-hybrid-gen2/getting-started.html
 sidebar: hardware_guide_sidebar
 platform:
   - quiver
-  - q1uag1
+  - q2uhg2
 ---
 
 ## Step 1: Verify Your Node
@@ -13,7 +15,7 @@ platform:
 
 
 ## Step 2: Boot by Using the Qumulo Core USB Drive Installer
-1. When the node powers on and begins to boot, on the **ASUS** screen, press **F8**.
+1. When the node powers on and begins to boot, enter the boot menu.
 
    {{site.data.alerts.note}}
    <ul>
@@ -22,10 +24,10 @@ platform:
    </ul>
    {{site.data.alerts.end}}
 
-1. On the **Please select boot device:** screen, select your USB drive (usually labeled with `UEFI OS`) and boot into it.
+1. On the boot device selection screen, select your USB drive (usually labeled with `UEFI OS`) and boot into it.
 
    The Qumulo Core installation begins.
-   
+
 
 ## Step 3: Create and Configure Your Cluster
 {% include content-reuse/hardware-guides/run-anywhere-conditional-admonitions.md %}

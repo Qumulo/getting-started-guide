@@ -26,7 +26,7 @@ ACTIONS=()
 PS3='What would you like to build? '
 
 # Prints the options on screen
-options=("Qumulo-Certified Platinum-Tier Hardware Servicing Guide" "Azure Native Qumulo Administrator Guide" "Cloud Native Qumulo on AWS Administrator Guide" "Cloud Native Qumulo on Azure Administrator Guide" "Qumulo On-Premises Administrator Guide" "Qumulo Alerts Guide" "Qumulo qq CLI Command Guide" "Qumulo REST API Guide" "Qumulo Integration Guide" "All Administrator Guides" "All Guides" "Exit")
+options=("Qumulo-Certified Platinum-Tier Hardware Servicing Guide" "Gold-Tier Hardware Servicing Guide for Qumulo" "Azure Native Qumulo Administrator Guide" "Cloud Native Qumulo on AWS Administrator Guide" "Cloud Native Qumulo on Azure Administrator Guide" "Qumulo On-Premises Administrator Guide" "Qumulo Alerts Guide" "Qumulo qq CLI Command Guide" "Qumulo REST API Guide" "Qumulo Integration Guide" "All Administrator Guides" "All Guides" "Exit")
 echo
 
 select opt in "${options[@]}"
@@ -37,6 +37,10 @@ do
   case $opt in
     "Qumulo-Certified Platinum-Tier Hardware Servicing Guide")
       ACTIONS+=("Platinum_Tier_Hardware_Guide")
+      break
+      ;;
+    "Gold-Tier Hardware Servicing Guide for Qumulo")
+      ACTIONS+=("Gold_Tier_Hardware_Guide")
       break
       ;;
     "Azure Native Qumulo Administrator Guide")
@@ -76,7 +80,7 @@ do
       break
       ;;
     "All Guides")
-      ACTIONS+=("Platinum_Tier_Hardware_Guide" "ANQ_Guide" "CNQ_AWS_Guide" "CNQ_Azure_Guide" "Administrator_Guide" "Qumulo_Alerts_Guide" "Qumulo_qq_CLI_Command_Guide" "Integration_Guide")
+      ACTIONS+=("Platinum_Tier_Hardware_Guide" "Gold_Tier_Hardware_Guide" "ANQ_Guide" "CNQ_AWS_Guide" "CNQ_Azure_Guide" "Administrator_Guide" "Qumulo_Alerts_Guide" "Qumulo_qq_CLI_Command_Guide" "Integration_Guide")
       break
       ;;
     "Exit")
@@ -94,6 +98,10 @@ build_prince () {
     "Platinum_Tier_Hardware_Guide")
       JEKYLL_CONFIG=config_platinum_tier_hardware_guide_pdf.yml
       PRINCE_OUTPUT=qumulo-certified-platinum-tier-hardware-guide.pdf
+      ;;
+    "Gold_Tier_Hardware_Guide")
+      JEKYLL_CONFIG=config_gold_tier_hardware_guide_pdf.yml
+      PRINCE_OUTPUT=gold-tier-hardware-guide-for-qumulo.pdf
       ;;
     "ANQ_Guide")
       JEKYLL_CONFIG=config_azure_native_guide_pdf.yml

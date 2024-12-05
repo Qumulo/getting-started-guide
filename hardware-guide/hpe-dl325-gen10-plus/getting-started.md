@@ -1,9 +1,10 @@
 ---
-title: "Getting Started with Qumulo on HPE ProLiant DL325 Gen10 Plus"
+title: "Creating and Configuring a Qumulo Cluster with HPE ProLiant DL325 Gen10 Plus Nodes"
 summary: "This section explains how to prepare HPE ProLiant DL325 Gen10 Plus nodes for creating a Qumulo cluster. This guide is for system administrators, professional service providers, and colleagues in your organization who are responsible for installing and configuring server hardware."
-permalink: /hardware-guide/hpe-dl325-gen10-plus/getting-started.html
+permalink: /hardware-guide/hpe-dl325-gen10-plus/creating-configuring-cluster.html
 redirect_from:
   - /hardware/hpe-dl325-gen10-plus/getting-started.html
+  - /hardware-guide/hpe-dl325-gen10-plus/getting-started.html
 sidebar: hardware_guide_sidebar
 ---
 

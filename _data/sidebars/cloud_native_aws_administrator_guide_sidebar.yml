@@ -31,7 +31,7 @@ entries:
       url: /index.html
       output: web
 
-    - title: Cloud Native Qumulo on AWS Administrator Guide Home
+    - title: Guide Table of Contents
       url: /cloud-native-aws-administrator-guide/
       output: web
 

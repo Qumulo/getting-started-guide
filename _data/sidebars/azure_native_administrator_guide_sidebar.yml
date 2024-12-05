@@ -32,7 +32,7 @@ entries:
       output: web
       type: subnavi
 
-    - title: Azure Native Qumulo Administrator Guide Home
+    - title: Guide Table of Contents
       url: /azure-native-administrator-guide/
       output: web
       type: subnavi

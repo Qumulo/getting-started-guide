@@ -6,6 +6,12 @@ breadcrumbs: exclude
 tocTrue: true
 ---
 
+<style>
+#toc ul li:nth-child(-n+5) {
+    display: none;
+}
+</style>
+
 To get started, choose one of the following guides.
 
 <h2 class="frontpage">Cloud: Self-Managed File System</h2>
@@ -44,7 +50,7 @@ To get started, choose one of the following guides.
       <picture>
         <source type="image/webp" srcset="images/azure-native-qumulo-administrator-guide.webp">
         <source type="image/png" srcset="images/azure-native-qumulo-administrator-guide.png">
-        <img src="images/azure-native-qumulo-administrator-guide.png" alt="An image of a computer screen with a stylized Qumulo Core interface, symbolizing Azure native deployments" width="301" height="301">
+        <img src="images/azure-native-qumulo-administrator-guide.png" alt="An image of a computer screen with a stylized Qumulo Core interface, symbolizing Azure native deployments; above the image of the computer screen there is an image of the Qumulo logo, symbolizing the file system being Qumulo-managed" width="301" height="301">
       </picture>
       <figcaption>{{site.guides.anqShort}}</figcaption>
     </figure>
@@ -72,9 +78,22 @@ To get started, choose one of the following guides.
         <picture>
           <source type="image/webp" srcset="images/qumulo-certified-platinum-tier-hardware-servicing-guide.webp" width="301" height="301">
           <source type="image/png" srcset="images/qumulo-certified-platinum-tier-hardware-servicing-guide.png" width="301" height="301">
-          <img src="images/qumulo-certified-platinum-tier-hardware-servicing-guide.png" alt="A stylized image of a server rack, symbolizing installing, configuring, and maintaining hardware" width="301" height="301">
+          <img src="images/qumulo-certified-platinum-tier-hardware-servicing-guide.png" alt="A stylized image of a server rack, symbolizing installing, configuring, and maintaining hardware; above the image of the server rack there is an image of a ribbbon with the Qumulo logo, symbolizing the hardware being Qumulo-certified" width="301" height="301">
         </picture>
         <figcaption class="platinum-tier-caption">{{site.guides.hard}}</figcaption>
+      </figure>
+    </a>
+  </div>
+
+  <div class="guide-button">
+    <a href="gold-tier-hardware-servicing-guide/">
+      <figure>
+        <picture>
+          <source type="image/webp" srcset="images/gold-tier-hardware-servicing-guide.webp" width="301" height="301">
+          <source type="image/png" srcset="images/gold-tier-hardware-servicing-guide.png" width="301" height="301">
+          <img src="images/gold-tier-hardware-servicing-guide.png" alt="A stylized image of a server rack, symbolizing installing, configuring, and maintaining hardware" width="301" height="301">
+        </picture>
+        <figcaption>{{site.guides.hardGold}}</figcaption>
       </figure>
     </a>
   </div>

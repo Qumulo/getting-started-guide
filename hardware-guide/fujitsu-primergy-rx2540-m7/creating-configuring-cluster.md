@@ -1,7 +1,9 @@
 ---
-title: "Getting Started with Qumulo on Fujitsu PRIMERGY RX2540 M7"
+title: "Creating and Configuring a Qumulo Cluster with Fujitsu PRIMERGY RX2540 M7 Nodes"
 summary: "This section explains how to prepare Fujitsu RX2540 M7 nodes for creating a Qumulo cluster."
-permalink: /hardware-guide/fujitsu-primergy-rx2540-m7/getting-started.html
+permalink: /hardware-guide/fujitsu-primergy-rx2540-m7/creating-configuring-cluster.html
+redirect_from:
+  - /hardware-guide/fujitsu-primergy-rx2540-m7/getting-started.html
 sidebar: hardware_guide_sidebar
 ---
 
