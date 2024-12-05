@@ -1,9 +1,9 @@
 1. To get the correct version of the Qumulo Core Installer for the node in your cluster, {{site.contactQumuloCare}}.
 
-{% if page.platform != gold %}
-1. [Create a Qumulo Core USB Drive Installer](../getting-started/creating-usb-drive-installer.html).
-{% else %}
+{% if page.platform == 'gold' %}
 1. [Create a Qumulo Core USB Drive Installer](../gold-tier-hardware-servicing-guide/getting-started/creating-usb-drive-installer.html).
+{% else %}
+1. [Create a Qumulo Core USB Drive Installer](../getting-started/creating-usb-drive-installer.html).
 {% endif %}
 
 1. Power on your node, enter the boot menu, and select your USB drive.

@@ -5,6 +5,9 @@ permalink: /hardware-guide/supermicro-a-plus-asg-1014s-acr12n4h/replacing-hardwa
 redirect_from:
   - /hardware/supermicro-a-plus-asg-1014s-acr12n4h/replacing-hardware-components.html
 sidebar: hardware_guide_sidebar
+platform:
+  - supermicro
+  - sm1014s
 ---
 
 {% include content-reuse/hardware-guides/platform-agnostic-part-replacement-admonitions.md %}

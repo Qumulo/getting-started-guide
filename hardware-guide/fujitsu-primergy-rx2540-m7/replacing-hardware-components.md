@@ -6,6 +6,9 @@ sidebar: hardware_guide_sidebar
 varRemoveRAIDModule: <a href="#replace-raid-module-riser">Remove the RAID module riser from the motherboard.</a>
 varHotPlug: You can replace this component without powering off the node.
 varNoHotPlug: To replace this component, you must first power off the node.
+platform:
+  - fujitsu
+  - fprx2540m7
 ---
 
 {% include content-reuse/hardware-guides/platform-agnostic-part-replacement-admonitions.md %}

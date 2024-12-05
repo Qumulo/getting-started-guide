@@ -3,6 +3,9 @@ title: "Replacing Hardware Components in Your Supermicro A+ ASG-2015S-E1CR24L No
 summary: "This section provides basic stipulations regarding the replacement of certain hardware components in Supermicro 2015S nodes."
 permalink: /hardware-guide/supermicro-a-plus-asg-2015s-e1cr24l/replacing-hardware-components.html
 sidebar: hardware_guide_sidebar
+platform:
+  - supermicro
+  - sm2015s 
 ---
 
 For detailed hardware component replacement instructions, navigate to the <a href="https://www.supermicro.com/en/products/system/storage/2u/asg-2015s-e1cr24l">Storage A+ Server ASG-2015S-E1CR24L</a> in the Supermicro documentation, click **Resources & Downloads**, and then scroll down to the **User's Manuals** section.

@@ -5,6 +5,9 @@ permalink: /hardware-guide/supermicro-a-plus-wio-1114s-wn10rt/replacing-hardware
 redirect_from:
   - /hardware/supermicro-a-plus-wio-1114s-wn10rt/replacing-hardware-components.html
 sidebar: hardware_guide_sidebar
+platform:
+  - supermicro
+  - sm1114s
 ---
 
 {% include content-reuse/hardware-guides/platform-agnostic-part-replacement-admonitions.md %}
