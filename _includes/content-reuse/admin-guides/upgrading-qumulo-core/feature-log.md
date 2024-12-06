@@ -4,6 +4,10 @@ For information about upgrade types for each release, see <a href='mode-referenc
 
 <style>div#toc{height:200px;overflow:auto;}</style>
 
+## Qumulo Core 7.3.1.2
+{{page.varDownloadsRelnotes}}
+{% include important.html content="For long-standing clusters initially created in 2016 or earlier, this release resolves an issue in Qumulo Core 7.3.1.1 where the cluster may fail to start after upgrading to 7.3.1.1, resulting in a potential cluster outage." %}
+
 ## Qumulo Core 7.3.1.1
 {{page.varDownloadsRelnotes}}
 {% include important.html content="For clusters that have only tagged VLANs but no untagged networks, this release resolves an issue in Qumulo Core 7.3.1 where it was possible for the default gateways to be copied incorrectly during the upgrade process, resulting in a potential cluster outage." %}
