@@ -7,7 +7,7 @@ For information about upgrade types for each release, see <a href='mode-referenc
 ## Qumulo Core 7.3.2.1
 {{page.varDownloadsRelnotes}} 
 * Removed the limit from the number of floating IP addresses per cluster
-* Added support for sharing S3 objects with presigned URLs
+* Added support for sharing S3 objects with presigned URLs to additional S3 API actions
 
 ## Qumulo Core 7.3.1.2
 {{page.varDownloadsRelnotes}}
