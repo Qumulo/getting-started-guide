@@ -60,5 +60,3 @@ This section explains how to deploy the Azure Storage Accounts that act as persi
       ]
       persistent_storage_resource_group = "{{site.cnq.persistentStorageResourceGroupAzure}}"
       ```
-
-      {% include tip.html content="You will need the `persistent_storage_resource_group` value to deploy your cluster." %}
