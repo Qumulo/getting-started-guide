@@ -13,7 +13,9 @@ platform:
 
 For detailed hardware replacement instructions, see <a href="https://docs.qumulo.com/pdf/quiver-2uh-hybrid-rackmount-chassis-user-manual.pdf#page=11" class="pdf">RSC-2MS Rackmount Chassis User's Manual</a> {{site.hardware.fromAIC}}.
 
-{% include content-reuse/hardware-guides/platform-agnostic-part-replacement-admonitions.md %}
+{% capture ShipScrews %}Before installing your {{site.q2uhg2}} node in a server rack, you must remove the shipping screws from the node.{% endcapture %}
+{% include important.html content=ShipScrews %}
+
 
 ## To Remove and Replace the Top Cover
 Follow the instructions in the SC-2MS Rackmount Chassis User's Manual: <a href="https://docs.qumulo.com/pdf/quiver-2uh-hybrid-rackmount-chassis-user-manual.pdf#page=13" class="pdf">Top Cover (p. 13)</a>.
