@@ -6,7 +6,9 @@ sidebar: gold_tier_hardware_servicing_guide_sidebar
 ---
 
 ## Step 1: Boot by Using the Qumulo Core USB Drive Installer
-1. When the node powers on and begins to boot, enter the boot menu.
+1. Insert a USB drive with the [Qumulo Core installer](creating-usb-drive-installer.html) into an available port and power on the node.
+
+1. When the node begins to boot, enter the boot menu.
 
    {% include note.html content="The boot setting is persistent: When you boot from a USB drive once, the node continues to boot from the USB drive. After you finish installing Qumulo Core, remove the USB drive from the node." %}
 
