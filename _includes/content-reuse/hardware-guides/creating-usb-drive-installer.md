@@ -71,4 +71,6 @@ To create a USB Drive Installer on Windows, you must use a third-party applicati
 
 1. When the **ISOHybrid image detected** dialog box appears, click **Write in DD Image mode** and then click **OK**.
 
+   {% include important.html content="For this operation to succeed, you must use DD Image mode." %}
+
 1. To confirm the operation, destroy all data on the USB drive, and image the drive click **OK**.
