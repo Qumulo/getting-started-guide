@@ -89,3 +89,5 @@ sidebar: hardware_guide_sidebar
 
 ## Step 3: (Optional) Reconfiguring the Out-of-Band Management (IPMI) Settings
 If the current IPMI settings for your node are configured statically (rather than by using DHCP), you must reapply the static IPMI settings to the replacement node. For more information, see [IPMI Quick Reference Guide for Qumulo C-Series](https://care.qumulo.com/hc/en-us/articles/360024426314) on Qumulo Care.
+
+{{site.ipmiLoginRequired}}
