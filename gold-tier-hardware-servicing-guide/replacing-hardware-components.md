@@ -11,16 +11,15 @@ For detailed instructions, see the documentation from your hardware vendor.
 ## Locating a Failed Drive
 Gold-Tier hardware doesn't use predefined drive mapping or panel LEDs to indicate drive health.
 
-
-### To Locate a Failed Drive
+### To Locate a Failed Drive by using the Web UI
 
 1. Log in to Qumulo Core.
 
 1. Click **Cluster > Overview** and then click the name of the node with a failed drive.
 
-1. On the page for the node, the failed drive is listed.
+1. On the page for the node, under **Drive Details**, the serial number for the failed drive is listed.
 
-1. Use a server management tool to determine the location of the failed drive.
+1. Use the failed drive's serial number and a server management tool to determine the physical location of the failed drive.
 
 
 ## Initializing a Replacement Boot Drive
